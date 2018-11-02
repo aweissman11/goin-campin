@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import { getCurrentLocation } from ''
+import { getCurrentLocation } from '../actions/getCurrentLocationThunk';
+import GeoLocation from './GeoLocation';
 
 class App extends Component {
-  componentDidMount() {
-    this.props.getCurrentLocation();
-  }
+  // componentDidMount() {
+  //   this.props.setInitialLocation();
+  // }
 
   render() {
     return (
@@ -18,6 +19,9 @@ class App extends Component {
           <div>
             <input placeholder='search here' />
           </div>
+          <GeoLocation
+            setInitialLocation={this.props.setInitialLocation}
+          />
           <div>
             <h3>Results:</h3>
             <div>
@@ -46,8 +50,10 @@ class App extends Component {
   }
 }
 
-export const mapDispatchToProps = (dispatch) => {
-  () => dispatch(getCurrentLocation())
-}
+export const mapStateToProps = ({ currentLocation }) => ({ currentLocation });
 
-export default connect(null, mapDispatchToProps)(App);
+export const mapDispatchToProps = (dispatch) => ({
+  setInitialLocation: () => dispatch(getCurrentLocation())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
