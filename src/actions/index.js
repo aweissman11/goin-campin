@@ -4,3 +4,10 @@ export const setCurrentLocation = (location) => {
     location
   }
 }
+
+export const setHikesList = (hikesList) => {
+  return {
+    type: 'SET_HIKES_LIST',
+    hikesList
+  }
+}
