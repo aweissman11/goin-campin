@@ -5,9 +5,11 @@ import { getCurrentLocation } from '../actions/getCurrentLocationThunk';
 import GeoLocation from './GeoLocation';
 
 class App extends Component {
-  // componentDidMount() {
-  //   this.props.setInitialLocation();
-  // }
+  setLocation = (location) => {
+    console.log('fires');
+    console.log('location in App:', location);
+    this.props.setInitialLocation(location)
+  }
 
   render() {
     return (
@@ -20,25 +22,11 @@ class App extends Component {
             <input placeholder='search here' />
           </div>
           <GeoLocation
-            setInitialLocation={this.props.setInitialLocation}
+            setInitialLocation={(location) => this.setLocation(location)}
           />
           <div>
             <h3>Results:</h3>
             <div>
-              <ul>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-                <li>Hike Name</li>
-              </ul>
             </div>
           </div>
         </section>
@@ -53,7 +41,7 @@ class App extends Component {
 export const mapStateToProps = ({ currentLocation }) => ({ currentLocation });
 
 export const mapDispatchToProps = (dispatch) => ({
-  setInitialLocation: () => dispatch(getCurrentLocation())
+  setInitialLocation: (location) => dispatch(getCurrentLocation(location))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
