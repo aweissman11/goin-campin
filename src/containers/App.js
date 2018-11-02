@@ -3,11 +3,10 @@ import './App.css';
 import { connect } from 'react-redux';
 import { getCurrentLocation } from '../actions/getCurrentLocationThunk';
 import GeoLocation from './GeoLocation';
+import HikesList from './HikesList';
 
 class App extends Component {
   setLocation = (location) => {
-    console.log('fires');
-    console.log('location in App:', location);
     this.props.setInitialLocation(location)
   }
 
@@ -26,9 +25,8 @@ class App extends Component {
           />
           <div>
             <h3>Results:</h3>
-            <div>
-            </div>
           </div>
+          <HikesList />
         </section>
         <section>
 
@@ -38,7 +36,7 @@ class App extends Component {
   }
 }
 
-export const mapStateToProps = ({ currentLocation }) => ({ currentLocation });
+export const mapStateToProps = ({ currentLocation, hikesList }) => ({ currentLocation, hikesList });
 
 export const mapDispatchToProps = (dispatch) => ({
   setInitialLocation: (location) => dispatch(getCurrentLocation(location))
