@@ -18,7 +18,6 @@ class GeoLocation extends Component {
     if (this.props.isGeolocationEnabled) {
       if (this.state.latitude !== this.props.coords.latitude) {
         const { latitude, longitude } = this.props.coords;
-        console.log('latitude:', latitude);
         this.props.setInitialLocation([latitude, longitude])
         this.setState({
           latitude,
