@@ -5,6 +5,7 @@ import { getCurrentLocation } from '../actions/getCurrentLocationThunk';
 import GeoLocation from './GeoLocation';
 import HikesList from './HikesList';
 import CampsList from './CampsList';
+import LocationSearchInput from './LocationSearchInput';
 
 class App extends Component {
   setLocation = (location) => {
@@ -19,7 +20,7 @@ class App extends Component {
         <section>
           <header>We're Goin Campin!</header>
           <div>
-            <input placeholder='search here' />
+            <LocationSearchInput />
           </div>
           <GeoLocation
             setInitialLocation={(location) => this.setLocation(location)}
