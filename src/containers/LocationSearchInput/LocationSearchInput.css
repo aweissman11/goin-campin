@@ -1,0 +1,9 @@
+.suggestion-item--active {
+  backgroundColor: #fafafa;
+  cursor: pointer;
+
+}
+.suggestion-item {
+  backgroundColor: #fff;
+  cursor: pointer;
+}
