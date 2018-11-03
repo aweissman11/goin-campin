@@ -6,8 +6,8 @@ import { getHikesList } from '../../actions/getHikesListThunk';
 class HikesList extends Component {
 
   getHikesList = () => {
-    const { currentLocation } = this.props;
-    if (currentLocation.length > 0) {
+    const { currentLocation, hikesList } = this.props;
+    if (currentLocation.length > 0 && hikesList.length < 1) {
       this.props.getHikesList(currentLocation);
     }
   }
