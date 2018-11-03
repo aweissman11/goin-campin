@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getCurrentLocation } from '../actions/getCurrentLocationThunk';
 import GeoLocation from './GeoLocation';
 import HikesList from './HikesList';
+import CampsList from './CampsList';
 
 class App extends Component {
   setLocation = (location) => {
@@ -26,7 +27,8 @@ class App extends Component {
           <div>
             <h3>Results:</h3>
           </div>
-          <HikesList />
+          {/* <HikesList /> */}
+          <CampsList />
         </section>
         <section>
 
