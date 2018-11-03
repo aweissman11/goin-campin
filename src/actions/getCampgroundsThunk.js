@@ -1,4 +1,3 @@
-import { setCampsList } from './index';
 import { getCampWeather } from './getCampWeatherThunk';
 import { campgroundsFetch } from '../utilities/campgroundsFetch';
 import { campgroundsKey } from '../apiKeys';
