@@ -1,6 +1,9 @@
+* {
+  background-color: #3f6358;
+}
+
 .App {
   text-align: center;
-  background-color: #3f6358;
 }
 
 .intro-animation-container {
