@@ -11,3 +11,10 @@ export const setHikesList = (hikesList) => {
     hikesList
   }
 }
+
+export const setCampsList = (campsList) => {
+  return {
+    type: 'SET_CAMPS_LIST',
+    campsList
+  }
+}
