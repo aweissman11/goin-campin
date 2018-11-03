@@ -15,14 +15,17 @@ class CampsList extends Component {
   renderCamps = () => {
     this.getCampsList();
     if (this.props.campsList.length > 1) {
-      const slicedList = this.props.campsList.slice(2);
+      const slicedList = this.props.campsList.slice(2, 12);
       return slicedList.map( camp => {
         if (camp.attributes.facilityName !== 'Rent an RV for Your Next Adventure') {
           return (
             <div key={camp.attributes.facilityName} >
               <p>{camp.attributes.facilityName}</p>
               <p>
-                <img src={`http://www.reserveamerica.com${camp.attributes.faciltyPhoto}`}></img>
+                <img
+                  src={`http://www.reserveamerica.com${camp.attributes.faciltyPhoto}`}
+                  alt={`${camp.attributes.facilityName}`}
+                />
               </p>
             </div>
           )
