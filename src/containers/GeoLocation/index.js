@@ -3,7 +3,6 @@ import {geolocated} from 'react-geolocated';
 
 import './GeoLocation.css';
 
-
 class GeoLocation extends Component {
   constructor() {
     super()
@@ -15,10 +14,9 @@ class GeoLocation extends Component {
   }
 
   componentDidMount() {
-    //dispatch isLoading
-      // with getting location as message
+    this.props.geoLoading('getting location...', true)
   }
-
+  
   componentDidUpdate() {
     if (this.props.isGeolocationEnabled) {
       if (this.state.latitude !== this.props.coords.latitude) {
@@ -28,7 +26,7 @@ class GeoLocation extends Component {
           latitude,
           longitude
         })
-        // dispatch isloading now false
+        this.props.geoLoading('got location', false)
       } else {
         return;
       }
