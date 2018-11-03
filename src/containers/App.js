@@ -17,7 +17,7 @@ class App extends Component {
         <div className='intro-animation-container'>
         </div>
         <section>
-          <header>We're Goin Hiking!</header>
+          <header>We're Goin Campin!</header>
           <div>
             <input placeholder='search here' />
           </div>
