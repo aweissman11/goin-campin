@@ -1,10 +1,10 @@
-export const fetchCall = async (url) => {
-  const response = await fetch(url);
+export const campgroundsFetch = async (url) => {
+  const response = await fetch(`https://cors-anywhere.herokuapp.com/${url}`);
   if (!response.ok) {
     console.error(Error(response.statusText));
     return Error(response.statusText)
   }
-  return await response.json();
+  return await response.text();
 }
 
-export default fetchCall;
+export default campgroundsFetch;
