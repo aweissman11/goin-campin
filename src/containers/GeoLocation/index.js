@@ -14,6 +14,11 @@ class GeoLocation extends Component {
     }
   }
 
+  componentDidMount() {
+    //dispatch isLoading
+      // with getting location as message
+  }
+
   componentDidUpdate() {
     if (this.props.isGeolocationEnabled) {
       if (this.state.latitude !== this.props.coords.latitude) {
@@ -23,6 +28,7 @@ class GeoLocation extends Component {
           latitude,
           longitude
         })
+        // dispatch isloading now false
       } else {
         return;
       }
