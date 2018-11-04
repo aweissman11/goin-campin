@@ -10,6 +10,7 @@ export const getHikesList = (location) => {
       console.log('hikesList:', hikesList);
     } catch(error) {
       console.warn(error.message);
+      return error.message
     }
     dispatch(setHikesList(hikesList.trails));
   }
