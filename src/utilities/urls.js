@@ -6,6 +6,12 @@ export const hikingListUrl = (location) => {
 }
 
 export const currentWeatherUrl = (location) => {
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=${weatherKey}`;
+  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${location[0]}&lon=${location[1]}&units=imperial&appid=${weatherKey}`;
   return url;
 }
+
+export const fiveDayUrl = (location) => {
+  const url = `http://api.openweathermap.org/data/2.5/forecast?lat=${location[0]}&lon=${location[1]}&units=imperial&cnt=40&appid=${weatherKey}`
+  return url;
+}
+
