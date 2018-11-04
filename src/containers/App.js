@@ -19,6 +19,14 @@ class App extends Component {
   async componentDidMount() {
     await this.setState({ isOpening: true })
     await setTimeout(() => this.completeOpening(), 13000)
+
+    navigator.geolocation.getCurrentPosition((location) =>  {
+      console.log(location.coords.latitude);
+      console.log(location.coords.longitude);
+      console.log(location.coords.accuracy);
+      const { latitude, longitude } = location.coords;
+      this.setLocation([latitude, longitude]);
+    });
   }
 
   completeOpening = () => {
@@ -47,8 +55,6 @@ class App extends Component {
               <Route to='/opening' render={() => 
                   <Opening
                     completeOpening={this.completeOpening}
-                    setInitialLocation={(location) => this.setLocation(location)}
-                    geoLoading={(locationData) => this.props.geoLoading(locationData)}
                   />
               } /> :
               <Route to='/home' component={CampsList} />
