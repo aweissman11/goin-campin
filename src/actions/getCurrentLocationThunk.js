@@ -11,7 +11,7 @@ export const getCurrentLocation = () => {
         dispatch(setCurrentLocation([latitude, longitude]));
         dispatch(getCampsList([latitude, longitude]))
       });
-      dispatch(loading('found ya!', false))
+      dispatch(loading("found ya! Now let's see about those campgrounds...", true))
     } catch(error) {
       console.warn(error.message);
       return(error.message);
