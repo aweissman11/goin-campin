@@ -3,13 +3,9 @@ import { connect } from 'react-redux';
 
 import Loading from '../../components/Loading';
 import LocationSearchInput from '../LocationSearchInput';
-import { getCampsList } from '../../actions/getCampgroundsThunk';
 import Campground from '../Campground'
 
 class CampsList extends Component {
-  componentDidMount() {
-    // console.log('camplist here to save the day')
-  }
   renderCamps = () => {
     if (this.props.campsList.length > 0) {
       return this.props.campsList.map( camp => {
@@ -43,9 +39,7 @@ class CampsList extends Component {
           /> :
           <div>
             <h1>CampsList</h1>
-              {
-                this.renderCamps()
-              }
+              {this.renderCamps()}
           </div>
       }
     </div>
@@ -55,8 +49,4 @@ class CampsList extends Component {
 
 export const mapStateToProps = ({ currentLocation, campsList, loading }) => ({ currentLocation, campsList, loading })
 
-export const mapDispatchToProps = (dispatch) => ({
-  getCampsList: (location) => dispatch(getCampsList(location))
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(CampsList)
+export default connect(mapStateToProps, null)(CampsList)

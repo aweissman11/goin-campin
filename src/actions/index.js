@@ -20,6 +20,7 @@ export const setCampsList = (campsList) => {
 }
 
 export const loading = (message, isLoading) => {
+  console.log('loading:', message)
   return {
     type: 'LOADING',
     message,
