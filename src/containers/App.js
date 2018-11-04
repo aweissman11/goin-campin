@@ -12,20 +12,17 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      isOpening: false,
+      isOpening: true,
     }
   }
   
   async componentDidMount() {
-    await this.setState({ isOpening: true })
     await setTimeout(() => this.completeOpening(), 13000)
-
+    this.props.geoLoading('searching for a location...', true)
     navigator.geolocation.getCurrentPosition((location) =>  {
-      console.log(location.coords.latitude);
-      console.log(location.coords.longitude);
-      console.log(location.coords.accuracy);
       const { latitude, longitude } = location.coords;
       this.setLocation([latitude, longitude]);
+      this.props.geoLoading('found ya!', false)
     });
   }
 
