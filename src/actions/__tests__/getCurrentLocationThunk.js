@@ -1,8 +1,8 @@
 /* eslint-disable */
 import { getCurrentLocation } from '../getCurrentLocationThunk';
-import { setCurrentLocation } from '../index';
+import { setCurrentLocation, loading } from '../index';
 
-// jest.mock('../movieListThunk.js')
+// jest.mock('../someSortOfThunk.js')
 
 describe('getCurrentLocation', () => {
   let mockDispatch;
@@ -12,43 +12,38 @@ describe('getCurrentLocation', () => {
     mockDispatch = jest.fn()
   })
 
-  it('calls dispatch with setCurrentLocation(location)', () => {
+  it('calls dispatch with setCurrentLocation(location)', async () => {
     const thunk = getCurrentLocation(mockLocation)
     
-    thunk(mockDispatch)
+    await thunk(mockDispatch)
 
-    expect(mockDispatch).toHaveBeenCalled()
+    expect(mockDispatch).toHaveBeenCalledWith(loading('searching for a location...', true))
   })
+
+  // it('should pass in the location to getCurrentPosition', async () => {
+  //   const mockGetCurrentPosition = jest.fn().mockImplementation((location) => {
+  //     location = {
+  //       coords: {
+  //         latitude: 3,
+  //         longitude: 4
+  //       }
+  //     }
+  //   })
+
+  //   window.navigator = {
+  //     geolocation: {
+  //       getCurrentPosition: mockGetCurrentPosition
+  //     }
+  //   }
+    
+
+  //   const thunk = getCurrentLocation(mockLocation);
+
+  //   await thunk(mockDispatch);
+
+  //   expect(mockDispatch).toHaveBeenCalledWith(setCurrentLocation(mockLocation))
+
+  // })
+  
 })
 
-  // it.skip('should dispatch hasErrored(true) if the response is not ok', async () => {
-  //   window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-  //     ok: false
-  //   }))
-
-  //   const fakeMovies = {title: 'Back To The Future'}
-
-  //   const thunk = getCurrentLocation(null)
-
-  //   await thunk(mockDispatch)
-
-  //   expect(mockDispatch).toHaveBeenCalledWith(setHasErrored(true))
-  //   expect(mockDispatch).not.toHaveBeenCalledWith(isLoading(false))
-  // })
-
-  // it('should dispatch getCurrentLocation if the response is ok', async () => {
-  //   const fakeMovies = {title: 'Back To The Future'}
-
-  //   window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
-  //     ok: true,
-  //      json: () => Promise.resolve({
-  //       title: 'Back To The Future'
-  //     })
-  //   }))
-
-  //   const thunk = getCurrentLocation()
-
-  //   await thunk(mockDispatch)
-
-  //   expect(mockDispatch).toHaveBeenCalledWith(setMovieList(fakeMovies))
-  // })
