@@ -18,3 +18,11 @@ export const setCampsList = (campsList) => {
     campsList
   }
 }
+
+export const loading = (message, isLoading) => {
+  return {
+    type: 'LOADING',
+    message,
+    isLoading
+  }
+}
