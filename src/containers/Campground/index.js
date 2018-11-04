@@ -7,11 +7,14 @@ export class Campground extends Component {
         <div>
           <p>
             <img
-              src={`http://www.reserveamerica.com${this.props.attributes.faciltyPhoto}`}
-              alt={`${this.props.attributes.facilityName}`}
+              src={`${this.props.photo}`}
+              alt={`${this.props.name}`}
             />
-            <span>{this.props.attributes.facilityName}</span>
-            <span>{this.props.currentWeather.condition}</span>
+            <span>{this.props.name}</span>
+            <img
+              src={`${this.props.forecast[0].icon}`}
+              alt={`${this.props.forecast[0].summary}`}
+            />
           </p>
         </div>
       </div>
