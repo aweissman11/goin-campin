@@ -13,16 +13,15 @@ class CampsList extends Component {
   renderCamps = () => {
     if (this.props.campsList.length > 0) {
       return this.props.campsList.map( camp => {
-        if (camp.attributes.facilityName !== 'Rent an RV for Your Next Adventure') {
+        if (camp.name !== 'Rent an RV for Your Next Adventure') {
           return (
             <Campground
-              attributes={{...camp.attributes}} 
-              currentWeather={camp.currentWeather}
-              key={`${camp.attributes.facilityName}`}
+              {...camp}
+              key={`${camp.name}`}
             />
           )
         } else {
-          return <div key={`${camp.attributes.facilityName}`} ></div>
+          return <div key={`${camp.name}`} ></div>
         }
       })
     }
