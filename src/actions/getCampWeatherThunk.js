@@ -17,6 +17,6 @@ export const getCampWeather = (camps) => {
     //   console.warn(error.message);
     //   return (error.message);
     // }
-    dispatch(setCampsList(camps));
+    dispatch(setCampsList(weatherCamps));
   }
 }
