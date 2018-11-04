@@ -7,15 +7,12 @@ export const getCurrentLocation = () => {
     dispatch(loading('searching for a location...', true))
     try {
       let retrievedLocation;
-      console.log('try')
-      navigator.geolocation.getCurrentPosition((location) =>  {
-        console.log('location:', location);
+      const gotcha = navigator.geolocation.getCurrentPosition((location) =>  {
         const { latitude, longitude } = location.coords;
         retrievedLocation = [latitude, longitude];
         dispatch(setCurrentLocation([latitude, longitude]));
         dispatch(getCampsList([latitude, longitude]))
       });
-      console.log('retrievedLocation:', retrievedLocation);
       dispatch(loading('found ya!', false))
     } catch(error) {
       console.warn(error.message);
