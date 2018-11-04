@@ -1,3 +1,6 @@
+import fetchCall from '../utilities/fetchCall';
+import * as urls from '../utilities/urls';
+
 export const weatherFetchMap = async (camps) => {
   const weatherCamps = await camps.map( async camp => {
     // commented out to stop making fetch Calls
