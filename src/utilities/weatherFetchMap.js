@@ -3,10 +3,9 @@ import * as urls from '../utilities/urls';
 
 export const weatherFetchMap = async (camps) => {
   const weatherCamps = await camps.map( async camp => {
-    // commented out to stop making fetch Calls
-    // const currentWeather = await fetchCall(urls.currentWeatherUrl([camp.latitude, camp.longitude]))
-    const currentWeather = { time: 45345345, condition: 'sunny' }
-    return await { ...camp, currentWeather }
+    const { latitude, longitude } = camp.attributes
+    const forecast = await fetchCall(urls.fiveDayUrl([latitude, longitude]))
+    return await { ...camp, currentWeather, forecast }
   })
   return Promise.all(weatherCamps);
 }
