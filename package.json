@@ -15,6 +15,16 @@
     "redux-thunk": "^2.3.0",
     "xml-js": "^1.6.8"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/containers/LocationSearchInput/index.js",
+      "!src/apiKeys.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
