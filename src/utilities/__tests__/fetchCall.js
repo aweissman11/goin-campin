@@ -8,6 +8,7 @@ describe('fetchCall', () => {
     mockUrl = ''
   })
 
+
   it('should call fetch w/ the correct params', async () => {
     window.fetch = jest.fn().mockImplementation(() => (
       Promise.resolve({ json: () => Promise.resolve('Promise resolved') })
@@ -16,4 +17,25 @@ describe('fetchCall', () => {
     await fetchCall(mockUrl);
     expect (window.fetch).toHaveBeenCalledWith(mockUrl);
   })
+
+  it('should return the response', async () => {
+    window.fetch = jest.fn().mockImplementation(() => (
+      Promise.resolve({ ok: true, json: () => Promise.resolve('Promise resolved') })
+    ))
+
+    const result = await fetchCall(mockUrl);
+    expect(result).toEqual('Promise resolved')
+  })
+
+  it('should throw an error if failed', async () => {
+    window.fetch = jest.fn().mockImplementation(() => (
+      Promise.resolve({ ok: false })
+    ))
+
+    const result = await fetchCall(mockUrl);
+
+    expect(result).toEqual(Error())
+    
+  })
+  
 })
