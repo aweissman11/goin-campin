@@ -6,7 +6,6 @@ export const getCampWeather = (camps) => {
   return async (dispatch) => {
     try {
       const weatherCamps = await weatherFetchMap(camps)
-      console.log('weatherCamps:', JSON.stringify(weatherCamps, null, 2));
       const cleanCamps = campgroundCleaner(weatherCamps);
       dispatch(setCampsList(cleanCamps));
     } catch(error) {
