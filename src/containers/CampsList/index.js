@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { getCampsList } from '../../actions/getCampgroundsThunk';
 
 import Loading from '../../components/Loading';
 import LocationSearchInput from '../LocationSearchInput';
@@ -49,4 +50,8 @@ class CampsList extends Component {
 
 export const mapStateToProps = ({ currentLocation, campsList, loading }) => ({ currentLocation, campsList, loading })
 
-export default connect(mapStateToProps, null)(CampsList)
+export const mapDispatchToProps = (dispatch) => ({
+  getCampsList: (location) => dispatch(getCampsList(location))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CampsList)
