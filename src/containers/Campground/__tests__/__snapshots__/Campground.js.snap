@@ -1,0 +1,699 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Campground should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Campground
+    forecast={
+      Array [
+        Object {
+          "date": "2018-11-05 18:00:00",
+          "descrip": "clear sky",
+          "humidity": 49,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 55.35,
+          "min": 45.14,
+          "summary": "Clear",
+          "temp": 55.35,
+          "windSpeed": 8.66,
+        },
+        Object {
+          "date": "2018-11-05 21:00:00",
+          "descrip": "clear sky",
+          "humidity": 41,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 53.87,
+          "min": 46.22,
+          "summary": "Clear",
+          "temp": 53.87,
+          "windSpeed": 12.06,
+        },
+        Object {
+          "date": "2018-11-06 00:00:00",
+          "descrip": "clear sky",
+          "humidity": 41,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 43.47,
+          "min": 38.37,
+          "summary": "Clear",
+          "temp": 43.47,
+          "windSpeed": 8.1,
+        },
+        Object {
+          "date": "2018-11-06 03:00:00",
+          "descrip": "clear sky",
+          "humidity": 55,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 30.61,
+          "min": 28.06,
+          "summary": "Clear",
+          "temp": 30.61,
+          "windSpeed": 6.04,
+        },
+        Object {
+          "date": "2018-11-06 06:00:00",
+          "descrip": "clear sky",
+          "humidity": 52,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 26.97,
+          "min": 26.97,
+          "summary": "Clear",
+          "temp": 26.97,
+          "windSpeed": 7.63,
+        },
+        Object {
+          "date": "2018-11-06 09:00:00",
+          "descrip": "clear sky",
+          "humidity": 56,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 25.17,
+          "min": 25.17,
+          "summary": "Clear",
+          "temp": 25.17,
+          "windSpeed": 6.64,
+        },
+        Object {
+          "date": "2018-11-06 12:00:00",
+          "descrip": "clear sky",
+          "humidity": 55,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 21.86,
+          "min": 21.86,
+          "summary": "Clear",
+          "temp": 21.86,
+          "windSpeed": 6.02,
+        },
+        Object {
+          "date": "2018-11-06 15:00:00",
+          "descrip": "clear sky",
+          "humidity": 47,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 28.57,
+          "min": 28.57,
+          "summary": "Clear",
+          "temp": 28.57,
+          "windSpeed": 7.25,
+        },
+        Object {
+          "date": "2018-11-06 18:00:00",
+          "descrip": "clear sky",
+          "humidity": 45,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 42.43,
+          "min": 42.43,
+          "summary": "Clear",
+          "temp": 42.43,
+          "windSpeed": 9.08,
+        },
+        Object {
+          "date": "2018-11-06 21:00:00",
+          "descrip": "few clouds",
+          "humidity": 39,
+          "icon": "http://openweathermap.org/img/w/02d.png",
+          "max": 43.03,
+          "min": 43.03,
+          "summary": "Clouds",
+          "temp": 43.03,
+          "windSpeed": 10,
+        },
+        Object {
+          "date": "2018-11-07 00:00:00",
+          "descrip": "clear sky",
+          "humidity": 39,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 35.43,
+          "min": 35.43,
+          "summary": "Clear",
+          "temp": 35.43,
+          "windSpeed": 7.52,
+        },
+        Object {
+          "date": "2018-11-07 03:00:00",
+          "descrip": "clear sky",
+          "humidity": 49,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 24.57,
+          "min": 24.57,
+          "summary": "Clear",
+          "temp": 24.57,
+          "windSpeed": 5.41,
+        },
+        Object {
+          "date": "2018-11-07 06:00:00",
+          "descrip": "clear sky",
+          "humidity": 67,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 17.33,
+          "min": 17.33,
+          "summary": "Clear",
+          "temp": 17.33,
+          "windSpeed": 2.04,
+        },
+        Object {
+          "date": "2018-11-07 09:00:00",
+          "descrip": "clear sky",
+          "humidity": 73,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 14.2,
+          "min": 14.2,
+          "summary": "Clear",
+          "temp": 14.2,
+          "windSpeed": 2.51,
+        },
+        Object {
+          "date": "2018-11-07 12:00:00",
+          "descrip": "clear sky",
+          "humidity": 76,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 11.66,
+          "min": 11.66,
+          "summary": "Clear",
+          "temp": 11.66,
+          "windSpeed": 0.94,
+        },
+        Object {
+          "date": "2018-11-07 15:00:00",
+          "descrip": "light snow",
+          "humidity": 76,
+          "icon": "http://openweathermap.org/img/w/13d.png",
+          "max": 18.11,
+          "min": 18.11,
+          "summary": "Snow",
+          "temp": 18.11,
+          "windSpeed": 3.38,
+        },
+        Object {
+          "date": "2018-11-07 18:00:00",
+          "descrip": "clear sky",
+          "humidity": 54,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 35.61,
+          "min": 35.61,
+          "summary": "Clear",
+          "temp": 35.61,
+          "windSpeed": 2.82,
+        },
+        Object {
+          "date": "2018-11-07 21:00:00",
+          "descrip": "clear sky",
+          "humidity": 49,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 38.61,
+          "min": 38.61,
+          "summary": "Clear",
+          "temp": 38.61,
+          "windSpeed": 5.59,
+        },
+        Object {
+          "date": "2018-11-08 00:00:00",
+          "descrip": "clear sky",
+          "humidity": 56,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 30.71,
+          "min": 30.71,
+          "summary": "Clear",
+          "temp": 30.71,
+          "windSpeed": 4.41,
+        },
+        Object {
+          "date": "2018-11-08 03:00:00",
+          "descrip": "clear sky",
+          "humidity": 75,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 20.91,
+          "min": 20.91,
+          "summary": "Clear",
+          "temp": 20.91,
+          "windSpeed": 5.37,
+        },
+        Object {
+          "date": "2018-11-08 06:00:00",
+          "descrip": "light snow",
+          "humidity": 78,
+          "icon": "http://openweathermap.org/img/w/13n.png",
+          "max": 16.4,
+          "min": 16.4,
+          "summary": "Snow",
+          "temp": 16.4,
+          "windSpeed": 0.58,
+        },
+        Object {
+          "date": "2018-11-08 09:00:00",
+          "descrip": "clear sky",
+          "humidity": 75,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 13.52,
+          "min": 13.52,
+          "summary": "Clear",
+          "temp": 13.52,
+          "windSpeed": 1.59,
+        },
+        Object {
+          "date": "2018-11-08 12:00:00",
+          "descrip": "clear sky",
+          "humidity": 80,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 13.42,
+          "min": 13.42,
+          "summary": "Clear",
+          "temp": 13.42,
+          "windSpeed": 3.27,
+        },
+        Object {
+          "date": "2018-11-08 15:00:00",
+          "descrip": "clear sky",
+          "humidity": 71,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 20.01,
+          "min": 20.01,
+          "summary": "Clear",
+          "temp": 20.01,
+          "windSpeed": 4.38,
+        },
+        Object {
+          "date": "2018-11-08 18:00:00",
+          "descrip": "clear sky",
+          "humidity": 55,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 35.35,
+          "min": 35.35,
+          "summary": "Clear",
+          "temp": 35.35,
+          "windSpeed": 2.37,
+        },
+        Object {
+          "date": "2018-11-08 21:00:00",
+          "descrip": "clear sky",
+          "humidity": 44,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 39.8,
+          "min": 39.8,
+          "summary": "Clear",
+          "temp": 39.8,
+          "windSpeed": 1.72,
+        },
+        Object {
+          "date": "2018-11-09 00:00:00",
+          "descrip": "clear sky",
+          "humidity": 47,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 32.13,
+          "min": 32.13,
+          "summary": "Clear",
+          "temp": 32.13,
+          "windSpeed": 4.61,
+        },
+        Object {
+          "date": "2018-11-09 03:00:00",
+          "descrip": "clear sky",
+          "humidity": 67,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 18.71,
+          "min": 18.71,
+          "summary": "Clear",
+          "temp": 18.71,
+          "windSpeed": 2.15,
+        },
+        Object {
+          "date": "2018-11-09 06:00:00",
+          "descrip": "clear sky",
+          "humidity": 67,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 13.24,
+          "min": 13.24,
+          "summary": "Clear",
+          "temp": 13.24,
+          "windSpeed": 2.04,
+        },
+        Object {
+          "date": "2018-11-09 09:00:00",
+          "descrip": "clear sky",
+          "humidity": 61,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 11.61,
+          "min": 11.61,
+          "summary": "Clear",
+          "temp": 11.61,
+          "windSpeed": 3.76,
+        },
+        Object {
+          "date": "2018-11-09 12:00:00",
+          "descrip": "clear sky",
+          "humidity": 63,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 10.96,
+          "min": 10.96,
+          "summary": "Clear",
+          "temp": 10.96,
+          "windSpeed": 4.41,
+        },
+        Object {
+          "date": "2018-11-09 15:00:00",
+          "descrip": "clear sky",
+          "humidity": 55,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 17.43,
+          "min": 17.43,
+          "summary": "Clear",
+          "temp": 17.43,
+          "windSpeed": 4.74,
+        },
+        Object {
+          "date": "2018-11-09 18:00:00",
+          "descrip": "clear sky",
+          "humidity": 42,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 39.05,
+          "min": 39.05,
+          "summary": "Clear",
+          "temp": 39.05,
+          "windSpeed": 2.73,
+        },
+        Object {
+          "date": "2018-11-09 21:00:00",
+          "descrip": "clear sky",
+          "humidity": 36,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 44.63,
+          "min": 44.63,
+          "summary": "Clear",
+          "temp": 44.63,
+          "windSpeed": 1.86,
+        },
+        Object {
+          "date": "2018-11-10 00:00:00",
+          "descrip": "clear sky",
+          "humidity": 50,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 33.77,
+          "min": 33.77,
+          "summary": "Clear",
+          "temp": 33.77,
+          "windSpeed": 1.79,
+        },
+        Object {
+          "date": "2018-11-10 03:00:00",
+          "descrip": "clear sky",
+          "humidity": 63,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 18.92,
+          "min": 18.92,
+          "summary": "Clear",
+          "temp": 18.92,
+          "windSpeed": 2.37,
+        },
+        Object {
+          "date": "2018-11-10 06:00:00",
+          "descrip": "clear sky",
+          "humidity": 59,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 14.12,
+          "min": 14.12,
+          "summary": "Clear",
+          "temp": 14.12,
+          "windSpeed": 2.75,
+        },
+        Object {
+          "date": "2018-11-10 09:00:00",
+          "descrip": "clear sky",
+          "humidity": 53,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 12.45,
+          "min": 12.45,
+          "summary": "Clear",
+          "temp": 12.45,
+          "windSpeed": 3.6,
+        },
+        Object {
+          "date": "2018-11-10 12:00:00",
+          "descrip": "clear sky",
+          "humidity": 50,
+          "icon": "http://openweathermap.org/img/w/01n.png",
+          "max": 11.99,
+          "min": 11.99,
+          "summary": "Clear",
+          "temp": 11.99,
+          "windSpeed": 3.71,
+        },
+        Object {
+          "date": "2018-11-10 15:00:00",
+          "descrip": "clear sky",
+          "humidity": 37,
+          "icon": "http://openweathermap.org/img/w/01d.png",
+          "max": 20.67,
+          "min": 20.67,
+          "summary": "Clear",
+          "temp": 20.67,
+          "windSpeed": 4.41,
+        },
+      ]
+    }
+    lat="39.7302833"
+    long="-104.9525917"
+    name="Rent an RV for Your Next Adventure"
+    photo="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+    wAmps="Y"
+    wHose="N"
+    wPets="Y"
+    wSewer="N"
+    wWater="Lakefront"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div>
+        <p>
+          <img
+            alt="Rent an RV for Your Next Adventure"
+            src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+          />
+          <span>
+            Rent an RV for Your Next Adventure
+          </span>
+          <img
+            alt="Clear"
+            src="http://openweathermap.org/img/w/01d.png"
+          />
+        </p>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <p>
+          <img
+            alt="Rent an RV for Your Next Adventure"
+            src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+          />
+          <span>
+            Rent an RV for Your Next Adventure
+          </span>
+          <img
+            alt="Clear"
+            src="http://openweathermap.org/img/w/01d.png"
+          />
+        </p>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="Rent an RV for Your Next Adventure"
+              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+            />,
+            <span>
+              Rent an RV for Your Next Adventure
+            </span>,
+            <img
+              alt="Clear"
+              src="http://openweathermap.org/img/w/01d.png"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Rent an RV for Your Next Adventure",
+              "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Rent an RV for Your Next Adventure",
+            },
+            "ref": null,
+            "rendered": "Rent an RV for Your Next Adventure",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Clear",
+              "src": "http://openweathermap.org/img/w/01d.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "p",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
+          <p>
+            <img
+              alt="Rent an RV for Your Next Adventure"
+              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+            />
+            <span>
+              Rent an RV for Your Next Adventure
+            </span>
+            <img
+              alt="Clear"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+          </p>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p>
+            <img
+              alt="Rent an RV for Your Next Adventure"
+              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+            />
+            <span>
+              Rent an RV for Your Next Adventure
+            </span>
+            <img
+              alt="Clear"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+          </p>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="Rent an RV for Your Next Adventure"
+                src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+              />,
+              <span>
+                Rent an RV for Your Next Adventure
+              </span>,
+              <img
+                alt="Clear"
+                src="http://openweathermap.org/img/w/01d.png"
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Rent an RV for Your Next Adventure",
+                "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rent an RV for Your Next Adventure",
+              },
+              "ref": null,
+              "rendered": "Rent an RV for Your Next Adventure",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Clear",
+                "src": "http://openweathermap.org/img/w/01d.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "p",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
