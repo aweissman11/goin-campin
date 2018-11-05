@@ -6,7 +6,7 @@ import Opening from '../components/Opening';
 import CampsList from './CampsList';
 import { Route } from 'react-router-dom';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super()
     this.state = {
@@ -45,10 +45,8 @@ class App extends Component {
   }
 }
 
-export const mapStateToProps = ({ currentLocation, campsList }) => ({ currentLocation, campsList });
-
 export const mapDispatchToProps = (dispatch) => ({
   setInitialLocation: (location) => dispatch(getCurrentLocation(location))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);
