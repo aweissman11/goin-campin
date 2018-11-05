@@ -3,7 +3,9 @@ import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
+import { connect } from 'react-redux';
 
+import { getCampsList } from '../../actions/getCampgroundsThunk';
 import './LocationSearchInput.css';
  
 class LocationSearchInput extends React.Component {
@@ -15,22 +17,26 @@ class LocationSearchInput extends React.Component {
   handleChange = address => {
     this.setState({ address });
   };
- 
-  handleSelect = address => {
-    geocodeByAddress(address)
-      .then(results => getLatLng(results[0]))
-      .then(latLng => this.props.getCampsList([latLng.lat, latLng.lng]))
-      .catch(error => console.error('Error', error));
-  };
+
+  selectLocation = async (address) => {
+    try {
+      const results = await geocodeByAddress(address)
+      const coords = await getLatLng(results[0])
+      await this.props.getCampsList([coords.lat, coords.lng])
+    } catch(error) {
+      console.log('error:', error);
+    }
+  }
  
   render() {
     return (
       <PlacesAutocomplete
         value={this.state.address}
         onChange={this.handleChange}
-        onSelect={this.handleSelect}
+        onSelect={this.selectLocation}
       >
-        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+        {
+          ({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div>
             <input
               {...getInputProps({
@@ -62,4 +68,8 @@ class LocationSearchInput extends React.Component {
   }
 }
 
-export default LocationSearchInput;
+const mapDispatchToProps = (dispatch) => ({
+  getCampsList: (location) => dispatch(getCampsList(location))
+})
+
+export default connect(null, mapDispatchToProps)(LocationSearchInput);

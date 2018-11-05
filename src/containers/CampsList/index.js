@@ -3,28 +3,22 @@ import { connect } from 'react-redux';
 
 import Loading from '../../components/Loading';
 import LocationSearchInput from '../LocationSearchInput';
-import { getCampsList } from '../../actions/getCampgroundsThunk';
 import Campground from '../Campground'
 
-class CampsList extends Component {
-  componentDidMount() {
-    // console.log('camplist here to save the day')
-  }
+export class CampsList extends Component {
   renderCamps = () => {
-    if (this.props.campsList.length > 0) {
-      return this.props.campsList.map( camp => {
-        if (camp.name !== 'Rent an RV for Your Next Adventure') {
-          return (
-            <Campground
-              {...camp}
-              key={`${camp.name}`}
-            />
-          )
-        } else {
-          return <div key={`${camp.name}`} ></div>
-        }
-      })
-    }
+    const filteredCamps = this.props.campsList.filter(camp => (
+      camp.name !== 'Rent an RV for Your Next Adventure'
+    ))
+
+    return filteredCamps.map( camp => {
+      return (
+        <Campground
+          {...camp}
+          key={`${camp.name}`}
+        />
+      )
+    })
   }
 
   render() {
@@ -32,9 +26,7 @@ class CampsList extends Component {
     <div className='camps-list'>
       <header>We're Goin Campin!</header>
       <div>
-        <LocationSearchInput 
-          getCampsList={this.props.getCampsList}
-        />
+        <LocationSearchInput />
       </div>
       {
         this.props.loading.isLoading ?
@@ -43,9 +35,7 @@ class CampsList extends Component {
           /> :
           <div>
             <h1>CampsList</h1>
-              {
-                this.renderCamps()
-              }
+              {this.renderCamps()}
           </div>
       }
     </div>
@@ -53,10 +43,6 @@ class CampsList extends Component {
   }
 }
 
-export const mapStateToProps = ({ currentLocation, campsList, loading }) => ({ currentLocation, campsList, loading })
+export const mapStateToProps = ({ campsList, loading }) => ({ campsList, loading })
 
-export const mapDispatchToProps = (dispatch) => ({
-  getCampsList: (location) => dispatch(getCampsList(location))
-})
-
-export default connect(mapStateToProps, mapDispatchToProps)(CampsList)
+export default connect(mapStateToProps, null)(CampsList)

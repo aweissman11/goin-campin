@@ -1,7 +1,7 @@
 /* eslint-disable */
-import fetchCall from '../fetchCall';
+import campgroundsFetch from '../campgroundsFetch';
 
-describe('fetchCall', () => {
+describe('campgroundsFetch', () => {
   let mockUrl;
 
   beforeEach(() => {
@@ -11,19 +11,19 @@ describe('fetchCall', () => {
 
   it('should call fetch w/ the correct params', async () => {
     window.fetch = jest.fn().mockImplementation(() => (
-      Promise.resolve({ json: () => Promise.resolve('Promise resolved') })
+      Promise.resolve({ text: () => Promise.resolve('Promise resolved') })
     ))
 
-    await fetchCall(mockUrl);
-    expect (window.fetch).toHaveBeenCalledWith(mockUrl);
+    await campgroundsFetch(mockUrl);
+    expect (window.fetch).toHaveBeenCalledWith(`https://cors-anywhere.herokuapp.com/`);
   })
 
   it('should return the response', async () => {
     window.fetch = jest.fn().mockImplementation(() => (
-      Promise.resolve({ ok: true, json: () => Promise.resolve('Promise resolved') })
+      Promise.resolve({ ok: true, text: () => Promise.resolve('Promise resolved') })
     ))
 
-    const result = await fetchCall(mockUrl);
+    const result = await campgroundsFetch(mockUrl);
     expect(result).toEqual('Promise resolved')
   })
 
@@ -32,7 +32,7 @@ describe('fetchCall', () => {
       Promise.resolve({ ok: false })
     ))
 
-    const result = await fetchCall(mockUrl);
+    const result = await campgroundsFetch(mockUrl);
 
     expect(result).toEqual(Error())
     
