@@ -12,38 +12,54 @@ describe('getCurrentLocation', () => {
     mockDispatch = jest.fn()
   })
 
-  it('calls dispatch with setCurrentLocation(location)', async () => {
+  it('calls dispatch with loading(true)', async () => {
     const thunk = getCurrentLocation(mockLocation)
     
     await thunk(mockDispatch)
-
+    
     expect(mockDispatch).toHaveBeenCalledWith(loading('searching for a location...', true))
   })
-
-  // it('should pass in the location to getCurrentPosition', async () => {
-  //   const mockGetCurrentPosition = jest.fn().mockImplementation((location) => {
-  //     location = {
-  //       coords: {
-  //         latitude: 3,
-  //         longitude: 4
-  //       }
-  //     }
-  //   })
-
-  //   window.navigator = {
-  //     geolocation: {
-  //       getCurrentPosition: mockGetCurrentPosition
-  //     }
-  //   }
+  
+  it('calls dispatch with loading(true) again...', async () => {
+    const thunk = getCurrentLocation(mockLocation)
     
+    const mockGeolocation = {
+      getCurrentPosition: jest.fn(),
+      watchPosition: jest.fn()
+    };
 
-  //   const thunk = getCurrentLocation(mockLocation);
+    global.navigator.geolocation = mockGeolocation;
 
-  //   await thunk(mockDispatch);
+    await thunk(mockDispatch)
+    
+    expect(mockDispatch).toHaveBeenCalledWith(loading("found ya! Now let's see about those campgrounds...", true))
+  })
+  
+  it('should pass in the location to getCurrentPosition', async () => {
+    const mockGetCurrentPosition = jest.fn().mockImplementation((callback) => {
+      const location =  {
+        coords: {
+          latitude: 3,
+          longitude: 4
+        }
+      }
+      callback(location);
+    })
+    
+    const mockGeolocation = {
+      getCurrentPosition: mockGetCurrentPosition,
+      watchPosition: jest.fn()
+    };
+    
+    global.navigator.geolocation = mockGeolocation;
 
-  //   expect(mockDispatch).toHaveBeenCalledWith(setCurrentLocation(mockLocation))
+    const thunk = getCurrentLocation();
 
-  // })
+    await thunk(mockDispatch);
+
+    expect(mockDispatch).toHaveBeenCalledWith(setCurrentLocation(mockLocation))
+
+  })
   
 })
 
