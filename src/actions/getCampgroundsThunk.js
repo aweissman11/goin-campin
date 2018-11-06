@@ -12,7 +12,6 @@ export const getCampsList = (location) => {
     try {
       const campgroundsUrl = `http://api.amp.active.com/camping/campgrounds/?landmarkLat=${location[0]}&landmarkLong=${location[1]}&landmarkName=TRUE&api_key=${campgroundsKey}`;
       campsList = await campgroundsFetch(campgroundsUrl);
-      console.log('campsList:', campsList);
       if (campsList.length) {
         var result1 = convert.xml2json(campsList, {compact: false, spaces: 2});
         newResult = JSON.parse(result1);
