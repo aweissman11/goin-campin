@@ -7,3 +7,9 @@
   backgroundColor: #fff;
   cursor: pointer;
 }
+
+.location-search-input {
+  font-size: 2em;
+  height: 40px;
+  max-width: 300px;
+}
