@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Campground.css';
 
@@ -40,7 +41,9 @@ export class Campground extends Component {
               this.mapForecasts()
             }
           </div>
-  
+          <Link to={`/campground/${this.props.id}`}>
+            <p>Details...</p>
+          </Link>
         </div>
       </div>
     )
