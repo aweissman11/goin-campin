@@ -28,13 +28,7 @@ export class App extends Component {
     return (
       <div>
         <Route exact path='/campground/:id' render={({ match }) => {
-          const correctCamp = this.props.campsList.find( camp => {
-            if (camp.id === match.params.id) {
-              console.log('innerCamp', camp)
-              return camp
-            };
-          })
-          console.log('camp', correctCamp)
+          const correctCamp = this.props.campsList.find( camp => camp.id === match.params.id)
           return <CampDetails {...correctCamp}/>
         }}/>
 

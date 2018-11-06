@@ -18,33 +18,29 @@ export class Campground extends Component {
             <p>{cast.descrip}</p>
           </div>
         )
-      } else {
-        return <div key={cast.date}></div>
-      }
+      } 
     })
   }
 
   render() {
     return (
-      <div>
+      <div className='campground' >
+        <p className='camp-name'>{this.props.name}</p>
         <div>
-          <p>
-            <img
-              className='camp-photo'
-              src={`${this.props.photo}`}
-              alt={`${this.props.name}`}
-            />
-            <span className='camp-name'>{this.props.name}</span>
-          </p>
-          <div>
-            {
-              this.mapForecasts()
-            }
-          </div>
-          <Link to={`/campground/${this.props.id}`}>
-            <p>Details...</p>
-          </Link>
+          <img
+            className='camp-photo'
+            src={`${this.props.photo}`}
+            alt={`${this.props.name}`}
+          />
         </div>
+        <div className='forecasts'>
+          {
+            this.mapForecasts()
+          }
+        </div>
+        <Link to={`/campground/${this.props.id}`}>
+          <p className='details-btn'>Details...</p>
+        </Link>
       </div>
     )
   }

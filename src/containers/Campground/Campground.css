@@ -1,0 +1,30 @@
+.campground {
+  border: 1px gray solid;
+  border-radius: 12px;
+  margin: auto;
+  max-width: 90%;
+}
+
+.camp-name {
+  font-size: 1.5em;
+}
+
+.forecasts {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: space-around;
+  margin: 10px auto 50px;
+  width: 90%;
+}
+
+.campground p {
+  margin: 0;
+}
+
+.details-btn {
+  float: right;
+  bottom: 27px;
+  position: relative;
+  right: 15px;
+}
