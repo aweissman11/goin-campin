@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import { getCurrentLocation } from '../actions/getCurrentLocationThunk';
 import Opening from '../components/Opening';
 import CampsList from './CampsList';
-import { Route } from 'react-router-dom';
+import CampDetails from '../components/CampDetails';
+import { Route, withRouter } from 'react-router-dom';
 
 export class App extends Component {
   constructor() {
@@ -25,28 +26,41 @@ export class App extends Component {
 
   render() {
     return (
-      <Route to='/' render={() => {
-       return (
-        <div className="App">
-          {
-            this.state.isOpening ?
-              <Route to='/opening' render={() => 
-                  <Opening
-                    completeOpening={this.completeOpening}
-                  />
-              } /> :
-              <Route to='/home' component={CampsList} />
-            }
-          </div>
-        )
+      <div>
+        <Route exact path='/campground/:id' render={({ match }) => {
+          const correctCamp = this.props.campsList.find( camp => {
+            if (camp.id === match.params.id) {
+              console.log('innerCamp', camp)
+              return camp
+            };
+          })
+          console.log('camp', correctCamp)
+          return <CampDetails {...correctCamp}/>
+        }}/>
+
+        <Route exact path='/' render={() => {
+        return (
+          <div className="App">
+            {
+              this.state.isOpening ?
+                <Opening
+                  completeOpening={this.completeOpening}
+                /> :
+                <CampsList />
+              }
+            </div>
+          )
         }} />
+      </div>
             
     );
   }
 }
 
+export const mapStateToProps = ({ campsList }) => ({ campsList })
+
 export const mapDispatchToProps = (dispatch) => ({
   setInitialLocation: (location) => dispatch(getCurrentLocation(location))
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
