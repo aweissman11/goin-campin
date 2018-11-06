@@ -18,11 +18,10 @@ export const getCampsList = (location) => {
       }
     } catch(error) {
       console.warn(error.message);
-      return (error.message);
+      throw error.message;
     }
     
     const results = newResult.elements[0].elements.slice(0, 15)
-    console.log('results:', JSON.stringify(results, null, 2));
     dispatch(getCampWeather(results));
     dispatch(loading('got the campgrounds...', false))
   }

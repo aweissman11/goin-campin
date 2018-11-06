@@ -1841,7 +1841,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
+        <header
+          className="goin-campin"
+        >
           We're Goin Campin!
         </header>,
         <div>
@@ -3228,6 +3230,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "We're Goin Campin!",
+          "className": "goin-campin",
         },
         "ref": null,
         "rendered": "We're Goin Campin!",
@@ -6039,7 +6042,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
+          <header
+            className="goin-campin"
+          >
             We're Goin Campin!
           </header>,
           <div>
@@ -7426,6 +7431,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "We're Goin Campin!",
+            "className": "goin-campin",
           },
           "ref": null,
           "rendered": "We're Goin Campin!",
@@ -12092,7 +12098,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
+        <header
+          className="goin-campin"
+        >
           We're Goin Campin!
         </header>,
         <div>
@@ -13479,6 +13487,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "We're Goin Campin!",
+          "className": "goin-campin",
         },
         "ref": null,
         "rendered": "We're Goin Campin!",
@@ -16290,7 +16299,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
+          <header
+            className="goin-campin"
+          >
             We're Goin Campin!
           </header>,
           <div>
@@ -17677,6 +17688,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "We're Goin Campin!",
+            "className": "goin-campin",
           },
           "ref": null,
           "rendered": "We're Goin Campin!",

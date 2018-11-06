@@ -20,13 +20,25 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <h2
+          className-="loading-message"
+        >
           loading message
         </h2>,
-        <img
-          src="https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif"
-        />,
+        <div
+          className="gif-container"
+        >
+          <img
+            alt="loading"
+            className="loading-gif"
+            src="https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif"
+          />
+          <div
+            className="gradient"
+          />
+        </div>,
       ],
+      "className": "loading",
     },
     "ref": null,
     "rendered": Array [
@@ -36,6 +48,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "loading message",
+          "className-": "loading-message",
         },
         "ref": null,
         "rendered": "loading message",
@@ -46,11 +59,46 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "src": "https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif",
+          "children": Array [
+            <img
+              alt="loading"
+              className="loading-gif"
+              src="https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif"
+            />,
+            <div
+              className="gradient"
+            />,
+          ],
+          "className": "gif-container",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "loading",
+              "className": "loading-gif",
+              "src": "https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "gradient",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -62,13 +110,25 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <h2
+            className-="loading-message"
+          >
             loading message
           </h2>,
-          <img
-            src="https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif"
-          />,
+          <div
+            className="gif-container"
+          >
+            <img
+              alt="loading"
+              className="loading-gif"
+              src="https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif"
+            />
+            <div
+              className="gradient"
+            />
+          </div>,
         ],
+        "className": "loading",
       },
       "ref": null,
       "rendered": Array [
@@ -78,6 +138,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "loading message",
+            "className-": "loading-message",
           },
           "ref": null,
           "rendered": "loading message",
@@ -88,11 +149,46 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "src": "https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif",
+            "children": Array [
+              <img
+                alt="loading"
+                className="loading-gif"
+                src="https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif"
+              />,
+              <div
+                className="gradient"
+              />,
+            ],
+            "className": "gif-container",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "loading",
+                "className": "loading-gif",
+                "src": "https://cdn.dribbble.com/users/2524821/screenshots/5358445/untitled-1.gif",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "gradient",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

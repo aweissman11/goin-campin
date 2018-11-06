@@ -475,16 +475,197 @@ ShallowWrapper {
         <p>
           <img
             alt="Rent an RV for Your Next Adventure"
+            className="camp-photo"
             src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
           />
-          <span>
+          <span
+            className="camp-name"
+          >
             Rent an RV for Your Next Adventure
           </span>
-          <img
-            alt="Clear"
-            src="http://openweathermap.org/img/w/01d.png"
-          />
         </p>
+        <div>
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-05
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-06
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01n.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-06
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-07
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01n.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-07
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-08
+            </p>
+            <img
+              alt="Snow"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/13n.png"
+            />
+            <p>
+              light snow
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-08
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-09
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01n.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-09
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01d.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+          <div
+            className="weather-day"
+          >
+            <p>
+              11-10
+            </p>
+            <img
+              alt="Clear"
+              className="forecast-icon"
+              src="http://openweathermap.org/img/w/01n.png"
+            />
+            <p>
+              clear sky
+            </p>
+          </div>
+          <div />
+          <div />
+          <div />
+        </div>
       </div>,
     },
     "ref": null,
@@ -493,80 +674,1317 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <p>
-          <img
-            alt="Rent an RV for Your Next Adventure"
-            src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-          />
-          <span>
-            Rent an RV for Your Next Adventure
-          </span>
-          <img
-            alt="Clear"
-            src="http://openweathermap.org/img/w/01d.png"
-          />
-        </p>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
+        "children": Array [
+          <p>
             <img
               alt="Rent an RV for Your Next Adventure"
+              className="camp-photo"
               src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-            />,
-            <span>
+            />
+            <span
+              className="camp-name"
+            >
               Rent an RV for Your Next Adventure
-            </span>,
-            <img
-              alt="Clear"
-              src="http://openweathermap.org/img/w/01d.png"
-            />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "Rent an RV for Your Next Adventure",
-              "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Rent an RV for Your Next Adventure",
-            },
-            "ref": null,
-            "rendered": "Rent an RV for Your Next Adventure",
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "Clear",
-              "src": "http://openweathermap.org/img/w/01d.png",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
+            </span>
+          </p>,
+          <div>
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-05
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-06
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-06
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-07
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-07
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-08
+              </p>
+              <img
+                alt="Snow"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/13n.png"
+              />
+              <p>
+                light snow
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-08
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-09
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-09
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-10
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+          </div>,
         ],
-        "type": "p",
       },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="Rent an RV for Your Next Adventure"
+                className="camp-photo"
+                src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+              />,
+              <span
+                className="camp-name"
+              >
+                Rent an RV for Your Next Adventure
+              </span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Rent an RV for Your Next Adventure",
+                "className": "camp-photo",
+                "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rent an RV for Your Next Adventure",
+                "className": "camp-name",
+              },
+              "ref": null,
+              "rendered": "Rent an RV for Your Next Adventure",
+              "type": "span",
+            },
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-05
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-06
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-06
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-07
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-07
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-08
+                </p>
+                <img
+                  alt="Snow"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/13n.png"
+                />
+                <p>
+                  light snow
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-08
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-09
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-09
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-10
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>,
+              <div />,
+              <div />,
+              <div />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "2018-11-05 18:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-05
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-05",
+                  },
+                  "ref": null,
+                  "rendered": "11-05",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01d.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-05 21:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 00:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 03:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 06:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-06
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-06",
+                  },
+                  "ref": null,
+                  "rendered": "11-06",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01n.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 09:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 12:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 15:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 18:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-06
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-06",
+                  },
+                  "ref": null,
+                  "rendered": "11-06",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01d.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-06 21:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 00:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 03:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 06:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-07
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-07",
+                  },
+                  "ref": null,
+                  "rendered": "11-07",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01n.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 09:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 12:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 15:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 18:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-07
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-07",
+                  },
+                  "ref": null,
+                  "rendered": "11-07",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01d.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-07 21:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 00:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 03:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 06:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-08
+                  </p>,
+                  <img
+                    alt="Snow"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/13n.png"
+                  />,
+                  <p>
+                    light snow
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-08",
+                  },
+                  "ref": null,
+                  "rendered": "11-08",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Snow",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/13n.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "light snow",
+                  },
+                  "ref": null,
+                  "rendered": "light snow",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 09:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 12:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 15:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 18:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-08
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-08",
+                  },
+                  "ref": null,
+                  "rendered": "11-08",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01d.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-08 21:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 00:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 03:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 06:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-09
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-09",
+                  },
+                  "ref": null,
+                  "rendered": "11-09",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01n.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 09:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 12:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 15:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 18:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-09
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-09",
+                  },
+                  "ref": null,
+                  "rendered": "11-09",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01d.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-09 21:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-10 00:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-10 03:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-10 06:00:00",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    11-10
+                  </p>,
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />,
+                  <p>
+                    clear sky
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11-10",
+                  },
+                  "ref": null,
+                  "rendered": "11-10",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "Clear",
+                    "className": "forecast-icon",
+                    "src": "http://openweathermap.org/img/w/01n.png",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "clear sky",
+                  },
+                  "ref": null,
+                  "rendered": "clear sky",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-10 09:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-10 12:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2018-11-10 15:00:00",
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
     "type": "div",
@@ -581,16 +1999,197 @@ ShallowWrapper {
           <p>
             <img
               alt="Rent an RV for Your Next Adventure"
+              className="camp-photo"
               src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
             />
-            <span>
+            <span
+              className="camp-name"
+            >
               Rent an RV for Your Next Adventure
             </span>
-            <img
-              alt="Clear"
-              src="http://openweathermap.org/img/w/01d.png"
-            />
           </p>
+          <div>
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-05
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-06
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-06
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-07
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-07
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-08
+              </p>
+              <img
+                alt="Snow"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/13n.png"
+              />
+              <p>
+                light snow
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-08
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-09
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-09
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01d.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+            <div
+              className="weather-day"
+            >
+              <p>
+                11-10
+              </p>
+              <img
+                alt="Clear"
+                className="forecast-icon"
+                src="http://openweathermap.org/img/w/01n.png"
+              />
+              <p>
+                clear sky
+              </p>
+            </div>
+            <div />
+            <div />
+            <div />
+          </div>
         </div>,
       },
       "ref": null,
@@ -599,80 +2198,1317 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <p>
-            <img
-              alt="Rent an RV for Your Next Adventure"
-              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-            />
-            <span>
-              Rent an RV for Your Next Adventure
-            </span>
-            <img
-              alt="Clear"
-              src="http://openweathermap.org/img/w/01d.png"
-            />
-          </p>,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
+          "children": Array [
+            <p>
               <img
                 alt="Rent an RV for Your Next Adventure"
+                className="camp-photo"
                 src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-              />,
-              <span>
+              />
+              <span
+                className="camp-name"
+              >
                 Rent an RV for Your Next Adventure
-              </span>,
-              <img
-                alt="Clear"
-                src="http://openweathermap.org/img/w/01d.png"
-              />,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "Rent an RV for Your Next Adventure",
-                "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Rent an RV for Your Next Adventure",
-              },
-              "ref": null,
-              "rendered": "Rent an RV for Your Next Adventure",
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "alt": "Clear",
-                "src": "http://openweathermap.org/img/w/01d.png",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "img",
-            },
+              </span>
+            </p>,
+            <div>
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-05
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-06
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-06
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-07
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-07
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-08
+                </p>
+                <img
+                  alt="Snow"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/13n.png"
+                />
+                <p>
+                  light snow
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-08
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-09
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-09
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01d.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+              <div
+                className="weather-day"
+              >
+                <p>
+                  11-10
+                </p>
+                <img
+                  alt="Clear"
+                  className="forecast-icon"
+                  src="http://openweathermap.org/img/w/01n.png"
+                />
+                <p>
+                  clear sky
+                </p>
+              </div>
+              <div />
+              <div />
+              <div />
+            </div>,
           ],
-          "type": "p",
         },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt="Rent an RV for Your Next Adventure"
+                  className="camp-photo"
+                  src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+                />,
+                <span
+                  className="camp-name"
+                >
+                  Rent an RV for Your Next Adventure
+                </span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Rent an RV for Your Next Adventure",
+                  "className": "camp-photo",
+                  "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Rent an RV for Your Next Adventure",
+                  "className": "camp-name",
+                },
+                "ref": null,
+                "rendered": "Rent an RV for Your Next Adventure",
+                "type": "span",
+              },
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-05
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-06
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-06
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-07
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-07
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-08
+                  </p>
+                  <img
+                    alt="Snow"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/13n.png"
+                  />
+                  <p>
+                    light snow
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-08
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-09
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-09
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01d.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+                <div
+                  className="weather-day"
+                >
+                  <p>
+                    11-10
+                  </p>
+                  <img
+                    alt="Clear"
+                    className="forecast-icon"
+                    src="http://openweathermap.org/img/w/01n.png"
+                  />
+                  <p>
+                    clear sky
+                  </p>
+                </div>,
+                <div />,
+                <div />,
+                <div />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "2018-11-05 18:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-05
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01d.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-05",
+                    },
+                    "ref": null,
+                    "rendered": "11-05",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01d.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-05 21:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 00:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 03:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 06:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-06
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01n.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-06",
+                    },
+                    "ref": null,
+                    "rendered": "11-06",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01n.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 09:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 12:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 15:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 18:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-06
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01d.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-06",
+                    },
+                    "ref": null,
+                    "rendered": "11-06",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01d.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-06 21:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 00:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 03:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 06:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-07
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01n.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-07",
+                    },
+                    "ref": null,
+                    "rendered": "11-07",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01n.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 09:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 12:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 15:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 18:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-07
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01d.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-07",
+                    },
+                    "ref": null,
+                    "rendered": "11-07",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01d.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-07 21:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 00:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 03:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 06:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-08
+                    </p>,
+                    <img
+                      alt="Snow"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/13n.png"
+                    />,
+                    <p>
+                      light snow
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-08",
+                    },
+                    "ref": null,
+                    "rendered": "11-08",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Snow",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/13n.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "light snow",
+                    },
+                    "ref": null,
+                    "rendered": "light snow",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 09:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 12:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 15:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 18:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-08
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01d.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-08",
+                    },
+                    "ref": null,
+                    "rendered": "11-08",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01d.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-08 21:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 00:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 03:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 06:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-09
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01n.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-09",
+                    },
+                    "ref": null,
+                    "rendered": "11-09",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01n.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 09:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 12:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 15:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 18:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-09
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01d.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-09",
+                    },
+                    "ref": null,
+                    "rendered": "11-09",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01d.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-09 21:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-10 00:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-10 03:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-10 06:00:00",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p>
+                      11-10
+                    </p>,
+                    <img
+                      alt="Clear"
+                      className="forecast-icon"
+                      src="http://openweathermap.org/img/w/01n.png"
+                    />,
+                    <p>
+                      clear sky
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "11-10",
+                    },
+                    "ref": null,
+                    "rendered": "11-10",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "Clear",
+                      "className": "forecast-icon",
+                      "src": "http://openweathermap.org/img/w/01n.png",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "clear sky",
+                    },
+                    "ref": null,
+                    "rendered": "clear sky",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-10 09:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-10 12:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "2018-11-10 15:00:00",
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
       "type": "div",

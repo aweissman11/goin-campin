@@ -1,0 +1,33 @@
+.loading {
+  box-sizing: border-box;
+  object-fit: contain;
+  height: fill;
+  background: #3f6358;
+}
+
+.gif-container {
+  
+  position: relative;
+}
+
+.loading-message {
+  background: #3f6358;
+  z-index: 1403;
+}
+
+.loading-gif {
+  width: 100%;
+  height: fill;
+  background: #3f6358;
+
+}
+
+.gradient {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), #3f6358);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: fill;
+  z-index: 120;
+}

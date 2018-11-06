@@ -5,6 +5,8 @@ import Loading from '../../components/Loading';
 import LocationSearchInput from '../LocationSearchInput';
 import Campground from '../Campground'
 
+import './CampsList.css';
+
 export class CampsList extends Component {
   renderCamps = () => {
     const filteredCamps = this.props.campsList.filter(camp => (
@@ -24,7 +26,7 @@ export class CampsList extends Component {
   render() {
     return (
     <div className='camps-list'>
-      <header>We're Goin Campin!</header>
+      <header className='goin-campin'>We're Goin Campin!</header>
       <div>
         <LocationSearchInput />
       </div>

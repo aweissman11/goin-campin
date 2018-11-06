@@ -1,21 +1,46 @@
 import React, { Component } from 'react';
 
+import './Campground.css';
+
 export class Campground extends Component {
+  mapForecasts = () => {
+    return this.props.forecast.map( (cast, i) => {
+      if (i % 4 === 0 ) {
+        return (
+          <div key={cast.date}className='weather-day'>
+            <p>{cast.date.slice(5, 10)}</p>
+            <img
+              className='forecast-icon'
+              src={`${cast.icon}`}
+              alt={`${cast.summary}`}
+            />
+            <p>{cast.descrip}</p>
+          </div>
+        )
+      } else {
+        return <div key={cast.date}></div>
+      }
+    })
+  }
+
   render() {
     return (
       <div>
         <div>
           <p>
             <img
+              className='camp-photo'
               src={`${this.props.photo}`}
               alt={`${this.props.name}`}
             />
-            <span>{this.props.name}</span>
-            <img
-              src={`${this.props.forecast[0].icon}`}
-              alt={`${this.props.forecast[0].summary}`}
-            />
+            <span className='camp-name'>{this.props.name}</span>
           </p>
+          <div>
+            {
+              this.mapForecasts()
+            }
+          </div>
+  
         </div>
       </div>
     )
