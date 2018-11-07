@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { getHikesList } from '../../actions/getHikesListThunk';
+import Hike from '../../components/Hike';
 
 class HikesList extends Component {
 
-  getHikesList = () => {
+  componentDidMount() {
     const { currentLocation, hikesList } = this.props;
-    if (currentLocation.length > 0 && hikesList.length < 1) {
-      this.props.getHikesList(currentLocation);
-    }
+      if (currentLocation.length > 0 && hikesList.length < 1) {
+        this.props.getHikesList(currentLocation);
+      }
   }
+
+  hikes = () => this.props.hikesList.map( hike => <Hike {...hike} />)
 
   render() {
     return (
       <div className='hikes-list'>
         <h1>HikesList</h1>
         {
-          this.getHikesList()
+          this.hikes()
         }
       </div>
     )

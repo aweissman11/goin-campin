@@ -1,5 +1,4 @@
 import { weatherFetchMap } from '../weatherFetchMap';
-import { fiveDayUrl } from '../urls';
 
 describe('weatherFetchMap', () => {
   it('should ', async () => {
@@ -12,9 +11,6 @@ describe('weatherFetchMap', () => {
         }
       }
     ]
-
-    const mockLocation = [34, 45];
-    const mockUrl = fiveDayUrl(mockLocation)
 
     window.fetch = jest.fn().mockImplementation(() => (
       Promise.resolve({ ok: true, json: () => Promise.resolve('Forecast Object') })

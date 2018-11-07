@@ -1,7 +1,5 @@
 import { getCampWeather } from '../getCampWeatherThunk';
-import { setCampsList, hasErrored } from '../index';
-import { campgroundCleaner } from '../../utilities/campgroundCleaner';
-import { weatherFetchMap } from '../../utilities/weatherFetchMap';
+import { hasErrored } from '../index';
 
 import { mockCamps } from '../__mocks__/mockCamps';
 

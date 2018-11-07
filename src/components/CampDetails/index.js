@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import HikesList from '../../containers/HikesList';
 
 import Loading from '../Loading';
 
@@ -53,6 +54,7 @@ export class CampDetails extends Component {
                 this.mapForecasts()
               }
             </div>
+            <HikesList />
           </div>
         }
       </div>

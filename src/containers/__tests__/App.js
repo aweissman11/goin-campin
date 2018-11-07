@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import { App, mapDispatchToProps } from '../App';
-import { getCurrentLocation } from '../../actions/getCurrentLocationThunk';
 
 describe('App', () => {
   let wrapper;
