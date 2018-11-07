@@ -9,13 +9,15 @@ export class Campground extends Component {
       if (i % 4 === 0 ) {
         return (
           <div key={cast.date}className='weather-day'>
-            <p>{cast.date.slice(5, 10)}</p>
-            <img
-              className='forecast-icon'
-              src={`${cast.icon}`}
-              alt={`${cast.summary}`}
-            />
-            <p>{cast.descrip}</p>
+            <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
+            <div className='forecast-icon-container'>
+              <img
+                className='forecast-icon'
+                src={`${cast.icon}`}
+                alt={`${cast.summary}`}
+              />
+              </div>
+            <p className='forecast-p'>{cast.descrip}</p>
           </div>
         )
       } 
@@ -25,13 +27,15 @@ export class Campground extends Component {
   render() {
     return (
       <div className='campground' >
-        <p className='camp-name'>{this.props.name}</p>
-        <div>
-          <img
-            className='camp-photo'
-            src={`${this.props.photo}`}
-            alt={`${this.props.name}`}
-          />
+        <div className='campground-title'>
+          <div className='photo-container'>
+            <img
+              className='camp-photo'
+              src={`${this.props.photo}`}
+              alt={`${this.props.name}`}
+            />
+          </div>
+          <p className='camp-name'>{this.props.name}</p>
         </div>
         <div className='forecasts'>
           {
@@ -39,7 +43,7 @@ export class Campground extends Component {
           }
         </div>
         <Link to={`/campground/${this.props.id}`}>
-          <p className='details-btn'>Details...</p>
+          <p className='details-btn'>Get Full Campground Details...</p>
         </Link>
       </div>
     )
