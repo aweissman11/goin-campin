@@ -1,11 +1,21 @@
-import { getCampWeather } from '../getCampWeatherThunk';
-import { setCampsList } from '../index';
-import { campgroundCleaner } from '../../utilities/campgroundCleaner';
+import {
+  getCampWeather
+} from '../getCampWeatherThunk';
+import {
+  setCampsList
+} from '../index';
+import {
+  campgroundCleaner
+} from '../../utilities/campgroundCleaner';
+import {
+  weatherFetchMap
+} from '../../utilities/weatherFetchMap';
+
+jest.mock('../../utilities/weatherFetchMap')
 
 describe('getCampWeather', () => {
   let mockDispatch;
-  const mockCamps = [
-    {
+  const mockCamps = [{
       "type": "element",
       "name": "result",
       "attributes": {
@@ -89,9 +99,9 @@ describe('getCampWeather', () => {
 
   beforeEach(() => {
     mockDispatch = jest.fn();
-    
+
   })
-  
+
 
   it.skip('should dispatch setCampsList', async () => {
     const thunk = getCampWeather(mockCamps);
@@ -99,8 +109,8 @@ describe('getCampWeather', () => {
     console.log('expected:', expected);
 
     await thunk(mockDispatch);
-    
+
     expect(mockDispatch).toHaveBeenCalledWith(setCampsList(expected))
   })
-  
+
 })
