@@ -2,6 +2,7 @@ import { campsList } from '../campsList';
 import { currentLocation } from '../currentLocation';
 import { hikesList } from '../hikesList';
 import { loading } from '../loading';
+import { rootReducer } from '../index';
 
 describe('campsList', () => {
   it('should set camps list', () => {
@@ -21,6 +22,7 @@ describe('campsList', () => {
 
     expect(result).toEqual(expected)
   })
+})
   
 describe('currentLocation', () => {
   it('should set current location', () => {
@@ -90,4 +92,9 @@ describe('loading', () => {
   })
 })
 
+describe('rootReducer', () => {
+  it('should match the snapshot', () => {
+    expect(rootReducer).toMatchSnapshot();
+  })
+  
 })
