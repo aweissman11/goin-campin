@@ -2,6 +2,7 @@ import { campsList } from '../campsList';
 import { currentLocation } from '../currentLocation';
 import { hikesList } from '../hikesList';
 import { loading } from '../loading';
+import { hasErrored } from '../hasErrored';
 import { rootReducer } from '../index';
 
 describe('campsList', () => {
@@ -87,6 +88,34 @@ describe('loading', () => {
       message: 'booting up...'
     }
     const result = loading(undefined, {})
+
+    expect(result).toEqual(expected)
+  })
+})
+  
+describe('hasErrored', () => {
+  it('should not cause an error right away', () => {
+    const mockError = {
+      hasErrored: true,
+      message: 'We are all gonna die!'
+    }
+    const mockAction = {
+      type: 'HAS_ERRORED',
+      hasErrored: true,
+      message: 'We are all gonna die!'
+    }
+    const expected = mockError;
+    const result = hasErrored(undefined, mockAction);
+    
+    expect(result).toEqual(expected);
+  })
+  
+  it('should return default state', () => {
+    const expected = {
+      hasErrored: false,
+      message: 'nope'
+    }
+    const result = hasErrored(undefined, {})
 
     expect(result).toEqual(expected)
   })
