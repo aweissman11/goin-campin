@@ -1,0 +1,48 @@
+.camp-details {
+  background: #3f6358;
+  min-height: 100vh;
+  height: 100%;
+  width: fill;
+}
+
+.looking-up {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.loaded-details {
+  margin: auto;
+  max-width: 86%;
+}
+
+.home-btn {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.camp-overview {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.camp-name-details {
+  text-align: center;
+  margin: 70px auto 30px;
+}
+
+.camp-info {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.detailed-forecasts {
+  background: rgba(130, 130, 130, .5);
+  border: 1px gray solid;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  padding: 20px;
+}

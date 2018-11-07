@@ -1,14 +1,21 @@
-* {
-  background-color: #3f6358;
-}
-
 .App {
   text-align: center;
+}
+
+.intro-container-container {
+  object-fit: contain;
+  box-sizing: border-box;
 }
 
 .intro-animation-container {
   background-image: url('https://cdn.dribbble.com/users/25514/screenshots/3824773/travel_camping_animation.gif');
   background-size: cover;
-  width: 100vw;
   height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* width: 50vw; */
 }
