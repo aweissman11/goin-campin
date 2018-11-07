@@ -8,12 +8,15 @@ import Campground from '../../components/Campground';
 
 import './CampsList.css';
 
+import { mockCampsList } from './__mocks__/mockCampsList';
+
 export class CampsList extends Component {
   renderCamps = () => {
     const filteredCamps = this.props.campsList.filter(camp => (
       camp.name !== 'Rent an RV for Your Next Adventure'
     ))
 
+    // change back to filteredCamps to get real data
     return filteredCamps.map( camp => {
       return (
         <Campground
@@ -27,7 +30,7 @@ export class CampsList extends Component {
   render() {
     return (
     <div className='camps-list'>
-      <header className='goin-campin'>We're Goin Campin!</header>
+      <div className='logo'>LOGO</div>
       <div>
         <LocationSearchInput />
       </div>
@@ -37,7 +40,7 @@ export class CampsList extends Component {
             message={this.props.loading.message}
           /> :
           <div>
-            <h1>CampsList</h1>
+            <h1>Nearby Camp grounds</h1>
               {this.renderCamps()}
           </div>
       }

@@ -9,6 +9,7 @@ export const mockCampsList = [
     "wSewer": "N",
     "wHose": "N",
     "wWater": "Lakefront",
+    "id": "12345",
     "forecast": [
       {
         "date": "2018-11-05 18:00:00",
@@ -462,6 +463,7 @@ export const mockCampsList = [
     "wSewer": "N",
     "wHose": "N",
     "wWater": "",
+    "id": "12345",
     "forecast": [
       {
         "date": "2018-11-05 18:00:00",
@@ -915,6 +917,7 @@ export const mockCampsList = [
     "wSewer": "N",
     "wHose": "N",
     "wWater": "",
+    "id": "12345",
     "forecast": [
       {
         "date": "2018-11-05 18:00:00",
@@ -1368,6 +1371,7 @@ export const mockCampsList = [
     "wSewer": "N",
     "wHose": "N",
     "wWater": "",
+    "id": "12345",
     "forecast": [
       {
         "date": "2018-11-05 18:00:00",

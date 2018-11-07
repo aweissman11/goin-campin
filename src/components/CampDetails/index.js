@@ -7,9 +7,12 @@ import Loading from '../Loading';
 
 import './CampDetails.css';
 
+import { mockDetails } from './__mocks__/mockDetails';
+
 export class CampDetails extends Component {
   mapForecasts = () => {
-    return this.props.forecast.map( (cast) => {
+    // change back to this.props.forecast.map for real data
+    return mockDetails.forecast.map( (cast) => {
       return (
         <div key={cast.date}className='weather-day'>
           <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
@@ -26,7 +29,7 @@ export class CampDetails extends Component {
     })
   }
   render() {
-    const { name, wAmps, wHose, wPets, wSewere, wWater } = this.props
+    const { name, wAmps, wHose, wPets, wSewere, wWater } = mockDetails
     return (
       <div className='camp-details'>
         {
@@ -34,7 +37,7 @@ export class CampDetails extends Component {
           <div >
             <h2 className='looking-up'>Looking up your campground...</h2>
             <Loading /> 
-          </div>:
+          </div> :
           <div className='loaded-details'>
             <Link to='/'>
               <p className='home-btn'>Go Home</p>

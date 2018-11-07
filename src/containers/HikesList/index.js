@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { getHikesList } from '../../actions/getHikesListThunk';
 import Hike from '../../components/Hike';
 
+import { hikesList } from './__mocks__/hikesList';
+
 class HikesList extends Component {
 
   componentDidMount() {
@@ -13,12 +15,13 @@ class HikesList extends Component {
       }
   }
 
-  hikes = () => this.props.hikesList.map( hike => <Hike {...hike} />)
+  // map over this.props.hikesList to use real data
+  hikes = () => hikesList.trails.map( hike => <Hike key={hike.id} {...hike} />)
 
   render() {
     return (
       <div className='hikes-list'>
-        <h1>HikesList</h1>
+        <h1>Nearby Hikes</h1>
         {
           this.hikes()
         }
