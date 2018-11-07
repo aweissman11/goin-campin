@@ -1,0 +1,1602 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CampDetails should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CampDetails
+    forecase={
+      Array [
+        Object {
+          "date": "asdf",
+          "descrip": "asldkf",
+          "icon": "asldfkj;a",
+          "summary": "asldkfj",
+        },
+        Object {
+          "date": "asdf",
+          "descrip": "asldkf",
+          "icon": "asldfkj;a",
+          "summary": "asldkfj",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div>
+        <h2
+          className="looking-up"
+        >
+          Looking up your campground...
+        </h2>
+        <Loading />
+      </div>,
+      "className": "camp-details",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2
+            className="looking-up"
+          >
+            Looking up your campground...
+          </h2>,
+          <Loading />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Looking up your campground...",
+            "className": "looking-up",
+          },
+          "ref": null,
+          "rendered": "Looking up your campground...",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
+          <h2
+            className="looking-up"
+          >
+            Looking up your campground...
+          </h2>
+          <Loading />
+        </div>,
+        "className": "camp-details",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="looking-up"
+            >
+              Looking up your campground...
+            </h2>,
+            <Loading />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Looking up your campground...",
+              "className": "looking-up",
+            },
+            "ref": null,
+            "rendered": "Looking up your campground...",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`CampDetails should match the snapshot with a name 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CampDetails
+    forecast={
+      Array [
+        Object {
+          "date": "asaskdjfhlakjhdflkdf",
+          "descrip": "asldkf",
+          "icon": "asldfkj;a",
+          "summary": "asldkfj",
+        },
+        Object {
+          "date": "asasdfasdfdf",
+          "descrip": "asldljkahsdfljhalsdkfjhkf",
+          "icon": "asldfkj;a",
+          "summary": "asldkfj",
+        },
+      ]
+    }
+    name="jose"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="loaded-details"
+      >
+        <Link
+          replace={false}
+          to="/"
+        >
+          <p
+            className="home-btn"
+          >
+            Go Home
+          </p>
+        </Link>
+        <div
+          className="camp-overview"
+        >
+          <h1
+            className="camp-name-details"
+          >
+            jose
+          </h1>
+          <div
+            className="camp-info"
+          >
+            <p
+              className="info"
+            >
+              Has Amps: 
+              NA
+            </p>
+            <p
+              className="info"
+            >
+              Has Hose Hookup: 
+              NA
+            </p>
+            <p
+              className="info"
+            >
+              Allows Pets: 
+              NA
+            </p>
+            <p
+              className="info"
+            >
+              Has Sewer Hookup: 
+              NA
+            </p>
+            <p
+              className="info"
+            >
+              Has Water Hookup: 
+              NA
+            </p>
+          </div>
+        </div>
+        <div
+          className="detailed-forecasts"
+        >
+          <div
+            className="weather-day"
+          >
+            <p
+              className="forecast-p"
+            >
+              djfhl
+            </p>
+            <div
+              className="forecast-icon-container"
+            >
+              <img
+                alt="asldkfj"
+                className="forecast-icon"
+                src="asldfkj;a"
+              />
+            </div>
+            <p
+              className="forecast-p"
+            >
+              asldkf
+            </p>
+          </div>
+          <div
+            className="weather-day"
+          >
+            <p
+              className="forecast-p"
+            >
+              fasdf
+            </p>
+            <div
+              className="forecast-icon-container"
+            >
+              <img
+                alt="asldkfj"
+                className="forecast-icon"
+                src="asldfkj;a"
+              />
+            </div>
+            <p
+              className="forecast-p"
+            >
+              asldljkahsdfljhalsdkfjhkf
+            </p>
+          </div>
+        </div>
+      </div>,
+      "className": "camp-details",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Link
+            replace={false}
+            to="/"
+          >
+            <p
+              className="home-btn"
+            >
+              Go Home
+            </p>
+          </Link>,
+          <div
+            className="camp-overview"
+          >
+            <h1
+              className="camp-name-details"
+            >
+              jose
+            </h1>
+            <div
+              className="camp-info"
+            >
+              <p
+                className="info"
+              >
+                Has Amps: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Has Hose Hookup: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Allows Pets: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Has Sewer Hookup: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Has Water Hookup: 
+                NA
+              </p>
+            </div>
+          </div>,
+          <div
+            className="detailed-forecasts"
+          >
+            <div
+              className="weather-day"
+            >
+              <p
+                className="forecast-p"
+              >
+                djfhl
+              </p>
+              <div
+                className="forecast-icon-container"
+              >
+                <img
+                  alt="asldkfj"
+                  className="forecast-icon"
+                  src="asldfkj;a"
+                />
+              </div>
+              <p
+                className="forecast-p"
+              >
+                asldkf
+              </p>
+            </div>
+            <div
+              className="weather-day"
+            >
+              <p
+                className="forecast-p"
+              >
+                fasdf
+              </p>
+              <div
+                className="forecast-icon-container"
+              >
+                <img
+                  alt="asldkfj"
+                  className="forecast-icon"
+                  src="asldfkj;a"
+                />
+              </div>
+              <p
+                className="forecast-p"
+              >
+                asldljkahsdfljhalsdkfjhkf
+              </p>
+            </div>
+          </div>,
+        ],
+        "className": "loaded-details",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <p
+              className="home-btn"
+            >
+              Go Home
+            </p>,
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Go Home",
+              "className": "home-btn",
+            },
+            "ref": null,
+            "rendered": "Go Home",
+            "type": "p",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="camp-name-details"
+              >
+                jose
+              </h1>,
+              <div
+                className="camp-info"
+              >
+                <p
+                  className="info"
+                >
+                  Has Amps: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Has Hose Hookup: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Allows Pets: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Has Sewer Hookup: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Has Water Hookup: 
+                  NA
+                </p>
+              </div>,
+            ],
+            "className": "camp-overview",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "jose",
+                "className": "camp-name-details",
+              },
+              "ref": null,
+              "rendered": "jose",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="info"
+                  >
+                    Has Amps: 
+                    NA
+                  </p>,
+                  <p
+                    className="info"
+                  >
+                    Has Hose Hookup: 
+                    NA
+                  </p>,
+                  <p
+                    className="info"
+                  >
+                    Allows Pets: 
+                    NA
+                  </p>,
+                  <p
+                    className="info"
+                  >
+                    Has Sewer Hookup: 
+                    NA
+                  </p>,
+                  <p
+                    className="info"
+                  >
+                    Has Water Hookup: 
+                    NA
+                  </p>,
+                ],
+                "className": "camp-info",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Has Amps: ",
+                      "NA",
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Has Amps: ",
+                    "NA",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Has Hose Hookup: ",
+                      "NA",
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Has Hose Hookup: ",
+                    "NA",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Allows Pets: ",
+                      "NA",
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Allows Pets: ",
+                    "NA",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Has Sewer Hookup: ",
+                      "NA",
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Has Sewer Hookup: ",
+                    "NA",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Has Water Hookup: ",
+                      "NA",
+                    ],
+                    "className": "info",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Has Water Hookup: ",
+                    "NA",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="weather-day"
+              >
+                <p
+                  className="forecast-p"
+                >
+                  djfhl
+                </p>
+                <div
+                  className="forecast-icon-container"
+                >
+                  <img
+                    alt="asldkfj"
+                    className="forecast-icon"
+                    src="asldfkj;a"
+                  />
+                </div>
+                <p
+                  className="forecast-p"
+                >
+                  asldkf
+                </p>
+              </div>,
+              <div
+                className="weather-day"
+              >
+                <p
+                  className="forecast-p"
+                >
+                  fasdf
+                </p>
+                <div
+                  className="forecast-icon-container"
+                >
+                  <img
+                    alt="asldkfj"
+                    className="forecast-icon"
+                    src="asldfkj;a"
+                  />
+                </div>
+                <p
+                  className="forecast-p"
+                >
+                  asldljkahsdfljhalsdkfjhkf
+                </p>
+              </div>,
+            ],
+            "className": "detailed-forecasts",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "asaskdjfhlakjhdflkdf",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="forecast-p"
+                  >
+                    djfhl
+                  </p>,
+                  <div
+                    className="forecast-icon-container"
+                  >
+                    <img
+                      alt="asldkfj"
+                      className="forecast-icon"
+                      src="asldfkj;a"
+                    />
+                  </div>,
+                  <p
+                    className="forecast-p"
+                  >
+                    asldkf
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "djfhl",
+                    "className": "forecast-p",
+                  },
+                  "ref": null,
+                  "rendered": "djfhl",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="asldkfj"
+                      className="forecast-icon"
+                      src="asldfkj;a"
+                    />,
+                    "className": "forecast-icon-container",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "asldkfj",
+                      "className": "forecast-icon",
+                      "src": "asldfkj;a",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "asldkf",
+                    "className": "forecast-p",
+                  },
+                  "ref": null,
+                  "rendered": "asldkf",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "asasdfasdfdf",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="forecast-p"
+                  >
+                    fasdf
+                  </p>,
+                  <div
+                    className="forecast-icon-container"
+                  >
+                    <img
+                      alt="asldkfj"
+                      className="forecast-icon"
+                      src="asldfkj;a"
+                    />
+                  </div>,
+                  <p
+                    className="forecast-p"
+                  >
+                    asldljkahsdfljhalsdkfjhkf
+                  </p>,
+                ],
+                "className": "weather-day",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fasdf",
+                    "className": "forecast-p",
+                  },
+                  "ref": null,
+                  "rendered": "fasdf",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt="asldkfj"
+                      className="forecast-icon"
+                      src="asldfkj;a"
+                    />,
+                    "className": "forecast-icon-container",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "asldkfj",
+                      "className": "forecast-icon",
+                      "src": "asldfkj;a",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "asldljkahsdfljhalsdkfjhkf",
+                    "className": "forecast-p",
+                  },
+                  "ref": null,
+                  "rendered": "asldljkahsdfljhalsdkfjhkf",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="loaded-details"
+        >
+          <Link
+            replace={false}
+            to="/"
+          >
+            <p
+              className="home-btn"
+            >
+              Go Home
+            </p>
+          </Link>
+          <div
+            className="camp-overview"
+          >
+            <h1
+              className="camp-name-details"
+            >
+              jose
+            </h1>
+            <div
+              className="camp-info"
+            >
+              <p
+                className="info"
+              >
+                Has Amps: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Has Hose Hookup: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Allows Pets: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Has Sewer Hookup: 
+                NA
+              </p>
+              <p
+                className="info"
+              >
+                Has Water Hookup: 
+                NA
+              </p>
+            </div>
+          </div>
+          <div
+            className="detailed-forecasts"
+          >
+            <div
+              className="weather-day"
+            >
+              <p
+                className="forecast-p"
+              >
+                djfhl
+              </p>
+              <div
+                className="forecast-icon-container"
+              >
+                <img
+                  alt="asldkfj"
+                  className="forecast-icon"
+                  src="asldfkj;a"
+                />
+              </div>
+              <p
+                className="forecast-p"
+              >
+                asldkf
+              </p>
+            </div>
+            <div
+              className="weather-day"
+            >
+              <p
+                className="forecast-p"
+              >
+                fasdf
+              </p>
+              <div
+                className="forecast-icon-container"
+              >
+                <img
+                  alt="asldkfj"
+                  className="forecast-icon"
+                  src="asldfkj;a"
+                />
+              </div>
+              <p
+                className="forecast-p"
+              >
+                asldljkahsdfljhalsdkfjhkf
+              </p>
+            </div>
+          </div>
+        </div>,
+        "className": "camp-details",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Link
+              replace={false}
+              to="/"
+            >
+              <p
+                className="home-btn"
+              >
+                Go Home
+              </p>
+            </Link>,
+            <div
+              className="camp-overview"
+            >
+              <h1
+                className="camp-name-details"
+              >
+                jose
+              </h1>
+              <div
+                className="camp-info"
+              >
+                <p
+                  className="info"
+                >
+                  Has Amps: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Has Hose Hookup: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Allows Pets: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Has Sewer Hookup: 
+                  NA
+                </p>
+                <p
+                  className="info"
+                >
+                  Has Water Hookup: 
+                  NA
+                </p>
+              </div>
+            </div>,
+            <div
+              className="detailed-forecasts"
+            >
+              <div
+                className="weather-day"
+              >
+                <p
+                  className="forecast-p"
+                >
+                  djfhl
+                </p>
+                <div
+                  className="forecast-icon-container"
+                >
+                  <img
+                    alt="asldkfj"
+                    className="forecast-icon"
+                    src="asldfkj;a"
+                  />
+                </div>
+                <p
+                  className="forecast-p"
+                >
+                  asldkf
+                </p>
+              </div>
+              <div
+                className="weather-day"
+              >
+                <p
+                  className="forecast-p"
+                >
+                  fasdf
+                </p>
+                <div
+                  className="forecast-icon-container"
+                >
+                  <img
+                    alt="asldkfj"
+                    className="forecast-icon"
+                    src="asldfkj;a"
+                  />
+                </div>
+                <p
+                  className="forecast-p"
+                >
+                  asldljkahsdfljhalsdkfjhkf
+                </p>
+              </div>
+            </div>,
+          ],
+          "className": "loaded-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <p
+                className="home-btn"
+              >
+                Go Home
+              </p>,
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Go Home",
+                "className": "home-btn",
+              },
+              "ref": null,
+              "rendered": "Go Home",
+              "type": "p",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="camp-name-details"
+                >
+                  jose
+                </h1>,
+                <div
+                  className="camp-info"
+                >
+                  <p
+                    className="info"
+                  >
+                    Has Amps: 
+                    NA
+                  </p>
+                  <p
+                    className="info"
+                  >
+                    Has Hose Hookup: 
+                    NA
+                  </p>
+                  <p
+                    className="info"
+                  >
+                    Allows Pets: 
+                    NA
+                  </p>
+                  <p
+                    className="info"
+                  >
+                    Has Sewer Hookup: 
+                    NA
+                  </p>
+                  <p
+                    className="info"
+                  >
+                    Has Water Hookup: 
+                    NA
+                  </p>
+                </div>,
+              ],
+              "className": "camp-overview",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "jose",
+                  "className": "camp-name-details",
+                },
+                "ref": null,
+                "rendered": "jose",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="info"
+                    >
+                      Has Amps: 
+                      NA
+                    </p>,
+                    <p
+                      className="info"
+                    >
+                      Has Hose Hookup: 
+                      NA
+                    </p>,
+                    <p
+                      className="info"
+                    >
+                      Allows Pets: 
+                      NA
+                    </p>,
+                    <p
+                      className="info"
+                    >
+                      Has Sewer Hookup: 
+                      NA
+                    </p>,
+                    <p
+                      className="info"
+                    >
+                      Has Water Hookup: 
+                      NA
+                    </p>,
+                  ],
+                  "className": "camp-info",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Has Amps: ",
+                        "NA",
+                      ],
+                      "className": "info",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Has Amps: ",
+                      "NA",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Has Hose Hookup: ",
+                        "NA",
+                      ],
+                      "className": "info",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Has Hose Hookup: ",
+                      "NA",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Allows Pets: ",
+                        "NA",
+                      ],
+                      "className": "info",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Allows Pets: ",
+                      "NA",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Has Sewer Hookup: ",
+                        "NA",
+                      ],
+                      "className": "info",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Has Sewer Hookup: ",
+                      "NA",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Has Water Hookup: ",
+                        "NA",
+                      ],
+                      "className": "info",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Has Water Hookup: ",
+                      "NA",
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="weather-day"
+                >
+                  <p
+                    className="forecast-p"
+                  >
+                    djfhl
+                  </p>
+                  <div
+                    className="forecast-icon-container"
+                  >
+                    <img
+                      alt="asldkfj"
+                      className="forecast-icon"
+                      src="asldfkj;a"
+                    />
+                  </div>
+                  <p
+                    className="forecast-p"
+                  >
+                    asldkf
+                  </p>
+                </div>,
+                <div
+                  className="weather-day"
+                >
+                  <p
+                    className="forecast-p"
+                  >
+                    fasdf
+                  </p>
+                  <div
+                    className="forecast-icon-container"
+                  >
+                    <img
+                      alt="asldkfj"
+                      className="forecast-icon"
+                      src="asldfkj;a"
+                    />
+                  </div>
+                  <p
+                    className="forecast-p"
+                  >
+                    asldljkahsdfljhalsdkfjhkf
+                  </p>
+                </div>,
+              ],
+              "className": "detailed-forecasts",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "asaskdjfhlakjhdflkdf",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="forecast-p"
+                    >
+                      djfhl
+                    </p>,
+                    <div
+                      className="forecast-icon-container"
+                    >
+                      <img
+                        alt="asldkfj"
+                        className="forecast-icon"
+                        src="asldfkj;a"
+                      />
+                    </div>,
+                    <p
+                      className="forecast-p"
+                    >
+                      asldkf
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "djfhl",
+                      "className": "forecast-p",
+                    },
+                    "ref": null,
+                    "rendered": "djfhl",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="asldkfj"
+                        className="forecast-icon"
+                        src="asldfkj;a"
+                      />,
+                      "className": "forecast-icon-container",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "asldkfj",
+                        "className": "forecast-icon",
+                        "src": "asldfkj;a",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "asldkf",
+                      "className": "forecast-p",
+                    },
+                    "ref": null,
+                    "rendered": "asldkf",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": "asasdfasdfdf",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="forecast-p"
+                    >
+                      fasdf
+                    </p>,
+                    <div
+                      className="forecast-icon-container"
+                    >
+                      <img
+                        alt="asldkfj"
+                        className="forecast-icon"
+                        src="asldfkj;a"
+                      />
+                    </div>,
+                    <p
+                      className="forecast-p"
+                    >
+                      asldljkahsdfljhalsdkfjhkf
+                    </p>,
+                  ],
+                  "className": "weather-day",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "fasdf",
+                      "className": "forecast-p",
+                    },
+                    "ref": null,
+                    "rendered": "fasdf",
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <img
+                        alt="asldkfj"
+                        className="forecast-icon"
+                        src="asldfkj;a"
+                      />,
+                      "className": "forecast-icon-container",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "alt": "asldkfj",
+                        "className": "forecast-icon",
+                        "src": "asldfkj;a",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "img",
+                    },
+                    "type": "div",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "asldljkahsdfljhalsdkfjhkf",
+                      "className": "forecast-p",
+                    },
+                    "ref": null,
+                    "rendered": "asldljkahsdfljhalsdkfjhkf",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
