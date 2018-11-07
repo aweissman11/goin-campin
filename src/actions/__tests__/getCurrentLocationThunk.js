@@ -2,8 +2,6 @@
 import { getCurrentLocation } from '../getCurrentLocationThunk';
 import { setCurrentLocation, loading } from '../index';
 
-// jest.mock('../someSortOfThunk.js')
-
 describe('getCurrentLocation', () => {
   let mockDispatch;
   const mockLocation = [3, 4];
