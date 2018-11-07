@@ -1,7 +1,7 @@
 .loading {
   box-sizing: border-box;
   object-fit: contain;
-  height: fill;
+  height: stretch;
   background: #3f6358;
 }
 
@@ -17,7 +17,7 @@
 
 .loading-gif {
   width: 100%;
-  height: fill;
+  height: stretch;
   background: #3f6358;
 
 }
@@ -28,6 +28,6 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: fill;
+  height: stretch;
   z-index: 120;
 }

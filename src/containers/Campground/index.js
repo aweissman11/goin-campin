@@ -20,7 +20,9 @@ export class Campground extends Component {
             <p className='forecast-p'>{cast.descrip}</p>
           </div>
         )
-      } 
+      } else {
+        return null;
+      }
     })
   }
 
