@@ -472,17 +472,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p
-          className="camp-name"
+        <div
+          className="campground-title"
         >
-          Rent an RV for Your Next Adventure
-        </p>,
-        <div>
-          <img
-            alt="Rent an RV for Your Next Adventure"
-            className="camp-photo"
-            src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-          />
+          <div
+            className="photo-container"
+          >
+            <img
+              alt="Rent an RV for Your Next Adventure"
+              className="camp-photo"
+              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+            />
+          </div>
+          <p
+            className="camp-name"
+          >
+            Rent an RV for Your Next Adventure
+          </p>
         </div>,
         <div
           className="forecasts"
@@ -491,7 +497,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-05
             </p>
@@ -504,7 +510,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01d.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -512,7 +520,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-06
             </p>
@@ -525,7 +533,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01n.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -533,7 +543,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-06
             </p>
@@ -546,7 +556,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01d.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -554,7 +566,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-07
             </p>
@@ -567,7 +579,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01n.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -575,7 +589,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-07
             </p>
@@ -588,7 +602,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01d.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -596,7 +612,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-08
             </p>
@@ -609,7 +625,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/13n.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               light snow
             </p>
           </div>
@@ -617,7 +635,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-08
             </p>
@@ -630,7 +648,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01d.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -638,7 +658,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-09
             </p>
@@ -651,7 +671,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01n.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -659,7 +681,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-09
             </p>
@@ -672,7 +694,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01d.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -680,7 +704,7 @@ ShallowWrapper {
             className="weather-day"
           >
             <p
-              className="date"
+              className="forecast-p"
             >
               11-10
             </p>
@@ -693,7 +717,9 @@ ShallowWrapper {
                 src="http://openweathermap.org/img/w/01n.png"
               />
             </div>
-            <p>
+            <p
+              className="forecast-p"
+            >
               clear sky
             </p>
           </div>
@@ -705,7 +731,7 @@ ShallowWrapper {
           <p
             className="details-btn"
           >
-            Details...
+            Get Full Campground Details...
           </p>
         </Link>,
       ],
@@ -718,38 +744,67 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Rent an RV for Your Next Adventure",
-          "className": "camp-name",
+          "children": Array [
+            <div
+              className="photo-container"
+            >
+              <img
+                alt="Rent an RV for Your Next Adventure"
+                className="camp-photo"
+                src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+              />
+            </div>,
+            <p
+              className="camp-name"
+            >
+              Rent an RV for Your Next Adventure
+            </p>,
+          ],
+          "className": "campground-title",
         },
         "ref": null,
-        "rendered": "Rent an RV for Your Next Adventure",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <img
-            alt="Rent an RV for Your Next Adventure"
-            className="camp-photo"
-            src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-          />,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "alt": "Rent an RV for Your Next Adventure",
-            "className": "camp-photo",
-            "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                alt="Rent an RV for Your Next Adventure"
+                className="camp-photo"
+                src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+              />,
+              "className": "photo-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Rent an RV for Your Next Adventure",
+                "className": "camp-photo",
+                "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            "type": "div",
           },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Rent an RV for Your Next Adventure",
+              "className": "camp-name",
+            },
+            "ref": null,
+            "rendered": "Rent an RV for Your Next Adventure",
+            "type": "p",
+          },
+        ],
         "type": "div",
       },
       Object {
@@ -762,7 +817,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-05
               </p>
@@ -775,18 +830,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-06
               </p>
@@ -799,18 +856,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-06
               </p>
@@ -823,18 +882,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-07
               </p>
@@ -847,18 +908,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-07
               </p>
@@ -871,18 +934,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-08
               </p>
@@ -895,18 +960,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/13n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 light snow
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-08
               </p>
@@ -919,18 +986,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-09
               </p>
@@ -943,18 +1012,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-09
               </p>
@@ -967,18 +1038,20 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-10
               </p>
@@ -991,13 +1064,15 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
           ],
           "className": "forecasts",
         },
@@ -1010,7 +1085,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-05
                 </p>,
@@ -1023,7 +1098,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1037,7 +1114,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-05",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-05",
@@ -1077,6 +1154,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1085,9 +1163,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-06 06:00:00",
@@ -1095,7 +1173,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-06
                 </p>,
@@ -1108,7 +1186,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1122,7 +1202,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-06",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-06",
@@ -1162,6 +1242,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1170,9 +1251,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-06 18:00:00",
@@ -1180,7 +1261,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-06
                 </p>,
@@ -1193,7 +1274,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1207,7 +1290,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-06",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-06",
@@ -1247,6 +1330,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1255,9 +1339,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-07 06:00:00",
@@ -1265,7 +1349,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-07
                 </p>,
@@ -1278,7 +1362,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1292,7 +1378,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-07",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-07",
@@ -1332,6 +1418,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1340,9 +1427,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-07 18:00:00",
@@ -1350,7 +1437,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-07
                 </p>,
@@ -1363,7 +1450,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1377,7 +1466,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-07",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-07",
@@ -1417,6 +1506,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1425,9 +1515,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-08 06:00:00",
@@ -1435,7 +1525,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-08
                 </p>,
@@ -1448,7 +1538,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/13n.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   light snow
                 </p>,
               ],
@@ -1462,7 +1554,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-08",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-08",
@@ -1502,6 +1594,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "light snow",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "light snow",
@@ -1510,9 +1603,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-08 18:00:00",
@@ -1520,7 +1613,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-08
                 </p>,
@@ -1533,7 +1626,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1547,7 +1642,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-08",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-08",
@@ -1587,6 +1682,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1595,9 +1691,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-09 06:00:00",
@@ -1605,7 +1701,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-09
                 </p>,
@@ -1618,7 +1714,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1632,7 +1730,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-09",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-09",
@@ -1672,6 +1770,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1680,9 +1779,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-09 18:00:00",
@@ -1690,7 +1789,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-09
                 </p>,
@@ -1703,7 +1802,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1717,7 +1818,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-09",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-09",
@@ -1757,6 +1858,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1765,9 +1867,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-10 06:00:00",
@@ -1775,7 +1877,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-10
                 </p>,
@@ -1788,7 +1890,9 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>,
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>,
               ],
@@ -1802,7 +1906,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "11-10",
-                  "className": "date",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "11-10",
@@ -1842,6 +1946,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "clear sky",
+                  "className": "forecast-p",
                 },
                 "ref": null,
                 "rendered": "clear sky",
@@ -1850,9 +1955,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
         ],
         "type": "div",
       },
@@ -1864,7 +1969,7 @@ ShallowWrapper {
           "children": <p
             className="details-btn"
           >
-            Details...
+            Get Full Campground Details...
           </p>,
           "replace": false,
           "to": "/campground/undefined",
@@ -1875,11 +1980,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Details...",
+            "children": "Get Full Campground Details...",
             "className": "details-btn",
           },
           "ref": null,
-          "rendered": "Details...",
+          "rendered": "Get Full Campground Details...",
           "type": "p",
         },
         "type": [Function],
@@ -1894,17 +1999,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p
-            className="camp-name"
+          <div
+            className="campground-title"
           >
-            Rent an RV for Your Next Adventure
-          </p>,
-          <div>
-            <img
-              alt="Rent an RV for Your Next Adventure"
-              className="camp-photo"
-              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-            />
+            <div
+              className="photo-container"
+            >
+              <img
+                alt="Rent an RV for Your Next Adventure"
+                className="camp-photo"
+                src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+              />
+            </div>
+            <p
+              className="camp-name"
+            >
+              Rent an RV for Your Next Adventure
+            </p>
           </div>,
           <div
             className="forecasts"
@@ -1913,7 +2024,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-05
               </p>
@@ -1926,7 +2037,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -1934,7 +2047,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-06
               </p>
@@ -1947,7 +2060,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -1955,7 +2070,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-06
               </p>
@@ -1968,7 +2083,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -1976,7 +2093,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-07
               </p>
@@ -1989,7 +2106,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -1997,7 +2116,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-07
               </p>
@@ -2010,7 +2129,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -2018,7 +2139,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-08
               </p>
@@ -2031,7 +2152,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/13n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 light snow
               </p>
             </div>
@@ -2039,7 +2162,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-08
               </p>
@@ -2052,7 +2175,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -2060,7 +2185,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-09
               </p>
@@ -2073,7 +2198,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -2081,7 +2208,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-09
               </p>
@@ -2094,7 +2221,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01d.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -2102,7 +2231,7 @@ ShallowWrapper {
               className="weather-day"
             >
               <p
-                className="date"
+                className="forecast-p"
               >
                 11-10
               </p>
@@ -2115,7 +2244,9 @@ ShallowWrapper {
                   src="http://openweathermap.org/img/w/01n.png"
                 />
               </div>
-              <p>
+              <p
+                className="forecast-p"
+              >
                 clear sky
               </p>
             </div>
@@ -2127,7 +2258,7 @@ ShallowWrapper {
             <p
               className="details-btn"
             >
-              Details...
+              Get Full Campground Details...
             </p>
           </Link>,
         ],
@@ -2140,38 +2271,67 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Rent an RV for Your Next Adventure",
-            "className": "camp-name",
+            "children": Array [
+              <div
+                className="photo-container"
+              >
+                <img
+                  alt="Rent an RV for Your Next Adventure"
+                  className="camp-photo"
+                  src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+                />
+              </div>,
+              <p
+                className="camp-name"
+              >
+                Rent an RV for Your Next Adventure
+              </p>,
+            ],
+            "className": "campground-title",
           },
           "ref": null,
-          "rendered": "Rent an RV for Your Next Adventure",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <img
-              alt="Rent an RV for Your Next Adventure"
-              className="camp-photo"
-              src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
-            />,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "Rent an RV for Your Next Adventure",
-              "className": "camp-photo",
-              "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt="Rent an RV for Your Next Adventure"
+                  className="camp-photo"
+                  src="http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg"
+                />,
+                "className": "photo-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "Rent an RV for Your Next Adventure",
+                  "className": "camp-photo",
+                  "src": "http://www.reserveamerica.com/webphotos/IND2/pid720142/0/80x53.jpg",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Rent an RV for Your Next Adventure",
+                "className": "camp-name",
+              },
+              "ref": null,
+              "rendered": "Rent an RV for Your Next Adventure",
+              "type": "p",
+            },
+          ],
           "type": "div",
         },
         Object {
@@ -2184,7 +2344,7 @@ ShallowWrapper {
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-05
                 </p>
@@ -2197,18 +2357,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-06
                 </p>
@@ -2221,18 +2383,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-06
                 </p>
@@ -2245,18 +2409,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-07
                 </p>
@@ -2269,18 +2435,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-07
                 </p>
@@ -2293,18 +2461,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-08
                 </p>
@@ -2317,18 +2487,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/13n.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   light snow
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-08
                 </p>
@@ -2341,18 +2513,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-09
                 </p>
@@ -2365,18 +2539,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-09
                 </p>
@@ -2389,18 +2565,20 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01d.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
                 <p
-                  className="date"
+                  className="forecast-p"
                 >
                   11-10
                 </p>
@@ -2413,13 +2591,15 @@ ShallowWrapper {
                     src="http://openweathermap.org/img/w/01n.png"
                   />
                 </div>
-                <p>
+                <p
+                  className="forecast-p"
+                >
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
             ],
             "className": "forecasts",
           },
@@ -2432,7 +2612,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-05
                   </p>,
@@ -2445,7 +2625,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01d.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -2459,7 +2641,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-05",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-05",
@@ -2499,6 +2681,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -2507,9 +2690,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-06 06:00:00",
@@ -2517,7 +2700,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-06
                   </p>,
@@ -2530,7 +2713,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01n.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -2544,7 +2729,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-06",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-06",
@@ -2584,6 +2769,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -2592,9 +2778,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-06 18:00:00",
@@ -2602,7 +2788,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-06
                   </p>,
@@ -2615,7 +2801,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01d.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -2629,7 +2817,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-06",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-06",
@@ -2669,6 +2857,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -2677,9 +2866,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-07 06:00:00",
@@ -2687,7 +2876,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-07
                   </p>,
@@ -2700,7 +2889,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01n.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -2714,7 +2905,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-07",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-07",
@@ -2754,6 +2945,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -2762,9 +2954,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-07 18:00:00",
@@ -2772,7 +2964,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-07
                   </p>,
@@ -2785,7 +2977,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01d.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -2799,7 +2993,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-07",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-07",
@@ -2839,6 +3033,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -2847,9 +3042,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-08 06:00:00",
@@ -2857,7 +3052,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-08
                   </p>,
@@ -2870,7 +3065,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/13n.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     light snow
                   </p>,
                 ],
@@ -2884,7 +3081,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-08",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-08",
@@ -2924,6 +3121,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "light snow",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "light snow",
@@ -2932,9 +3130,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-08 18:00:00",
@@ -2942,7 +3140,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-08
                   </p>,
@@ -2955,7 +3153,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01d.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -2969,7 +3169,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-08",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-08",
@@ -3009,6 +3209,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -3017,9 +3218,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-09 06:00:00",
@@ -3027,7 +3228,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-09
                   </p>,
@@ -3040,7 +3241,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01n.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -3054,7 +3257,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-09",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-09",
@@ -3094,6 +3297,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -3102,9 +3306,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-09 18:00:00",
@@ -3112,7 +3316,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-09
                   </p>,
@@ -3125,7 +3329,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01d.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -3139,7 +3345,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-09",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-09",
@@ -3179,6 +3385,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -3187,9 +3394,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-10 06:00:00",
@@ -3197,7 +3404,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <p
-                    className="date"
+                    className="forecast-p"
                   >
                     11-10
                   </p>,
@@ -3210,7 +3417,9 @@ ShallowWrapper {
                       src="http://openweathermap.org/img/w/01n.png"
                     />
                   </div>,
-                  <p>
+                  <p
+                    className="forecast-p"
+                  >
                     clear sky
                   </p>,
                 ],
@@ -3224,7 +3433,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "11-10",
-                    "className": "date",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "11-10",
@@ -3264,6 +3473,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "clear sky",
+                    "className": "forecast-p",
                   },
                   "ref": null,
                   "rendered": "clear sky",
@@ -3272,9 +3482,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
           ],
           "type": "div",
         },
@@ -3286,7 +3496,7 @@ ShallowWrapper {
             "children": <p
               className="details-btn"
             >
-              Details...
+              Get Full Campground Details...
             </p>,
             "replace": false,
             "to": "/campground/undefined",
@@ -3297,11 +3507,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Details...",
+              "children": "Get Full Campground Details...",
               "className": "details-btn",
             },
             "ref": null,
-            "rendered": "Details...",
+            "rendered": "Get Full Campground Details...",
             "type": "p",
           },
           "type": [Function],

@@ -22,7 +22,9 @@
       "!src/containers/LocationSearchInput/index.js",
       "!src/apiKeys.js",
       "!src/serviceWorker.js",
-      "!src/setupTests.js"
+      "!src/setupTests.js",
+      "!src/actions/getHikesListThunk.js",
+      "!src/containers/HikesList/index.js"
     ]
   },
   "scripts": {

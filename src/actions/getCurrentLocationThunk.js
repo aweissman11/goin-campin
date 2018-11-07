@@ -13,7 +13,6 @@ export const getCurrentLocation = () => {
       });
       dispatch(loading("found ya! Now let's see about those campgrounds...", true))
     } catch(error) {
-      console.warn(error.message);
       return(error.message);
     }
   }
