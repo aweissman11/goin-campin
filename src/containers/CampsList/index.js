@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import Loading from '../../components/Loading';
 import LocationSearchInput from '../LocationSearchInput';
-import Campground from '../Campground'
+import Campground from '../../components/Campground';
 
 import './CampsList.css';
 
@@ -48,3 +49,9 @@ export class CampsList extends Component {
 export const mapStateToProps = ({ campsList, loading }) => ({ campsList, loading })
 
 export default connect(mapStateToProps, null)(CampsList)
+
+CampsList.propTypes = {
+  campsList: PropTypes.array,
+  dispatch: PropTypes.func,
+  loading: PropTypes.object
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import './Campground.css';
 
@@ -53,3 +54,17 @@ export class Campground extends Component {
 }
 
 export default Campground
+
+Campground.propTypes = {
+  forecast: PropTypes.array,
+  id: PropTypes.string,
+  lat: PropTypes.string,
+  long:PropTypes.string,
+  name: PropTypes.string,
+  photo: PropTypes.string,
+  wAmps: PropTypes.string,
+  wHose: PropTypes.string,
+  wPets: PropTypes.string,
+  wSewer: PropTypes.string,
+  wWater: PropTypes.string,
+}

@@ -4,17 +4,17 @@ exports[`CampDetails should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CampDetails
-    forecase={
+    forecast={
       Array [
         Object {
-          "date": "asdf",
+          "date": "asaskdjfhlakjhdflkdf",
           "descrip": "asldkf",
           "icon": "asldfkj;a",
           "summary": "asldkfj",
         },
         Object {
-          "date": "asdf",
-          "descrip": "asldkf",
+          "date": "asasdfasdfdf",
+          "descrip": "asldljkahsdfljhalsdkfjhkf",
           "icon": "asldfkj;a",
           "summary": "asldkfj",
         },

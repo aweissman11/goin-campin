@@ -836,9 +836,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -862,9 +862,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -888,9 +888,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -914,9 +914,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -940,9 +940,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -966,9 +966,9 @@ ShallowWrapper {
                 light snow
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -992,9 +992,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -1018,9 +1018,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -1044,9 +1044,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             <div
               className="weather-day"
             >
@@ -1070,9 +1070,9 @@ ShallowWrapper {
                 clear sky
               </p>
             </div>,
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
           ],
           "className": "forecasts",
         },
@@ -1163,9 +1163,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-06 06:00:00",
@@ -1251,9 +1251,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-06 18:00:00",
@@ -1339,9 +1339,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-07 06:00:00",
@@ -1427,9 +1427,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-07 18:00:00",
@@ -1515,9 +1515,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-08 06:00:00",
@@ -1603,9 +1603,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-08 18:00:00",
@@ -1691,9 +1691,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-09 06:00:00",
@@ -1779,9 +1779,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-09 18:00:00",
@@ -1867,9 +1867,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
           Object {
             "instance": null,
             "key": "2018-11-10 06:00:00",
@@ -1955,9 +1955,9 @@ ShallowWrapper {
             ],
             "type": "div",
           },
-          undefined,
-          undefined,
-          undefined,
+          null,
+          null,
+          null,
         ],
         "type": "div",
       },
@@ -2363,9 +2363,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2389,9 +2389,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2415,9 +2415,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2441,9 +2441,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2467,9 +2467,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2493,9 +2493,9 @@ ShallowWrapper {
                   light snow
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2519,9 +2519,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2545,9 +2545,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2571,9 +2571,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
               <div
                 className="weather-day"
               >
@@ -2597,9 +2597,9 @@ ShallowWrapper {
                   clear sky
                 </p>
               </div>,
-              undefined,
-              undefined,
-              undefined,
+              null,
+              null,
+              null,
             ],
             "className": "forecasts",
           },
@@ -2690,9 +2690,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-06 06:00:00",
@@ -2778,9 +2778,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-06 18:00:00",
@@ -2866,9 +2866,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-07 06:00:00",
@@ -2954,9 +2954,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-07 18:00:00",
@@ -3042,9 +3042,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-08 06:00:00",
@@ -3130,9 +3130,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-08 18:00:00",
@@ -3218,9 +3218,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-09 06:00:00",
@@ -3306,9 +3306,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-09 18:00:00",
@@ -3394,9 +3394,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
             Object {
               "instance": null,
               "key": "2018-11-10 06:00:00",
@@ -3482,9 +3482,9 @@ ShallowWrapper {
               ],
               "type": "div",
             },
-            undefined,
-            undefined,
-            undefined,
+            null,
+            null,
+            null,
           ],
           "type": "div",
         },

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class Opening extends Component {
   render() {
@@ -15,3 +16,7 @@ export class Opening extends Component {
 }
 
 export default Opening;
+
+Opening.propTypes = {
+  completeOpening: PropTypes.func
+}
