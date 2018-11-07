@@ -3,27 +3,55 @@ import { Link, withRouter } from 'react-router-dom';
 
 import Loading from '../Loading';
 
+import './CampDetails.css';
+
 export class CampDetails extends Component {
+  mapForecasts = () => {
+    return this.props.forecast.map( (cast) => {
+      return (
+        <div key={cast.date}className='weather-day'>
+          <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
+          <div className='forecast-icon-container'>
+            <img
+              className='forecast-icon'
+              src={`${cast.icon}`}
+              alt={`${cast.summary}`}
+            />
+            </div>
+          <p className='forecast-p'>{cast.descrip}</p>
+        </div>
+      )
+    })
+  }
   render() {
     const { name, photo, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
-      <div>
+      <div className='camp-details'>
         {
           !this.props.name ?
-          <div>
-            <h2>Looking up your campground...</h2>
+          <div >
+            <h2 className='looking-up'>Looking up your campground...</h2>
             <Loading /> 
           </div>:
-          <div>
+          <div className='loaded-details'>
             <Link to='/'>
-              <p>Go Home</p>
+              <p className='home-btn'>Go Home</p>
             </Link>
-            <h1>{name}</h1>
-            <p>Has Amps: {wAmps}</p>
-            <p>Has Hose Hookup: {wHose}</p>
-            <p>Allows Pets: {wPets}</p>
-            <p>Has Sewer Hookup: {wSewere}</p>
-            <p>Has Water Hookup: {wWater}</p>
+            <div className='camp-overview'>
+              <h1 className='camp-name-details'>{name}</h1>
+              <div className='camp-info'>
+                <p className='info'>Has Amps: {wAmps || 'NA'}</p>
+                <p className='info'>Has Hose Hookup: {wHose || 'NA'}</p>
+                <p className='info'>Allows Pets: {wPets || 'NA'}</p>
+                <p className='info'>Has Sewer Hookup: {wSewere || 'NA'}</p>
+                <p className='info'>Has Water Hookup: {wWater || 'NA'}</p>
+              </div>
+            </div>
+            <div className='detailed-forecasts'>
+              {
+                this.mapForecasts()
+              }
+            </div>
           </div>
         }
       </div>
