@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import Loading from '../Loading';
 
@@ -24,7 +25,7 @@ export class CampDetails extends Component {
     })
   }
   render() {
-    const { name, photo, wAmps, wHose, wPets, wSewere, wWater } = this.props
+    const { name, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
       <div className='camp-details'>
         {
@@ -61,6 +62,19 @@ export class CampDetails extends Component {
 
 export default withRouter(CampDetails);
 
+CampDetails.propTypes = {
+  forecast: PropTypes.array,
+  id: PropTypes.string,
+  lat: PropTypes.string,
+  long: PropTypes.string,
+  name: PropTypes.string,
+  photo: PropTypes.string,
+  wAmps: PropTypes.string,
+  wHose: PropTypes.string,
+  wPets: PropTypes.string,
+  wSewer: PropTypes.string,
+  wWater: PropTypes.string
+};
 
 // forecast:
 // Array[40]
