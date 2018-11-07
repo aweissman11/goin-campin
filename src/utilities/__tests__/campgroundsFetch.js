@@ -11,7 +11,7 @@ describe('campgroundsFetch', () => {
 
   it('should call fetch w/ the correct params', async () => {
     window.fetch = jest.fn().mockImplementation(() => (
-      Promise.resolve({ text: () => Promise.resolve('Promise resolved') })
+      Promise.resolve({ ok: true, text: () => Promise.resolve('Promise resolved') })
     ))
 
     await campgroundsFetch(mockUrl);
@@ -32,10 +32,7 @@ describe('campgroundsFetch', () => {
       Promise.resolve({ ok: false })
     ))
 
-    const result = await campgroundsFetch(mockUrl);
-
-    expect(result).toEqual(Error())
-    
+    await expect(campgroundsFetch(mockUrl)).rejects.toThrow()
   })
   
 })

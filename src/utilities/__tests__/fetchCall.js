@@ -11,7 +11,7 @@ describe('fetchCall', () => {
 
   it('should call fetch w/ the correct params', async () => {
     window.fetch = jest.fn().mockImplementation(() => (
-      Promise.resolve({ json: () => Promise.resolve('Promise resolved') })
+      Promise.resolve({ ok: true, json: () => Promise.resolve({ok: true}) })
     ))
 
     await fetchCall(mockUrl);
@@ -32,10 +32,7 @@ describe('fetchCall', () => {
       Promise.resolve({ ok: false })
     ))
 
-    const result = await fetchCall(mockUrl);
-
-    expect(result).toEqual(Error())
-    
+    await expect(fetchCall(mockUrl)).rejects.toThrow()
   })
   
 })

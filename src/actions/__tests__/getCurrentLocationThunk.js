@@ -2,8 +2,6 @@
 import { getCurrentLocation } from '../getCurrentLocationThunk';
 import { setCurrentLocation, loading } from '../index';
 
-// jest.mock('../someSortOfThunk.js')
-
 describe('getCurrentLocation', () => {
   let mockDispatch;
   const mockLocation = [3, 4];
@@ -32,7 +30,7 @@ describe('getCurrentLocation', () => {
 
     await thunk(mockDispatch)
     
-    expect(mockDispatch).toHaveBeenCalledWith(loading("found ya! Now let's see about those campgrounds...", true))
+    expect(mockDispatch).toHaveBeenCalledWith(loading("hmmm, can't seem to find you, please use the search", true))
   })
   
   it('should pass in the location to getCurrentPosition', async () => {

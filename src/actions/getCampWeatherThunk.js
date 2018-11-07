@@ -1,4 +1,4 @@
-import { setCampsList } from './index';
+import { setCampsList, hasErrored } from './index';
 import { campgroundCleaner } from '../utilities/campgroundCleaner'
 import { weatherFetchMap } from '../utilities/weatherFetchMap';
 
@@ -8,7 +8,7 @@ export const getCampWeather = (camps) => async (dispatch) => {
     const cleanCamps = campgroundCleaner(weatherCamps);
     dispatch(setCampsList(cleanCamps));
   } catch (error) {
-    console.warn(error.message);
+    dispatch(hasErrored(error.message, true))
     return (error.message);
   }
 }
