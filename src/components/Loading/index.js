@@ -5,7 +5,7 @@ import './Loading.css'
 const Loading = (props) => {
   return(
     <div className='loading'>
-      <h2 className-='loading-message'>{props.message}</h2>
+      <h2 className='loading-message'>{props.message}</h2>
       <div className='gif-container'>
         <img 
           alt='loading'
