@@ -18,7 +18,7 @@
 }
 
 .home-btn {
-  padding-bottom: 10px;
+  font-weight: bold;
   padding-top: 20px;
   margin: 0;
 }
@@ -30,7 +30,7 @@
 
 .camp-name-details {
   text-align: center;
-  margin: 70px auto 30px;
+  margin: 25px auto 10px;
 }
 
 .camp-info {
