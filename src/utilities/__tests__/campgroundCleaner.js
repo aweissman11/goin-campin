@@ -1408,7 +1408,7 @@ describe('campgroundCleaner', () => {
       }
     }
 
-    const expected = ['name', 'photo', 'lat', 'long', 'wAmps', 'wPets', 'wSewer', 'wHose', 'wWater', 'forecast']
+    const expected = ['name', 'photo', 'lat', 'long', 'wAmps', 'wPets', 'wSewer', 'wHose', 'wWater', 'id', 'forecast']
     const result = Object.keys(campgroundCleaner([mockCamp])[0]);
     
     expect(result).toEqual(expected);
