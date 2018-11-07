@@ -30,7 +30,7 @@ describe('getCurrentLocation', () => {
 
     await thunk(mockDispatch)
     
-    expect(mockDispatch).toHaveBeenCalledWith(loading("hmmm, can't seem to find you, please use the search", true))
+    expect(mockDispatch).toHaveBeenCalledWith(loading("please use the search", true))
   })
   
   it('should pass in the location to getCurrentPosition', async () => {
