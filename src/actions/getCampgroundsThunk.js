@@ -1,6 +1,6 @@
 import { getCampWeather } from './getCampWeatherThunk';
 import { campgroundsFetch } from '../utilities/campgroundsFetch';
-import { loading } from '../actions/index';
+import { loading, hasErrored } from '../actions/index';
 import { campgroundsKey } from '../apiKeys';
 import convert from 'xml-js';
 
@@ -18,7 +18,8 @@ export const getCampsList = (location) => {
       }
     } catch(error) {
       console.warn(error.message);
-      throw error.message;
+      dispatch(hasErrored(error.message, true))
+      throw Error(error.message);
     }
     
     const results = newResult.elements[0].elements.slice(0, 15)

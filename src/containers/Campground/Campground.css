@@ -1,0 +1,61 @@
+.campground {
+  background: rgba(130, 130, 130, .5);
+  border: 1px gray solid;
+  border-radius: 12px;
+  margin: 15px auto;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.campground-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.camp-name {
+  font-size: 1.5em;
+  margin: 10px 0 0 15px;  
+}
+
+.camp-photo {
+  border-radius: 12px;
+  height: 50px;
+}
+
+.date {
+  position: relative;
+  top: 5px;
+}
+
+.forecast-icon-container {
+  height: 40px;
+}
+
+.forecasts {
+  display: grid;
+  grid-gap: 20px 10px;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: space-around;
+  margin: 10px auto 50px;
+  width: 90%;
+}
+
+.forecast-p {
+  margin: 0;
+}
+
+.details-btn {
+  color: #5a1c2a;
+  font-size: 1.4em;
+  font-weight: bold;
+  float: right;
+  bottom: 55px;
+  position: relative;
+  right: 15px;
+}
+
+.details-btn:hover {
+  color: #8b5762;
+  transform: scale(1.02);
+}

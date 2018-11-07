@@ -1,0 +1,6 @@
+export const campgroundsFetch = jest.fn().mockImplementation(() => Promise.resolve(mockXML))
+
+const mockXML = `<resultset count="2" resultType="campgrounds">
+<result agencyIcon="" agencyName="" availabilityStatus="Y" contractID="IND2" contractType="PRIVATE" facilityID="720142" facilityName="Rent an RV for Your Next Adventure" faciltyPhoto="/webphotos/IND2/pid720142/0/80x53.jpg" favorite="N" latitude="39.7302833" listingOnly="Y" longitude="-104.9525917" regionName="" reservationChannel="Web Reservable" shortName="M042" sitesWithAmps="Y" sitesWithPetsAllowed="Y" sitesWithSewerHookup="N" sitesWithWaterHookup="N" sitesWithWaterfront="Lakefront" state="CO"/>
+<result agencyIcon="" agencyName="" availabilityStatus="Y" contractID="INDP" contractType="PRIVATE" facilityID="721016" facilityName="South Park Mobile Home and RV Community" faciltyPhoto="/webphotos/INDP/pid721016/0/80x53.jpg" favorite="N" latitude="39.6493861" listingOnly="Y" longitude="-105.024525" regionName="" reservationChannel="Web Reservable" shortName="GS0916" sitesWithAmps="Y" sitesWithPetsAllowed="N" sitesWithSewerHookup="N" sitesWithWaterHookup="N" sitesWithWaterfront="" state="CO"/>
+</resultset>`

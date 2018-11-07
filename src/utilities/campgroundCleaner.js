@@ -10,6 +10,7 @@ export const campgroundCleaner = (camps) => {
       wSewer: camp.attributes.sitesWithSewerHookup,
       wHose: camp.attributes.sitesWithWaterHookup,
       wWater: camp.attributes.sitesWithWaterfront,
+      id: camp.attributes.facilityID,
       forecast: cleanForecast(camp.forecast.list)
     }
   })

@@ -1,5 +1,12 @@
 import { getCampsList } from '../getCampgroundsThunk';
 import { loading } from '../';
+import { campgroundsFetch } from '../../utilities/campgroundsFetch';
+import { getCampWeather } from '../getCampWeatherThunk';
+
+jest.mock('../../utilities/campgroundsFetch');
+jest.mock('../getCampWeatherThunk', () => ({
+  getCampWeather: jest.fn()
+}))
 
 describe('getCampsList', () => {
   let mockDispatch;
@@ -18,13 +25,18 @@ describe('getCampsList', () => {
   
   it('should fetch campgrounds', async () => {
     const mockLocation = [34, 45];
-    const mockUrl = mockLocation
-    
-    const mockXML = `<resultset count="2" resultType="campgrounds">
-    <result agencyIcon="" agencyName="" availabilityStatus="Y" contractID="IND2" contractType="PRIVATE" facilityID="720142" facilityName="Rent an RV for Your Next Adventure" faciltyPhoto="/webphotos/IND2/pid720142/0/80x53.jpg" favorite="N" latitude="39.7302833" listingOnly="Y" longitude="-104.9525917" regionName="" reservationChannel="Web Reservable" shortName="M042" sitesWithAmps="Y" sitesWithPetsAllowed="Y" sitesWithSewerHookup="N" sitesWithWaterHookup="N" sitesWithWaterfront="Lakefront" state="CO"/>
-    <result agencyIcon="" agencyName="" availabilityStatus="Y" contractID="INDP" contractType="PRIVATE" facilityID="721016" facilityName="South Park Mobile Home and RV Community" faciltyPhoto="/webphotos/INDP/pid721016/0/80x53.jpg" favorite="N" latitude="39.6493861" listingOnly="Y" longitude="-105.024525" regionName="" reservationChannel="Web Reservable" shortName="GS0916" sitesWithAmps="Y" sitesWithPetsAllowed="N" sitesWithSewerHookup="N" sitesWithWaterHookup="N" sitesWithWaterfront="" state="CO"/>
-    </resultset>`
-
+    const thunk = getCampsList(mockLocation);
+    await thunk(mockDispatch);
+    expect(campgroundsFetch).toHaveBeenCalled()
+  })
+  
+  it('should stop loading', async () => {
+    const thunk = getCampsList(mockLocation);
+    await thunk(mockDispatch);
+    expect(mockDispatch).toHaveBeenCalledWith(loading('got the campgrounds...', false))
+  })
+  
+  it('should dispatch getCampWeather with the results', async () => {
     const mockResults = [
       {
         "type": "element",
@@ -189,28 +201,13 @@ describe('getCampsList', () => {
         }
       }
     ]
-    
-    window.fetch = jest.fn().mockImplementation(() => (
-      Promise.resolve({ ok: true, text: () => Promise.resolve(mockXML) })
-      ));
-      
     const thunk = getCampsList(mockLocation);
     await thunk(mockDispatch);
-
-    expect(mockDispatch).toHaveBeenCalledWith()
-
+    expect(mockDispatch).toHaveBeenCalledWith(getCampWeather(mockResults))
   })
-  
+
   it('should catch an error', () => {
     
-  })
-  
-  it('should dispatch getCampWeather with the results', () => {
-  
-  })
-  
-  it('should dispath loading as false', () => {
-  
   })
   
 })

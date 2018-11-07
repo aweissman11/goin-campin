@@ -27,3 +27,11 @@ export const loading = (message, isLoading) => {
     isLoading
   }
 }
+
+export const hasErrored = (message, isLoading) => {
+  return {
+    type: 'HAS_ERRORED',
+    message,
+    isLoading
+  }
+}
