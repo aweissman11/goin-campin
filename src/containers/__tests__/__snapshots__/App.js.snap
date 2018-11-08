@@ -57,7 +57,6 @@ ShallowWrapper {
         />
         <Route
           render={[Function]}
-          to="/"
         />
       </Switch>,
     },
@@ -80,7 +79,6 @@ ShallowWrapper {
           />,
           <Route
             render={[Function]}
-            to="/"
           />,
         ],
       },
@@ -118,7 +116,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "render": [Function],
-            "to": "/",
           },
           "ref": null,
           "rendered": null,
@@ -148,7 +145,6 @@ ShallowWrapper {
           />
           <Route
             render={[Function]}
-            to="/"
           />
         </Switch>,
       },
@@ -171,7 +167,6 @@ ShallowWrapper {
             />,
             <Route
               render={[Function]}
-              to="/"
             />,
           ],
         },
@@ -209,7 +204,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "render": [Function],
-              "to": "/",
             },
             "ref": null,
             "rendered": null,
@@ -298,7 +292,6 @@ ShallowWrapper {
         />
         <Route
           render={[Function]}
-          to="/"
         />
       </Switch>,
     },
@@ -321,7 +314,6 @@ ShallowWrapper {
           />,
           <Route
             render={[Function]}
-            to="/"
           />,
         ],
       },
@@ -359,7 +351,6 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "render": [Function],
-            "to": "/",
           },
           "ref": null,
           "rendered": null,
@@ -389,7 +380,6 @@ ShallowWrapper {
           />
           <Route
             render={[Function]}
-            to="/"
           />
         </Switch>,
       },
@@ -412,7 +402,6 @@ ShallowWrapper {
             />,
             <Route
               render={[Function]}
-              to="/"
             />,
           ],
         },
@@ -450,7 +439,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "render": [Function],
-              "to": "/",
             },
             "ref": null,
             "rendered": null,
