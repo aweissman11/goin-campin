@@ -23,7 +23,7 @@ describe('CampsList', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  
+  // should have entire state tree in mock state
   describe('mapStateToProps', () => {
     it('should map the campslist state to props', () => {
       const expected = mockCampsList

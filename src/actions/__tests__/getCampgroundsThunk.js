@@ -26,7 +26,6 @@ describe('getCampsList', () => {
   })
 
   it('should fetch campgrounds', async () => {
-    const mockLocation = [34, 45];
     const thunk = getCampsList(mockLocation);
     await thunk(mockDispatch);
     expect(campgroundsFetch).toHaveBeenCalled()

@@ -22,7 +22,7 @@ class LocationSearchInput extends React.Component {
     try {
       const results = await geocodeByAddress(address)
       const coords = await getLatLng(results[0])
-      await this.props.getCampsList([coords.lat, coords.lng])
+      this.props.getCampsList([coords.lat, coords.lng])
     } catch(error) {
       console.log('error:', error);
     }
