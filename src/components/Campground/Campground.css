@@ -1,10 +1,6 @@
 .campground {
-  background: rgba(130, 130, 130, .5);
-  border: 1px gray solid;
-  border-radius: 12px;
-  margin: 15px auto;
-  max-width: 90%;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .campground-title {
@@ -45,17 +41,51 @@
   margin: 0;
 }
 
+.details-link {
+  text-decoration: none;
+
+}
+
 .details-btn {
   color: #5a1c2a;
   font-size: 1.4em;
   font-weight: bold;
-  float: right;
-  bottom: 55px;
-  position: relative;
-  right: 15px;
 }
 
 .details-btn:hover {
   color: #8b5762;
   transform: scale(1.02);
 }
+
+.details-btn:link {
+  text-decoration: none;
+  
+}
+
+.camp-color-0 {
+  background: #f9c67f;
+}
+
+.camp-color-1 {
+  background: #acdad9;
+}
+
+.camp-color-2 {
+  background: #607067;
+}
+
+.camp-color-3 {
+  background: #e9bcb0;
+}
+
+.camp-color-4 {
+  background: #79c39f;
+}
+
+/* 
+yellow: #f9c67f
+blue: #acdad9
+teal: #79c39f
+green: #607067
+pink: #e9bcb0 
+*/

@@ -17,11 +17,12 @@ export class CampsList extends Component {
     ))
 
     // change back to filteredCamps to get real data
-    return filteredCamps.map( camp => {
+    return filteredCamps.map( (camp, i) => {
       return (
         <Campground
           {...camp}
           key={`${camp.name}`}
+          color={i % 5}
         />
       )
     })
@@ -30,9 +31,11 @@ export class CampsList extends Component {
   render() {
     return (
     <div className='camps-list'>
-      <div className='logo'>LOGO</div>
-      <div>
+      <section className='top-bar'>
+        <div className='logo'>LOGO</div>
         <LocationSearchInput />
+      </section>
+      <div>
       </div>
       {
         this.props.loading.isLoading ?
@@ -40,7 +43,9 @@ export class CampsList extends Component {
             message={this.props.loading.message}
           /> :
           <div>
-            <h1>Nearby Camp grounds</h1>
+            <div className='nearby-campgrounds'>
+              <h1>Nearby Campgrounds</h1>
+            </div>
               {this.renderCamps()}
           </div>
       }

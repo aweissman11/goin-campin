@@ -28,24 +28,24 @@ export class Campground extends Component {
   }
 
   render() {
+    const { photo, name, color, forecast } = this.props;
+    const colorClass = `camp-color-${color}`
     return (
-      <div className='campground' >
-        <div className='campground-title'>
-          <div className='photo-container'>
+      <div className={`campground ${colorClass}`} >
+        <p className='camp-name'>{name}</p>
+        <div key={forecast[0].date} className='weather-day'>
+          <p className='forecast-p'>current weather</p>
+          <div className='forecast-icon-container'>
             <img
-              className='camp-photo'
-              src={`${this.props.photo}`}
-              alt={`${this.props.name}`}
+              className='forecast-icon'
+              src={`${forecast[0].icon}`}
+              alt={`${forecast[0].summary}`}
             />
-          </div>
-          <p className='camp-name'>{this.props.name}</p>
+            </div>
+          <p className='forecast-p'>{forecast[0].descrip}</p>
+          <p className='forecast-p'>{forecast[0].temp} degrees</p>
         </div>
-        <div className='forecasts'>
-          {
-            this.mapForecasts()
-          }
-        </div>
-        <Link to={`/campground/${this.props.id}`}>
+        <Link to={`/campground/${this.props.id}`} className='detail-link'>
           <p className='details-btn'>Get Full Campground Details...</p>
         </Link>
       </div>

@@ -1,17 +1,31 @@
 .suggestion-item--active {
-  backgroundColor: #fafafa;
+  background-color: #fafafa;
   cursor: pointer;
 
 }
 .suggestion-item {
-  backgroundColor: #fff;
+  background-color: #fff;
   cursor: pointer;
 }
 
-.location-search-input {
-  border-radius: 12px;
-  font-size: 2em;
+.search-container {
+  float: right;
   height: 40px;
-  max-width: 300px;
-  text-align: center;
 }
+
+.location-search-input {
+  font-size: 2em;
+  height: 44px;
+  outline: none;
+  max-width: 300px;
+  border: none;
+}
+
+
+/* 
+yellow: #f9c67f
+blue: #acdad9
+teal: #79c39f
+green: #607067
+pink: #e9bcb0 
+*/
