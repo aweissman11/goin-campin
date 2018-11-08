@@ -15,9 +15,9 @@ export class App extends Component {
     }
   }
   
-  async componentDidMount() {
-    await setTimeout(() => this.completeOpening(), 13000)
-    await this.props.setInitialLocation()
+  componentDidMount() {
+    setTimeout(this.completeOpening, 13000)
+    this.props.setInitialLocation()
   }
 
   completeOpening = () => {
@@ -45,10 +45,11 @@ export class App extends Component {
               </div>
             )
           }} />
-          <Route to='/' render={() => {
+          <Route render={() => {
           return (
             <div className="App">
               {
+                // this should be a 404 page
                 this.state.isOpening ?
                   <Opening
                     completeOpening={this.completeOpening}

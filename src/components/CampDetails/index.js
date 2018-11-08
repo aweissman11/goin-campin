@@ -65,7 +65,7 @@ export class CampDetails extends Component {
   }
 }
 
-export default withRouter(CampDetails);
+export default CampDetails;
 
 CampDetails.propTypes = {
   forecast: PropTypes.array,
