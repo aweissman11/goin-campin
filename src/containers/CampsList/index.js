@@ -8,15 +8,12 @@ import Campground from '../../components/Campground';
 
 import './CampsList.css';
 
-import { mockCampsList } from './__mocks__/mockCampsList';
-
 export class CampsList extends Component {
   renderCamps = () => {
     const filteredCamps = this.props.campsList.filter(camp => (
       camp.name !== 'Rent an RV for Your Next Adventure'
     ))
 
-    // change back to filteredCamps to get real data
     return filteredCamps.map( (camp, i) => {
       return (
         <Campground

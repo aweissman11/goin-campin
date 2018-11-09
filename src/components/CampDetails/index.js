@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import HikesList from '../../containers/HikesList';
 
@@ -7,12 +7,9 @@ import Loading from '../Loading';
 
 import './CampDetails.css';
 
-import { mockDetails } from './__mocks__/mockDetails';
-
 export class CampDetails extends Component {
   mapForecasts = () => {
-    // change back to this.props.forecast.map for real data
-    return mockDetails.forecast.map( (cast) => {
+    return this.props.forecast.map( (cast) => {
       return (
         <div key={cast.date}className='weather-day'>
           <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
@@ -29,15 +26,15 @@ export class CampDetails extends Component {
     })
   }
   render() {
-    const { name, wAmps, wHose, wPets, wSewere, wWater } = mockDetails
+    const { lat, long, name, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
       <div className='camp-details'>
-        {/* {
+        {
           !this.props.name ?
           <div >
             <h2 className='looking-up'>Looking up your campground...</h2>
             <Loading /> 
-          </div> : */}
+          </div> :
           <div className='loaded-details'>
             <Link to='/'>
               <p className='home-btn'>Go Home</p>
@@ -57,9 +54,9 @@ export class CampDetails extends Component {
                 this.mapForecasts()
               }
             </div>
-            <HikesList />
+            <HikesList lat={lat} long={long}/>
           </div>
-        {/* } */}
+        }
       </div>
     )
   }

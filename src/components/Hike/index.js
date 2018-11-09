@@ -28,6 +28,7 @@ export class Hike extends Component {
           <a
             href={`${url}`}
             target='_blank'
+            rel="noopener noreferrer"
           >
             {`${name}`}
           </a>
@@ -39,5 +40,3 @@ export class Hike extends Component {
 }
 
 export default Hike;
-
-{/* <a target='_blank' href={`${url}`}>{name}</a> */}
