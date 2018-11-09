@@ -14,7 +14,7 @@ export const getCurrentLocation = () => {
         dispatch(getCampsList([latitude, longitude]))
         dispatch(loading("found ya! Now let's see about those campgrounds...", true))
       }, errorCallback, {timeout:10000});
-      dispatch(loading("hmmm, can't seem to find you, please use the search", true))
+      dispatch(loading("please use the search", true))
     } catch(error) {
       dispatch(hasErrored(error.message, true))
       return(error.message);

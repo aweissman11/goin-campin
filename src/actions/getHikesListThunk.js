@@ -7,7 +7,6 @@ export const getHikesList = (location) => {
     let hikesList;
     try {
       hikesList = await fetchCall(hikingListUrl(location));
-      console.log('hikesList:', hikesList);
     } catch(error) {
       console.warn(error.message);
       return error.message

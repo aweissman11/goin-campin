@@ -14,11 +14,12 @@ export class CampsList extends Component {
       camp.name !== 'Rent an RV for Your Next Adventure'
     ))
 
-    return filteredCamps.map( camp => {
+    return filteredCamps.map( (camp, i) => {
       return (
         <Campground
           {...camp}
           key={`${camp.name}`}
+          color={i % 5}
         />
       )
     })
@@ -27,9 +28,11 @@ export class CampsList extends Component {
   render() {
     return (
     <div className='camps-list'>
-      <header className='goin-campin'>We're Goin Campin!</header>
-      <div>
+      <section className='top-bar'>
+        <div className='logo'>LOGO</div>
         <LocationSearchInput />
+      </section>
+      <div>
       </div>
       {
         this.props.loading.isLoading ?
@@ -37,7 +40,10 @@ export class CampsList extends Component {
             message={this.props.loading.message}
           /> :
           <div>
-            <h1>CampsList</h1>
+            <div className='nearby-campgrounds'>
+              <h1>Nearby Campgrounds</h1>
+              <p>Current Weather</p>
+            </div>
               {this.renderCamps()}
           </div>
       }

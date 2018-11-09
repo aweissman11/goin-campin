@@ -1,5 +1,5 @@
 import { getCampsList } from '../getCampgroundsThunk';
-import { setCampsList, hasErrored } from '../index';
+import { hasErrored } from '../index';
 
 import { mockCamps } from '../__mocks__/mockCamps';
 

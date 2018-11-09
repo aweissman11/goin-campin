@@ -1,7 +1,7 @@
 export const campgroundCleaner = (camps) => {
   const cleanCamps = camps.map( camp => {
     return {
-      name: camp.attributes.facilityName,
+      name: camp.attributes.facilityName.toUpperCase(),
       photo: `http://www.reserveamerica.com${camp.attributes.faciltyPhoto}`,
       lat: camp.attributes.latitude,
       long: camp.attributes.longitude,

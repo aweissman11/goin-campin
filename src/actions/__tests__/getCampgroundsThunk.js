@@ -1,5 +1,5 @@
 import { getCampsList } from '../getCampgroundsThunk';
-import { loading, hasErrored } from '../';
+import { loading } from '../';
 import { campgroundsFetch } from '../../utilities/campgroundsFetch';
 import { getCampWeather } from '../getCampWeatherThunk';
 

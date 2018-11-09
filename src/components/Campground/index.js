@@ -5,47 +5,26 @@ import PropTypes from 'prop-types';
 import './Campground.css';
 
 export class Campground extends Component {
-  mapForecasts = () => {
-    return this.props.forecast.map( (cast, i) => {
-      if (i % 4 === 0 ) {
-        return (
-          <div key={cast.date}className='weather-day'>
-            <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
-            <div className='forecast-icon-container'>
-              <img
-                className='forecast-icon'
-                src={`${cast.icon}`}
-                alt={`${cast.summary}`}
-              />
-              </div>
-            <p className='forecast-p'>{cast.descrip}</p>
-          </div>
-        )
-      } else {
-        return null;
-      }
-    })
-  }
-
   render() {
+    const { name, color, forecast } = this.props;
+    const colorClass = `camp-color-${color}`
     return (
-      <div className='campground' >
-        <div className='campground-title'>
-          <div className='photo-container'>
+      <div className={`campground ${colorClass}`} >
+        <p className='camp-name'>{name}</p>
+        <div className='weather-info'>
+          <div key={forecast[0].date} className='weather-day'>
+            <p className='forecast-p'>{forecast[0].descrip}</p>
+            <p className='forecast-p'>{forecast[0].temp} degrees</p>
+          </div>
+          <div className='forecast-icon-container'>
             <img
-              className='camp-photo'
-              src={`${this.props.photo}`}
-              alt={`${this.props.name}`}
+              className='forecast-home-icon'
+              src={`${forecast[0].icon}`}
+              alt={`${forecast[0].summary}`}
             />
           </div>
-          <p className='camp-name'>{this.props.name}</p>
         </div>
-        <div className='forecasts'>
-          {
-            this.mapForecasts()
-          }
-        </div>
-        <Link to={`/campground/${this.props.id}`}>
+        <Link to={`/campground/${this.props.id}`} className='detail-link'>
           <p className='details-btn'>Get Full Campground Details...</p>
         </Link>
       </div>

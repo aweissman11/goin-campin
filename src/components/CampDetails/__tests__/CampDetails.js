@@ -37,30 +37,6 @@ describe('CampDetails', () => {
   })
 
   it('should map the forecast', () => {
-    const expected = [
-      <div className="weather-day">
-        <p className="forecast-p">
-          djfhl
-        </p>
-        <div className="forecast-icon-container">
-          <img
-            alt="asldkfj"
-            className="forecast-icon"
-            src="asldfkj;a"
-          />
-          </div>
-            <p className="forecast-p">asldkf</p>
-          </div>,
-          <div className="weather-day">
-            <p className="forecast-p">
-            fasdf  
-            </p>
-            <div className="forecast-icon-container">
-            <img alt="asldkfj" className="forecast-icon" src="asldfkj;a" />
-          </div>
-          <p className="forecast-p">asldljkahsdfljhalsdkfjhkf</p>
-        </div>
-      ]
     expect(wrapper.instance().mapForecasts().length).toBe(2)
   })
   
