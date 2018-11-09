@@ -20,7 +20,7 @@ export const getCampsList = (location) => {
     const result1 = convert.xml2json(campsList, {compact: false, spaces: 2});
     newResult = JSON.parse(result1);
 
-    const results = newResult.elements[0].elements.slice(0, 15)
+    const results = newResult.elements[0].elements.slice(0, 25)
     dispatch(getCampWeather(results));
     dispatch(loading('got the campgrounds...', false))
   }
