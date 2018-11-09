@@ -20,8 +20,8 @@ class HikesList extends Component {
   render() {
     return (
       <div className='hikes-list'>
-        <h1>Nearby Hikes</h1>
         <div className='hikes'>
+        <h1>Nearby Hikes</h1>
           {
             this.hikes()
           }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import HikesList from '../../containers/HikesList';
+import LocationSearchInput from '../../containers/LocationSearchInput';
 
 import Loading from '../Loading';
 
@@ -9,9 +10,10 @@ import './CampDetails.css';
 
 export class CampDetails extends Component {
   mapForecasts = () => {
-    return this.props.forecast.map( (cast) => {
+    return this.props.forecast.map( (cast, i) => {
+      const colorClass=`weather-color-${i%5}`
       return (
-        <div key={cast.date}className='weather-day'>
+        <div key={cast.date}className={`weather-day ${colorClass}`}>
           <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
           <div className='forecast-icon-container'>
             <img
@@ -29,6 +31,10 @@ export class CampDetails extends Component {
     const { lat, long, name, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
       <div className='camp-details'>
+        <section className='top-bar'>
+          <div className='logo'>LOGO</div>
+          <LocationSearchInput />
+        </section>
         {
           !this.props.name ?
           <div >
@@ -50,6 +56,7 @@ export class CampDetails extends Component {
               </div>
             </div>
             <div className='detailed-forecasts'>
+              <h1>detailed forecast</h1>
               {
                 this.mapForecasts()
               }

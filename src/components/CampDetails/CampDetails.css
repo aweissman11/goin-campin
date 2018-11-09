@@ -17,7 +17,7 @@
 
 .loaded-details {
   margin: auto;
-  max-width: 86%;
+  /* max-width: 86%; */
 }
 
 .home-btn {
@@ -27,8 +27,6 @@
 }
 
 .camp-overview {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .camp-name-details {
@@ -39,13 +37,39 @@
 .camp-info {
   text-align: center;
   margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .detailed-forecasts {
-  background: rgba(130, 130, 130, .5);
-  border: 1px gray solid;
-  border-radius: 12px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  background: #acdad8;
+}
+
+.detailed-forecasts h1 {
+  background: #fff;
+  height: 120%;
+  margin: 0;
+}
+
+
+.weather-color-0 {
+  background: #f9c67f;
+}
+
+.weather-color-1 {
+  background: #acdad9;
+}
+
+.weather-color-2 {
+  background: #607067;
+}
+
+.weather-color-3 {
+  background: #e9bcb0;
+}
+
+.weather-color-4 {
+  background: #79c39f;
 }

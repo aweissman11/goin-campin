@@ -36,6 +36,17 @@
   margin-left: 100px;
 }
 
+.bottom-bar {
+  background: #fff;
+  height: 46px;
+}
+
+.info-btn {
+  line-height: 46px;
+}
+
+
+
 /* 
 yellow: #f9c67f
 blue: #acdad9
