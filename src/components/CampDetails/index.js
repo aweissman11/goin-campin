@@ -9,9 +9,10 @@ import './CampDetails.css';
 
 export class CampDetails extends Component {
   mapForecasts = () => {
-    return this.props.forecast.map( (cast) => {
+    return this.props.forecast.map( (cast, i) => {
+      const colorClass=`weather-color-${i%5}`
       return (
-        <div key={cast.date}className='weather-day'>
+        <div key={cast.date}className={`weather-day ${colorClass}`}>
           <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
           <div className='forecast-icon-container'>
             <img
@@ -50,6 +51,7 @@ export class CampDetails extends Component {
               </div>
             </div>
             <div className='detailed-forecasts'>
+              <h1>detailed forecast</h1>
               {
                 this.mapForecasts()
               }

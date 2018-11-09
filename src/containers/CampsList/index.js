@@ -45,6 +45,9 @@ export class CampsList extends Component {
               <p>Current Weather</p>
             </div>
               {this.renderCamps()}
+              <div className='bottom-bar'>
+                <span className='info-btn'>INFO</span>
+              </div>
           </div>
       }
     </div>
