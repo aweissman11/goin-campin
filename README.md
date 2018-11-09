@@ -36,8 +36,8 @@ This app showcases use of the following:
 Below are the wireframes used to conceptualize the app, as well as screenshots of the final product:
 
 ![alt text](./src/assets/wireframePic.png)
-![alt text](./src/assets/HomepagePic.png)
-![alt text](./src/assets/ScrollPic.png)
-![alt text](./src/assets/DetailsPic.png)
+![alt text](./src/assets/homeScreenPic.png)
+![alt text](./src/assets/CampDetailsPic.png)
+![alt text](./src/assets/CampDetailsScrollPic.png)
 
 
