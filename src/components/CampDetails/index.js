@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import HikesList from '../../containers/HikesList';
+import LocationSearchInput from '../../containers/LocationSearchInput';
 
 import Loading from '../Loading';
 
@@ -30,6 +31,10 @@ export class CampDetails extends Component {
     const { lat, long, name, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
       <div className='camp-details'>
+        <section className='top-bar'>
+          <div className='logo'>LOGO</div>
+          <LocationSearchInput />
+        </section>
         {
           !this.props.name ?
           <div >
