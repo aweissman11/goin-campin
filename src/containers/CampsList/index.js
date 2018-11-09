@@ -45,6 +45,7 @@ export class CampsList extends Component {
           <div>
             <div className='nearby-campgrounds'>
               <h1>Nearby Campgrounds</h1>
+              <p>Current Weather</p>
             </div>
               {this.renderCamps()}
           </div>

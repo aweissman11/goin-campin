@@ -18,6 +18,9 @@
 }
 
 .nearby-campgrounds {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: space-around; */
   text-align: left;
 }
 
@@ -26,7 +29,11 @@
   color: #fff;
   height: 100%;
   margin: 0;
-  padding: 20px;
+  text-align: center;
+}
+
+.nearby-campgrounds p {
+  margin-left: 100px;
 }
 
 /* 

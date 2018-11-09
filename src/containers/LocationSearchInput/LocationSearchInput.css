@@ -10,7 +10,7 @@
 
 .search-container {
   float: right;
-  height: 40px;
+  /* height: 40px; */
 }
 
 .location-search-input {
@@ -19,6 +19,12 @@
   outline: none;
   max-width: 300px;
   border: none;
+}
+
+.autocomplete-dropdown-container {
+  position: absolute;
+  top: 40px;
+  right: 0px;
 }
 
 

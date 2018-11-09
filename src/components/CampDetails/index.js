@@ -32,12 +32,12 @@ export class CampDetails extends Component {
     const { name, wAmps, wHose, wPets, wSewere, wWater } = mockDetails
     return (
       <div className='camp-details'>
-        {
+        {/* {
           !this.props.name ?
           <div >
             <h2 className='looking-up'>Looking up your campground...</h2>
             <Loading /> 
-          </div> :
+          </div> : */}
           <div className='loaded-details'>
             <Link to='/'>
               <p className='home-btn'>Go Home</p>
@@ -59,7 +59,7 @@ export class CampDetails extends Component {
             </div>
             <HikesList />
           </div>
-        }
+        {/* } */}
       </div>
     )
   }

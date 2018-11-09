@@ -10,8 +10,20 @@
 }
 
 .camp-name {
+  font-family: 'Dancing Script';
   font-size: 1.5em;
   margin: 10px 0 0 15px;  
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img.forecast-home-icon {
+  position: relative;
+  right: 60px;
+  top: 10px;
 }
 
 .camp-photo {
@@ -30,7 +42,6 @@
 
 .forecasts {
   display: grid;
-  grid-gap: 20px 10px;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   justify-content: space-around;
   margin: 10px auto 50px;

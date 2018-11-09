@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { getHikesList } from '../../actions/getHikesListThunk';
 import Hike from '../../components/Hike';
 
+import './HikesList.css'
+
 import { hikesList } from './__mocks__/hikesList';
 
 class HikesList extends Component {
@@ -16,15 +18,19 @@ class HikesList extends Component {
   }
 
   // map over this.props.hikesList to use real data
-  hikes = () => hikesList.trails.map( hike => <Hike key={hike.id} {...hike} />)
+  hikes = () => hikesList.trails.map( (hike, i) => (
+    <Hike color={i%5} key={hike.id} {...hike} />
+  ))
 
   render() {
     return (
       <div className='hikes-list'>
         <h1>Nearby Hikes</h1>
-        {
-          this.hikes()
-        }
+        <div className='hikes'>
+          {
+            this.hikes()
+          }
+        </div>
       </div>
     )
   }

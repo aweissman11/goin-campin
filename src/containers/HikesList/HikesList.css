@@ -1,4 +1,72 @@
-.forecast-icon {
-  width: 140px;
+.hikes {
+  column-count: 5;
+  column-gap: 0px;  
 }
 
+.hike {
+}
+
+.photo-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hike-photo {
+  width: 100%;
+  height: auto;
+}
+
+.hovering {
+  /* z-index: 10000; */
+}
+
+.photo-container:hover .hike-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hike-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity .2s, visibility .2s;
+
+}
+
+
+.photo-container:hover .hike-info p {
+  transition: .4s;
+  transform: translateY(-.5em);
+}
+
+
+.hike-color-0 {
+  background: #f9c67f;
+}
+
+.hike-color-1 {
+  background: #acdad9;
+}
+
+.hike-color-2 {
+  background: #607067;
+}
+
+.hike-color-3 {
+  background: #e9bcb0;
+}
+
+.hike-color-4 {
+  background: #79c39f;
+}
