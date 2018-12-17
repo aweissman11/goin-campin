@@ -32,9 +32,13 @@
 .camp-name-details {
   text-align: center;
   margin: 25px auto 10px;
+  color: white;
 }
 
 .camp-info {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
   text-align: center;
   margin: 20px auto;
   display: flex;

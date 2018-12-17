@@ -6,6 +6,8 @@ import Loading from '../../components/Loading';
 import LocationSearchInput from '../LocationSearchInput';
 import Campground from '../../components/Campground';
 
+import { ReactComponent as LogoSvg } from '../../assets/campin_logo.svg';
+
 import './CampsList.css';
 
 export class CampsList extends Component {
@@ -29,7 +31,9 @@ export class CampsList extends Component {
     return (
     <div className='camps-list'>
       <section className='top-bar'>
-        <div className='logo'>LOGO</div>
+        <div className='logo-container'>
+          <LogoSvg className='logo' />
+        </div>
         <LocationSearchInput />
       </section>
       <div>

@@ -10,11 +10,20 @@
 .top-bar {
   background: #fff;
   width: 100vw;
-  height: 46px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  float: left;
+  line-height: 84px;
+  margin-left: 15px;
 }
 
 .logo {
-  float: left;
+  width: 100px;
+  height: auto;
 }
 
 .nearby-campgrounds {
