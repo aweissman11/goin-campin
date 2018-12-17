@@ -16,6 +16,7 @@
 .location-search-input {
   font-size: 2em;
   height: 44px;
+  margin-top: 10px;
   outline: none;
   max-width: 300px;
   border: none;

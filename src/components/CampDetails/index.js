@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import HikesList from '../../containers/HikesList';
 import LocationSearchInput from '../../containers/LocationSearchInput';
+import { ReactComponent as LogoSvg } from '../../assets/campin_logo.svg';
 
 import Loading from '../Loading';
 
@@ -31,10 +32,14 @@ export class CampDetails extends Component {
     const { lat, long, name, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
       <div className='camp-details'>
-        <section className='top-bar'>
-          <div className='logo'>LOGO</div>
-          <LocationSearchInput />
-        </section>
+      <section className='top-bar'>
+        <div className='logo-container'>
+          <Link to='/'>
+            <LogoSvg className='logo' />
+          </Link>
+        </div>
+        <LocationSearchInput />
+      </section>
         {
           !this.props.name ?
           <div >
@@ -42,17 +47,14 @@ export class CampDetails extends Component {
             <Loading /> 
           </div> :
           <div className='loaded-details'>
-            <Link to='/'>
-              <p className='home-btn'>Go Home</p>
-            </Link>
             <div className='camp-overview'>
               <h1 className='camp-name-details'>{name}</h1>
               <div className='camp-info'>
-                <p className='info'>Has Amps: {wAmps || 'NA'}</p>
-                <p className='info'>Has Hose Hookup: {wHose || 'NA'}</p>
-                <p className='info'>Allows Pets: {wPets || 'NA'}</p>
-                <p className='info'>Has Sewer Hookup: {wSewere || 'NA'}</p>
-                <p className='info'>Has Water Hookup: {wWater || 'NA'}</p>
+                <p className='info'>Has Amps: <span className='hookup'>{wAmps || 'NA'}</span></p>
+                <p className='info'>Has Hose Hookup: <span className='hookup'>{wHose || 'NA'}</span></p>
+                <p className='info'>Allows Pets: <span className='hookup'>{wPets || 'NA'}</span></p>
+                <p className='info'>Has Sewer Hookup: <span className='hookup'>{wSewere || 'NA'}</span></p>
+                <p className='info'>Has Water Access: <span className='hookup'>{wWater || 'NA'}</span></p>
               </div>
             </div>
             <div className='detailed-forecasts'>
