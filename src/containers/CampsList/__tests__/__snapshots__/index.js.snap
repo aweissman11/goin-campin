@@ -449,6 +449,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.7302833",
           "long": "-104.9525917",
           "name": "Rent an RV for Your Next Adventure",
@@ -902,6 +903,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.6493861",
           "long": "-105.024525",
           "name": "South Park Mobile Home and RV Community",
@@ -1355,6 +1357,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.7208611",
           "long": "-105.2009167",
           "name": "Golden Terrace South RV Resort",
@@ -1808,6 +1811,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.7195194",
           "long": "-105.2012389",
           "name": "Dakota Ridge RV Resort",
@@ -1841,19 +1845,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header
-          className="goin-campin"
+        <section
+          className="top-bar"
         >
-          We're Goin Campin!
-        </header>,
-        <div>
+          <div
+            className="logo-container"
+          >
+            <ReactComponent
+              className="logo"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            />
+          </div>
           <Connect(LocationSearchInput) />
-        </div>,
+        </section>,
+        <div />,
         <div>
-          <h1>
-            CampsList
-          </h1>
-          <Campground
+          <withRouter(Campground)
             forecast={
               Array [
                 Object {
@@ -2298,6 +2310,7 @@ ShallowWrapper {
                 },
               ]
             }
+            id="12345"
             lat="39.6493861"
             long="-105.024525"
             name="South Park Mobile Home and RV Community"
@@ -2308,7 +2321,7 @@ ShallowWrapper {
             wSewer="N"
             wWater=""
           />
-          <Campground
+          <withRouter(Campground)
             forecast={
               Array [
                 Object {
@@ -2753,6 +2766,7 @@ ShallowWrapper {
                 },
               ]
             }
+            id="12345"
             lat="39.7208611"
             long="-105.2009167"
             name="Golden Terrace South RV Resort"
@@ -2763,7 +2777,7 @@ ShallowWrapper {
             wSewer="N"
             wWater=""
           />
-          <Campground
+          <withRouter(Campground)
             forecast={
               Array [
                 Object {
@@ -3208,6 +3222,7 @@ ShallowWrapper {
                 },
               ]
             }
+            id="12345"
             lat="39.7195194"
             long="-105.2012389"
             name="Dakota Ridge RV Resort"
@@ -3218,6 +3233,17 @@ ShallowWrapper {
             wSewer="N"
             wWater=""
           />
+          <div
+            className="bottom-bar"
+          >
+            <a
+              className="info-btn"
+              href="https://github.com/aweissman11/goin-campin"
+              target="_blank"
+            >
+              SITE INFO
+            </a>
+          </div>
         </div>,
       ],
       "className": "camps-list",
@@ -3229,30 +3255,79 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "We're Goin Campin!",
-          "className": "goin-campin",
+          "children": Array [
+            <div
+              className="logo-container"
+            >
+              <ReactComponent
+                className="logo"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+              />
+            </div>,
+            <Connect(LocationSearchInput) />,
+          ],
+          "className": "top-bar",
         },
         "ref": null,
-        "rendered": "We're Goin Campin!",
-        "type": "header",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ReactComponent
+                className="logo"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+              />,
+              "className": "logo-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "logo",
+                "onClick": [Function],
+                "style": Object {
+                  "cursor": "pointer",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
-        "props": Object {
-          "children": <Connect(LocationSearchInput) />,
-        },
+        "props": Object {},
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "rendered": null,
         "type": "div",
       },
       Object {
@@ -3261,11 +3336,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CampsList
-            </h1>,
             Array [
-              <Campground
+              <withRouter(Campground)
                 forecast={
                   Array [
                     Object {
@@ -3710,6 +3782,7 @@ ShallowWrapper {
                     },
                   ]
                 }
+                id="12345"
                 lat="39.6493861"
                 long="-105.024525"
                 name="South Park Mobile Home and RV Community"
@@ -3720,7 +3793,7 @@ ShallowWrapper {
                 wSewer="N"
                 wWater=""
               />,
-              <Campground
+              <withRouter(Campground)
                 forecast={
                   Array [
                     Object {
@@ -4165,6 +4238,7 @@ ShallowWrapper {
                     },
                   ]
                 }
+                id="12345"
                 lat="39.7208611"
                 long="-105.2009167"
                 name="Golden Terrace South RV Resort"
@@ -4175,7 +4249,7 @@ ShallowWrapper {
                 wSewer="N"
                 wWater=""
               />,
-              <Campground
+              <withRouter(Campground)
                 forecast={
                   Array [
                     Object {
@@ -4620,6 +4694,7 @@ ShallowWrapper {
                     },
                   ]
                 }
+                id="12345"
                 lat="39.7195194"
                 long="-105.2012389"
                 name="Dakota Ridge RV Resort"
@@ -4631,25 +4706,25 @@ ShallowWrapper {
                 wWater=""
               />,
             ],
+            <div
+              className="bottom-bar"
+            >
+              <a
+                className="info-btn"
+                href="https://github.com/aweissman11/goin-campin"
+                target="_blank"
+              >
+                SITE INFO
+              </a>
+            </div>,
           ],
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "CampsList",
-            },
-            "ref": null,
-            "rendered": "CampsList",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
             "key": "South Park Mobile Home and RV Community",
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "forecast": Array [
                 Object {
@@ -5093,6 +5168,7 @@ ShallowWrapper {
                   "windSpeed": 4.41,
                 },
               ],
+              "id": "12345",
               "lat": "39.6493861",
               "long": "-105.024525",
               "name": "South Park Mobile Home and RV Community",
@@ -5110,7 +5186,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "Golden Terrace South RV Resort",
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "forecast": Array [
                 Object {
@@ -5554,6 +5630,7 @@ ShallowWrapper {
                   "windSpeed": 4.41,
                 },
               ],
+              "id": "12345",
               "lat": "39.7208611",
               "long": "-105.2009167",
               "name": "Golden Terrace South RV Resort",
@@ -5571,7 +5648,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "Dakota Ridge RV Resort",
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "forecast": Array [
                 Object {
@@ -6015,6 +6092,7 @@ ShallowWrapper {
                   "windSpeed": 4.41,
                 },
               ],
+              "id": "12345",
               "lat": "39.7195194",
               "long": "-105.2012389",
               "name": "Dakota Ridge RV Resort",
@@ -6029,6 +6107,37 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="info-btn"
+                href="https://github.com/aweissman11/goin-campin"
+                target="_blank"
+              >
+                SITE INFO
+              </a>,
+              "className": "bottom-bar",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SITE INFO",
+                "className": "info-btn",
+                "href": "https://github.com/aweissman11/goin-campin",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "SITE INFO",
+              "type": "a",
+            },
+            "type": "div",
+          },
         ],
         "type": "div",
       },
@@ -6042,19 +6151,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header
-            className="goin-campin"
+          <section
+            className="top-bar"
           >
-            We're Goin Campin!
-          </header>,
-          <div>
+            <div
+              className="logo-container"
+            >
+              <ReactComponent
+                className="logo"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+              />
+            </div>
             <Connect(LocationSearchInput) />
-          </div>,
+          </section>,
+          <div />,
           <div>
-            <h1>
-              CampsList
-            </h1>
-            <Campground
+            <withRouter(Campground)
               forecast={
                 Array [
                   Object {
@@ -6499,6 +6616,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              id="12345"
               lat="39.6493861"
               long="-105.024525"
               name="South Park Mobile Home and RV Community"
@@ -6509,7 +6627,7 @@ ShallowWrapper {
               wSewer="N"
               wWater=""
             />
-            <Campground
+            <withRouter(Campground)
               forecast={
                 Array [
                   Object {
@@ -6954,6 +7072,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              id="12345"
               lat="39.7208611"
               long="-105.2009167"
               name="Golden Terrace South RV Resort"
@@ -6964,7 +7083,7 @@ ShallowWrapper {
               wSewer="N"
               wWater=""
             />
-            <Campground
+            <withRouter(Campground)
               forecast={
                 Array [
                   Object {
@@ -7409,6 +7528,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              id="12345"
               lat="39.7195194"
               long="-105.2012389"
               name="Dakota Ridge RV Resort"
@@ -7419,6 +7539,17 @@ ShallowWrapper {
               wSewer="N"
               wWater=""
             />
+            <div
+              className="bottom-bar"
+            >
+              <a
+                className="info-btn"
+                href="https://github.com/aweissman11/goin-campin"
+                target="_blank"
+              >
+                SITE INFO
+              </a>
+            </div>
           </div>,
         ],
         "className": "camps-list",
@@ -7430,30 +7561,79 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "We're Goin Campin!",
-            "className": "goin-campin",
+            "children": Array [
+              <div
+                className="logo-container"
+              >
+                <ReactComponent
+                  className="logo"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                />
+              </div>,
+              <Connect(LocationSearchInput) />,
+            ],
+            "className": "top-bar",
           },
           "ref": null,
-          "rendered": "We're Goin Campin!",
-          "type": "header",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ReactComponent
+                  className="logo"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                />,
+                "className": "logo-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "logo",
+                  "onClick": [Function],
+                  "style": Object {
+                    "cursor": "pointer",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
-          "props": Object {
-            "children": <Connect(LocationSearchInput) />,
-          },
+          "props": Object {},
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": "div",
         },
         Object {
@@ -7462,11 +7642,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1>
-                CampsList
-              </h1>,
               Array [
-                <Campground
+                <withRouter(Campground)
                   forecast={
                     Array [
                       Object {
@@ -7911,6 +8088,7 @@ ShallowWrapper {
                       },
                     ]
                   }
+                  id="12345"
                   lat="39.6493861"
                   long="-105.024525"
                   name="South Park Mobile Home and RV Community"
@@ -7921,7 +8099,7 @@ ShallowWrapper {
                   wSewer="N"
                   wWater=""
                 />,
-                <Campground
+                <withRouter(Campground)
                   forecast={
                     Array [
                       Object {
@@ -8366,6 +8544,7 @@ ShallowWrapper {
                       },
                     ]
                   }
+                  id="12345"
                   lat="39.7208611"
                   long="-105.2009167"
                   name="Golden Terrace South RV Resort"
@@ -8376,7 +8555,7 @@ ShallowWrapper {
                   wSewer="N"
                   wWater=""
                 />,
-                <Campground
+                <withRouter(Campground)
                   forecast={
                     Array [
                       Object {
@@ -8821,6 +9000,7 @@ ShallowWrapper {
                       },
                     ]
                   }
+                  id="12345"
                   lat="39.7195194"
                   long="-105.2012389"
                   name="Dakota Ridge RV Resort"
@@ -8832,25 +9012,25 @@ ShallowWrapper {
                   wWater=""
                 />,
               ],
+              <div
+                className="bottom-bar"
+              >
+                <a
+                  className="info-btn"
+                  href="https://github.com/aweissman11/goin-campin"
+                  target="_blank"
+                >
+                  SITE INFO
+                </a>
+              </div>,
             ],
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "CampsList",
-              },
-              "ref": null,
-              "rendered": "CampsList",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
               "key": "South Park Mobile Home and RV Community",
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "forecast": Array [
                   Object {
@@ -9294,6 +9474,7 @@ ShallowWrapper {
                     "windSpeed": 4.41,
                   },
                 ],
+                "id": "12345",
                 "lat": "39.6493861",
                 "long": "-105.024525",
                 "name": "South Park Mobile Home and RV Community",
@@ -9311,7 +9492,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "Golden Terrace South RV Resort",
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "forecast": Array [
                   Object {
@@ -9755,6 +9936,7 @@ ShallowWrapper {
                     "windSpeed": 4.41,
                   },
                 ],
+                "id": "12345",
                 "lat": "39.7208611",
                 "long": "-105.2009167",
                 "name": "Golden Terrace South RV Resort",
@@ -9772,7 +9954,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "Dakota Ridge RV Resort",
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "forecast": Array [
                   Object {
@@ -10216,6 +10398,7 @@ ShallowWrapper {
                     "windSpeed": 4.41,
                   },
                 ],
+                "id": "12345",
                 "lat": "39.7195194",
                 "long": "-105.2012389",
                 "name": "Dakota Ridge RV Resort",
@@ -10229,6 +10412,37 @@ ShallowWrapper {
               "ref": null,
               "rendered": null,
               "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="info-btn"
+                  href="https://github.com/aweissman11/goin-campin"
+                  target="_blank"
+                >
+                  SITE INFO
+                </a>,
+                "className": "bottom-bar",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SITE INFO",
+                  "className": "info-btn",
+                  "href": "https://github.com/aweissman11/goin-campin",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "SITE INFO",
+                "type": "a",
+              },
+              "type": "div",
             },
           ],
           "type": "div",
@@ -10706,6 +10920,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.7302833",
           "long": "-104.9525917",
           "name": "Rent an RV for Your Next Adventure",
@@ -11159,6 +11374,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.6493861",
           "long": "-105.024525",
           "name": "South Park Mobile Home and RV Community",
@@ -11612,6 +11828,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.7208611",
           "long": "-105.2009167",
           "name": "Golden Terrace South RV Resort",
@@ -12065,6 +12282,7 @@ ShallowWrapper {
               "windSpeed": 4.41,
             },
           ],
+          "id": "12345",
           "lat": "39.7195194",
           "long": "-105.2012389",
           "name": "Dakota Ridge RV Resort",
@@ -12098,19 +12316,27 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header
-          className="goin-campin"
+        <section
+          className="top-bar"
         >
-          We're Goin Campin!
-        </header>,
-        <div>
+          <div
+            className="logo-container"
+          >
+            <ReactComponent
+              className="logo"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            />
+          </div>
           <Connect(LocationSearchInput) />
-        </div>,
+        </section>,
+        <div />,
         <div>
-          <h1>
-            CampsList
-          </h1>
-          <Campground
+          <withRouter(Campground)
             forecast={
               Array [
                 Object {
@@ -12555,6 +12781,7 @@ ShallowWrapper {
                 },
               ]
             }
+            id="12345"
             lat="39.6493861"
             long="-105.024525"
             name="South Park Mobile Home and RV Community"
@@ -12565,7 +12792,7 @@ ShallowWrapper {
             wSewer="N"
             wWater=""
           />
-          <Campground
+          <withRouter(Campground)
             forecast={
               Array [
                 Object {
@@ -13010,6 +13237,7 @@ ShallowWrapper {
                 },
               ]
             }
+            id="12345"
             lat="39.7208611"
             long="-105.2009167"
             name="Golden Terrace South RV Resort"
@@ -13020,7 +13248,7 @@ ShallowWrapper {
             wSewer="N"
             wWater=""
           />
-          <Campground
+          <withRouter(Campground)
             forecast={
               Array [
                 Object {
@@ -13465,6 +13693,7 @@ ShallowWrapper {
                 },
               ]
             }
+            id="12345"
             lat="39.7195194"
             long="-105.2012389"
             name="Dakota Ridge RV Resort"
@@ -13475,6 +13704,17 @@ ShallowWrapper {
             wSewer="N"
             wWater=""
           />
+          <div
+            className="bottom-bar"
+          >
+            <a
+              className="info-btn"
+              href="https://github.com/aweissman11/goin-campin"
+              target="_blank"
+            >
+              SITE INFO
+            </a>
+          </div>
         </div>,
       ],
       "className": "camps-list",
@@ -13486,30 +13726,79 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "We're Goin Campin!",
-          "className": "goin-campin",
+          "children": Array [
+            <div
+              className="logo-container"
+            >
+              <ReactComponent
+                className="logo"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+              />
+            </div>,
+            <Connect(LocationSearchInput) />,
+          ],
+          "className": "top-bar",
         },
         "ref": null,
-        "rendered": "We're Goin Campin!",
-        "type": "header",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ReactComponent
+                className="logo"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+              />,
+              "className": "logo-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "logo",
+                "onClick": [Function],
+                "style": Object {
+                  "cursor": "pointer",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
-        "props": Object {
-          "children": <Connect(LocationSearchInput) />,
-        },
+        "props": Object {},
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        "rendered": null,
         "type": "div",
       },
       Object {
@@ -13518,11 +13807,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CampsList
-            </h1>,
             Array [
-              <Campground
+              <withRouter(Campground)
                 forecast={
                   Array [
                     Object {
@@ -13967,6 +14253,7 @@ ShallowWrapper {
                     },
                   ]
                 }
+                id="12345"
                 lat="39.6493861"
                 long="-105.024525"
                 name="South Park Mobile Home and RV Community"
@@ -13977,7 +14264,7 @@ ShallowWrapper {
                 wSewer="N"
                 wWater=""
               />,
-              <Campground
+              <withRouter(Campground)
                 forecast={
                   Array [
                     Object {
@@ -14422,6 +14709,7 @@ ShallowWrapper {
                     },
                   ]
                 }
+                id="12345"
                 lat="39.7208611"
                 long="-105.2009167"
                 name="Golden Terrace South RV Resort"
@@ -14432,7 +14720,7 @@ ShallowWrapper {
                 wSewer="N"
                 wWater=""
               />,
-              <Campground
+              <withRouter(Campground)
                 forecast={
                   Array [
                     Object {
@@ -14877,6 +15165,7 @@ ShallowWrapper {
                     },
                   ]
                 }
+                id="12345"
                 lat="39.7195194"
                 long="-105.2012389"
                 name="Dakota Ridge RV Resort"
@@ -14888,25 +15177,25 @@ ShallowWrapper {
                 wWater=""
               />,
             ],
+            <div
+              className="bottom-bar"
+            >
+              <a
+                className="info-btn"
+                href="https://github.com/aweissman11/goin-campin"
+                target="_blank"
+              >
+                SITE INFO
+              </a>
+            </div>,
           ],
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "CampsList",
-            },
-            "ref": null,
-            "rendered": "CampsList",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
             "key": "South Park Mobile Home and RV Community",
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "forecast": Array [
                 Object {
@@ -15350,6 +15639,7 @@ ShallowWrapper {
                   "windSpeed": 4.41,
                 },
               ],
+              "id": "12345",
               "lat": "39.6493861",
               "long": "-105.024525",
               "name": "South Park Mobile Home and RV Community",
@@ -15367,7 +15657,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "Golden Terrace South RV Resort",
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "forecast": Array [
                 Object {
@@ -15811,6 +16101,7 @@ ShallowWrapper {
                   "windSpeed": 4.41,
                 },
               ],
+              "id": "12345",
               "lat": "39.7208611",
               "long": "-105.2009167",
               "name": "Golden Terrace South RV Resort",
@@ -15828,7 +16119,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "Dakota Ridge RV Resort",
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "forecast": Array [
                 Object {
@@ -16272,6 +16563,7 @@ ShallowWrapper {
                   "windSpeed": 4.41,
                 },
               ],
+              "id": "12345",
               "lat": "39.7195194",
               "long": "-105.2012389",
               "name": "Dakota Ridge RV Resort",
@@ -16286,6 +16578,37 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="info-btn"
+                href="https://github.com/aweissman11/goin-campin"
+                target="_blank"
+              >
+                SITE INFO
+              </a>,
+              "className": "bottom-bar",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "SITE INFO",
+                "className": "info-btn",
+                "href": "https://github.com/aweissman11/goin-campin",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "SITE INFO",
+              "type": "a",
+            },
+            "type": "div",
+          },
         ],
         "type": "div",
       },
@@ -16299,19 +16622,27 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header
-            className="goin-campin"
+          <section
+            className="top-bar"
           >
-            We're Goin Campin!
-          </header>,
-          <div>
+            <div
+              className="logo-container"
+            >
+              <ReactComponent
+                className="logo"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "cursor": "pointer",
+                  }
+                }
+              />
+            </div>
             <Connect(LocationSearchInput) />
-          </div>,
+          </section>,
+          <div />,
           <div>
-            <h1>
-              CampsList
-            </h1>
-            <Campground
+            <withRouter(Campground)
               forecast={
                 Array [
                   Object {
@@ -16756,6 +17087,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              id="12345"
               lat="39.6493861"
               long="-105.024525"
               name="South Park Mobile Home and RV Community"
@@ -16766,7 +17098,7 @@ ShallowWrapper {
               wSewer="N"
               wWater=""
             />
-            <Campground
+            <withRouter(Campground)
               forecast={
                 Array [
                   Object {
@@ -17211,6 +17543,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              id="12345"
               lat="39.7208611"
               long="-105.2009167"
               name="Golden Terrace South RV Resort"
@@ -17221,7 +17554,7 @@ ShallowWrapper {
               wSewer="N"
               wWater=""
             />
-            <Campground
+            <withRouter(Campground)
               forecast={
                 Array [
                   Object {
@@ -17666,6 +17999,7 @@ ShallowWrapper {
                   },
                 ]
               }
+              id="12345"
               lat="39.7195194"
               long="-105.2012389"
               name="Dakota Ridge RV Resort"
@@ -17676,6 +18010,17 @@ ShallowWrapper {
               wSewer="N"
               wWater=""
             />
+            <div
+              className="bottom-bar"
+            >
+              <a
+                className="info-btn"
+                href="https://github.com/aweissman11/goin-campin"
+                target="_blank"
+              >
+                SITE INFO
+              </a>
+            </div>
           </div>,
         ],
         "className": "camps-list",
@@ -17687,30 +18032,79 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "We're Goin Campin!",
-            "className": "goin-campin",
+            "children": Array [
+              <div
+                className="logo-container"
+              >
+                <ReactComponent
+                  className="logo"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                />
+              </div>,
+              <Connect(LocationSearchInput) />,
+            ],
+            "className": "top-bar",
           },
           "ref": null,
-          "rendered": "We're Goin Campin!",
-          "type": "header",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ReactComponent
+                  className="logo"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                />,
+                "className": "logo-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "logo",
+                  "onClick": [Function],
+                  "style": Object {
+                    "cursor": "pointer",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
-          "props": Object {
-            "children": <Connect(LocationSearchInput) />,
-          },
+          "props": Object {},
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
+          "rendered": null,
           "type": "div",
         },
         Object {
@@ -17719,11 +18113,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1>
-                CampsList
-              </h1>,
               Array [
-                <Campground
+                <withRouter(Campground)
                   forecast={
                     Array [
                       Object {
@@ -18168,6 +18559,7 @@ ShallowWrapper {
                       },
                     ]
                   }
+                  id="12345"
                   lat="39.6493861"
                   long="-105.024525"
                   name="South Park Mobile Home and RV Community"
@@ -18178,7 +18570,7 @@ ShallowWrapper {
                   wSewer="N"
                   wWater=""
                 />,
-                <Campground
+                <withRouter(Campground)
                   forecast={
                     Array [
                       Object {
@@ -18623,6 +19015,7 @@ ShallowWrapper {
                       },
                     ]
                   }
+                  id="12345"
                   lat="39.7208611"
                   long="-105.2009167"
                   name="Golden Terrace South RV Resort"
@@ -18633,7 +19026,7 @@ ShallowWrapper {
                   wSewer="N"
                   wWater=""
                 />,
-                <Campground
+                <withRouter(Campground)
                   forecast={
                     Array [
                       Object {
@@ -19078,6 +19471,7 @@ ShallowWrapper {
                       },
                     ]
                   }
+                  id="12345"
                   lat="39.7195194"
                   long="-105.2012389"
                   name="Dakota Ridge RV Resort"
@@ -19089,25 +19483,25 @@ ShallowWrapper {
                   wWater=""
                 />,
               ],
+              <div
+                className="bottom-bar"
+              >
+                <a
+                  className="info-btn"
+                  href="https://github.com/aweissman11/goin-campin"
+                  target="_blank"
+                >
+                  SITE INFO
+                </a>
+              </div>,
             ],
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "CampsList",
-              },
-              "ref": null,
-              "rendered": "CampsList",
-              "type": "h1",
-            },
-            Object {
-              "instance": null,
               "key": "South Park Mobile Home and RV Community",
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "forecast": Array [
                   Object {
@@ -19551,6 +19945,7 @@ ShallowWrapper {
                     "windSpeed": 4.41,
                   },
                 ],
+                "id": "12345",
                 "lat": "39.6493861",
                 "long": "-105.024525",
                 "name": "South Park Mobile Home and RV Community",
@@ -19568,7 +19963,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "Golden Terrace South RV Resort",
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "forecast": Array [
                   Object {
@@ -20012,6 +20407,7 @@ ShallowWrapper {
                     "windSpeed": 4.41,
                   },
                 ],
+                "id": "12345",
                 "lat": "39.7208611",
                 "long": "-105.2009167",
                 "name": "Golden Terrace South RV Resort",
@@ -20029,7 +20425,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "Dakota Ridge RV Resort",
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "forecast": Array [
                   Object {
@@ -20473,6 +20869,7 @@ ShallowWrapper {
                     "windSpeed": 4.41,
                   },
                 ],
+                "id": "12345",
                 "lat": "39.7195194",
                 "long": "-105.2012389",
                 "name": "Dakota Ridge RV Resort",
@@ -20486,6 +20883,37 @@ ShallowWrapper {
               "ref": null,
               "rendered": null,
               "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="info-btn"
+                  href="https://github.com/aweissman11/goin-campin"
+                  target="_blank"
+                >
+                  SITE INFO
+                </a>,
+                "className": "bottom-bar",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "SITE INFO",
+                  "className": "info-btn",
+                  "href": "https://github.com/aweissman11/goin-campin",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "SITE INFO",
+                "type": "a",
+              },
+              "type": "div",
             },
           ],
           "type": "div",
