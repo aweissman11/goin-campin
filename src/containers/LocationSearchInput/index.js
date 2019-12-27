@@ -5,6 +5,7 @@ import PlacesAutocomplete, {
   getLatLng,
 } from 'react-places-autocomplete';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import { getCampsList } from '../../actions/getCampgroundsThunk';
 import './LocationSearchInput.css';
@@ -43,6 +44,7 @@ class LocationSearchInput extends React.Component {
         };
       }
       this.props.getCampsList([coords.lat, coords.lng])
+      this.props.history.push('/');
     } catch (error) {
       console.warn('error:', error);
     }
@@ -92,4 +94,4 @@ const mapDispatchToProps = (dispatch) => ({
   getCampsList: (location) => dispatch(getCampsList(location))
 })
 
-export default connect(null, mapDispatchToProps)(LocationSearchInput);
+export default withRouter(connect(null, mapDispatchToProps)(LocationSearchInput));

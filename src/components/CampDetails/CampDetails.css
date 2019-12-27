@@ -45,6 +45,11 @@
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info {
+  white-space: nowrap;
 }
 
 .detailed-forecasts {
