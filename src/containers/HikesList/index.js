@@ -10,18 +10,18 @@ class HikesList extends Component {
 
   componentDidMount() {
     const { lat, long } = this.props;
-        this.props.getHikesList([lat, long]);
+    this.props.getHikesList([lat, long]);
   }
 
-  hikes = () => this.props.hikesList.map( (hike, i) => (
-        <Hike color={i%5} key={hike.id} {...hike} />
-        ))
+  hikes = () => this.props.hikesList.map((hike, i) => (
+    <Hike color={i % 5} key={hike.id} {...hike} />
+  ))
 
   render() {
     return (
       <div className='hikes-list'>
+        <h1 className='nearby-hikes'>Nearby Hikes</h1>
         <div className='hikes'>
-        <h1>Nearby Hikes</h1>
           {
             this.hikes()
           }

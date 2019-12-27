@@ -16,12 +16,11 @@ export class CampsList extends Component {
       camp.name !== 'Rent an RV for Your Next Adventure'
     ))
 
-    return filteredCamps.map( (camp, i) => {
+    return filteredCamps.map((camp, i) => {
       return (
         <Campground
           {...camp}
           key={`${camp.name}`}
-          color={i % 5}
         />
       )
     })
@@ -29,32 +28,34 @@ export class CampsList extends Component {
 
   render() {
     return (
-    <div className='camps-list'>
-      <section className='top-bar'>
-        <div className='logo-container'>
-          <LogoSvg className='logo' />
+      <div className='camps-list'>
+        <section className='top-bar'>
+          <div className='logo-container'>
+            <LogoSvg
+              onClick={() => window.location.reload()}
+              className='logo'
+              style={{
+                cursor: 'pointer'
+              }}
+            />
+          </div>
+          <LocationSearchInput />
+        </section>
+        <div>
         </div>
-        <LocationSearchInput />
-      </section>
-      <div>
-      </div>
-      {
-        this.props.loading.isLoading ?
-          <Loading
-            message={this.props.loading.message}
-          /> :
-          <div>
-            <div className='nearby-campgrounds'>
-              <h1>Nearby Campgrounds</h1>
-              <p>Current Weather</p>
-            </div>
+        {
+          this.props.loading.isLoading ?
+            <Loading
+              message={this.props.loading.message}
+            /> :
+            <div>
               {this.renderCamps()}
               <div className='bottom-bar'>
-                <span className='info-btn'>INFO</span>
+                <a href='https://github.com/aweissman11/goin-campin' target='_blank' className='info-btn'>SITE INFO</a>
               </div>
-          </div>
-      }
-    </div>
+            </div>
+        }
+      </div>
     )
   }
 }

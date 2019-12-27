@@ -1,5 +1,5 @@
 .camp-details {
-  background: #3f6358;
+  margin: 0 40px;
   min-height: 100vh;
   height: 100%;
   width: stretch;
@@ -26,17 +26,19 @@
   margin: 0;
 }
 
-.camp-overview {
+.camp-break {
+  height: 2px;
+  background: rgba(156, 156, 156, .6);
+  width: 45%;
+  margin: 40px auto;
 }
 
 .camp-name-details {
   text-align: center;
   margin: 25px auto 10px;
-  color: white;
 }
 
 .camp-info {
-  color: white;
   font-weight: bold;
   font-size: 1.3em;
   text-align: center;
@@ -47,33 +49,18 @@
 
 .detailed-forecasts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-  background: #acdad8;
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
 }
 
-.detailed-forecasts h1 {
-  background: #fff;
-  height: 120%;
-  margin: 0;
+.weather-day {
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 25px;
+  /* border: 1px rgba(156, 156, 156, .6) solid; */
 }
 
-
-.weather-color-0 {
-  background: #f9c67f;
-}
-
-.weather-color-1 {
-  background: #acdad9;
-}
-
-.weather-color-2 {
-  background: #607067;
-}
-
-.weather-color-3 {
-  background: #e9bcb0;
-}
-
-.weather-color-4 {
-  background: #79c39f;
+@media (max-width: 500px) {
+  .camp-details {
+    margin: 0 15px;
+  }
 }

@@ -4,15 +4,17 @@
 }
 
 .camps-list {
-  background: #3f6358;
+  margin: 0 40px;
+  text-align: left;
 }
 
 .top-bar {
   background: #fff;
-  width: 100vw;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px rgba(156, 156, 156, .6) solid;
 }
 
 .logo-container {
@@ -29,12 +31,11 @@
 .nearby-campgrounds {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* justify-content: space-around; */
   text-align: left;
 }
 
 .nearby-campgrounds h1 {
-  background: #3f6358;
+  /* background: #3f6358; */
   color: #fff;
   height: 100%;
   margin: 0;
@@ -52,14 +53,11 @@
 
 .info-btn {
   line-height: 46px;
+  float: right;
 }
 
-
-
-/* 
-yellow: #f9c67f
-blue: #acdad9
-teal: #79c39f
-green: #607067
-pink: #e9bcb0 
-*/
+@media (max-width: 500px) {
+  .camps-list {
+    margin: 0 15px;
+  }
+}

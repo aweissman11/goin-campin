@@ -11,10 +11,10 @@ import './CampDetails.css';
 
 export class CampDetails extends Component {
   mapForecasts = () => {
-    return this.props.forecast.map( (cast, i) => {
-      const colorClass=`weather-color-${i%5}`
+    return this.props.forecast.map((cast, i) => {
+      const colorClass = `weather-color-${i % 5}`
       return (
-        <div key={cast.date}className={`weather-day ${colorClass}`}>
+        <div key={cast.date} className={`weather-day`}>
           <p className='forecast-p'>{cast.date.slice(5, 10)}</p>
           <div className='forecast-icon-container'>
             <img
@@ -22,7 +22,7 @@ export class CampDetails extends Component {
               src={`${cast.icon}`}
               alt={`${cast.summary}`}
             />
-            </div>
+          </div>
           <p className='forecast-p'>{cast.descrip}</p>
         </div>
       )
@@ -32,39 +32,42 @@ export class CampDetails extends Component {
     const { lat, long, name, wAmps, wHose, wPets, wSewere, wWater } = this.props
     return (
       <div className='camp-details'>
-      <section className='top-bar'>
-        <div className='logo-container'>
-          <Link to='/'>
-            <LogoSvg className='logo' />
-          </Link>
-        </div>
-        <LocationSearchInput />
-      </section>
+        <section className='top-bar'>
+          <div className='logo-container'>
+            <Link to='/'>
+              <LogoSvg className='logo' />
+            </Link>
+          </div>
+          <LocationSearchInput />
+        </section>
         {
           !this.props.name ?
-          <div >
-            <h2 className='looking-up'>Looking up your campground...</h2>
-            <Loading /> 
-          </div> :
-          <div className='loaded-details'>
-            <div className='camp-overview'>
-              <h1 className='camp-name-details'>{name}</h1>
-              <div className='camp-info'>
-                <p className='info'>Has Amps: <span className='hookup'>{wAmps || 'NA'}</span></p>
-                <p className='info'>Has Hose Hookup: <span className='hookup'>{wHose || 'NA'}</span></p>
-                <p className='info'>Allows Pets: <span className='hookup'>{wPets || 'NA'}</span></p>
-                <p className='info'>Has Sewer Hookup: <span className='hookup'>{wSewere || 'NA'}</span></p>
-                <p className='info'>Has Water Access: <span className='hookup'>{wWater || 'NA'}</span></p>
+            <div >
+              <h2 className='looking-up'>Looking up your campground...</h2>
+              <Loading />
+            </div> :
+            <div className='loaded-details'>
+              <div className='camp-overview'>
+                <h1 className='camp-name-details'>{name}</h1>
+                <div className='camp-break'></div>
+                <div className='camp-info'>
+                  <p className='info'>Has Amps: <span className='hookup'>{wAmps || 'NA'}</span></p>
+                  <p className='info'>Has Hose Hookup: <span className='hookup'>{wHose || 'NA'}</span></p>
+                  <p className='info'>Allows Pets: <span className='hookup'>{wPets || 'NA'}</span></p>
+                  <p className='info'>Has Sewer Hookup: <span className='hookup'>{wSewere || 'NA'}</span></p>
+                  <p className='info'>Has Water Access: <span className='hookup'>{wWater || 'NA'}</span></p>
+                </div>
+              </div>
+              <div className='camp-break'></div>
+              <HikesList lat={lat} long={long} />
+              <div className='camp-break'></div>
+              <h1 className='nearby-hikes'>Weather Details</h1>
+              <div className='detailed-forecasts'>
+                {
+                  this.mapForecasts()
+                }
               </div>
             </div>
-            <div className='detailed-forecasts'>
-              <h1>detailed forecast</h1>
-              {
-                this.mapForecasts()
-              }
-            </div>
-            <HikesList lat={lat} long={long}/>
-          </div>
         }
       </div>
     )

@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import './Campground.css';
 
 export class Campground extends Component {
   render() {
-    const { name, color, forecast } = this.props;
-    const colorClass = `camp-color-${color}`
-    return (
-      <div className={`campground ${colorClass}`} >
-        <p className='camp-name'>{name}</p>
-        <div className='weather-info'>
-          <div key={forecast[0].date} className='weather-day'>
-            <p className='forecast-p'>{forecast[0].descrip}</p>
-            <p className='forecast-p'>{forecast[0].temp} degrees</p>
-          </div>
+    const { name, forecast } = this.props;
+    return (<>
+      <div className='campground' onClick={() => this.props.history.push('/campground/' + this.props.id)}>
+        <div className='flex-it flex-end'>
+          <p className='camp-name'>{name}</p>
+        </div>
+        <div className='flex-it'>
+          <p className='forecast-p'>{forecast[0].descrip}&nbsp;</p>
+          <p className='forecast-p'>{forecast[0].temp} degrees</p>
           <div className='forecast-icon-container'>
             <img
               className='forecast-home-icon'
@@ -24,21 +23,19 @@ export class Campground extends Component {
             />
           </div>
         </div>
-        <Link to={`/campground/${this.props.id}`} className='detail-link'>
-          <p className='details-btn'>Get Full Campground Details...</p>
-        </Link>
       </div>
-    )
+      <div className='line-break'></div>
+    </>)
   }
 }
 
-export default Campground
+export default withRouter(Campground);
 
 Campground.propTypes = {
   forecast: PropTypes.array,
   id: PropTypes.string,
   lat: PropTypes.string,
-  long:PropTypes.string,
+  long: PropTypes.string,
   name: PropTypes.string,
   photo: PropTypes.string,
   wAmps: PropTypes.string,
