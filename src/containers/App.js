@@ -14,9 +14,9 @@ export class App extends Component {
       isOpening: true,
     }
   }
-  
+
   componentDidMount() {
-    setTimeout(this.completeOpening, 13000)
+    setTimeout(this.completeOpening, 3000)
     this.props.setInitialLocation()
   }
 
@@ -29,32 +29,32 @@ export class App extends Component {
       <div>
         <Switch>
           <Route exact path='/campground/:id' render={({ match }) => {
-            const correctCamp = this.props.campsList.find( camp => camp.id === match.params.id)
-            return <CampDetails {...correctCamp}/>
-          }}/>
+            const correctCamp = this.props.campsList.find(camp => camp.id === match.params.id)
+            return <CampDetails {...correctCamp} />
+          }} />
           <Route exact path='/' render={() => {
-          return (
-            <div className="App">
-              {
-                this.state.isOpening ?
-                  <Opening
-                    completeOpening={this.completeOpening}
-                  /> :
-                  <CampsList />
+            return (
+              <div className="App">
+                {
+                  this.state.isOpening ?
+                    <Opening
+                      completeOpening={this.completeOpening}
+                    /> :
+                    <CampsList />
                 }
               </div>
             )
           }} />
           <Route render={() => {
-          return (
-            <div className="App">
-              {
-                // this should be a 404 page
-                this.state.isOpening ?
-                  <Opening
-                    completeOpening={this.completeOpening}
-                  /> :
-                  <CampsList />
+            return (
+              <div className="App">
+                {
+                  // this should be a 404 page
+                  this.state.isOpening ?
+                    <Opening
+                      completeOpening={this.completeOpening}
+                    /> :
+                    <CampsList />
                 }
               </div>
             )
@@ -62,7 +62,7 @@ export class App extends Component {
 
         </Switch>
       </div>
-            
+
     );
   }
 }

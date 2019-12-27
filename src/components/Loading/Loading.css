@@ -2,32 +2,33 @@
   box-sizing: border-box;
   object-fit: contain;
   height: stretch;
-  background: #3f6358;
 }
 
 .gif-container {
-  max-height: 90vh;
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  left: 0;
+  height: 100vh;
+  top: 70px;
 }
 
 .loading-message {
-  background: #3f6358;
   z-index: 1403;
+  position: fixed;
 }
 
 .loading-gif {
   width: 100%;
   height: stretch;
-  background: #3f6358;
-
 }
 
 .gradient {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0), #3f6358);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0), #3f6358); */
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 110vw;
   height: stretch;
   z-index: 120;
 }

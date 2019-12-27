@@ -1,8 +1,8 @@
 .suggestion-item--active {
   background-color: #fafafa;
   cursor: pointer;
-
 }
+
 .suggestion-item {
   background-color: #fff;
   cursor: pointer;
@@ -14,6 +14,7 @@
 }
 
 .location-search-input {
+  font-family: 'Amatic SC', cursive;
   font-size: 2em;
   height: 44px;
   margin-top: 10px;
@@ -27,7 +28,6 @@
   top: 40px;
   right: 0px;
 }
-
 
 /* 
 yellow: #f9c67f

@@ -1,12 +1,12 @@
 .hikes {
   column-count: 5;
-  column-gap: 0px;  
+  column-gap: 5px;
 }
 
-.hikes-list h1 {
-  background: #fff;
+.nearby-hikes {
   height: 120%;
-  margin: 0;
+  margin: 90px auto 40px;
+  text-align: center;
 }
 
 .photo-container {
@@ -40,32 +40,29 @@
   justify-content: center;
   text-align: center;
   transition: opacity .2s, visibility .2s;
-
 }
-
 
 .photo-container:hover .hike-info p {
   transition: .4s;
   transform: translateY(-.5em);
 }
 
-
 .hike-color-0 {
-  background: #f9c67f;
+  background: #f9c67f80;
 }
 
 .hike-color-1 {
-  background: #acdad9;
+  background: #acdad980;
 }
 
 .hike-color-2 {
-  background: #607067;
+  background: #60706780;
 }
 
 .hike-color-3 {
-  background: #e9bcb0;
+  background: #e9bcb080;
 }
 
 .hike-color-4 {
-  background: #79c39f;
+  background: #79c39f80;
 }
